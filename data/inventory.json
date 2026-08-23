@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-08-23T13:46:50.356Z",
+  "generatedAt": "2026-08-23T17:13:16.797Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -11,18 +11,18 @@
   },
   "portfolioScore": 32,
   "actionsSummary": {
-    "configured": 32,
+    "configured": 33,
     "green": 11,
     "red": 2,
     "yellow": 1,
-    "unknown": 15,
+    "unknown": 16,
     "idle": 3,
-    "notConfigured": 114
+    "notConfigured": 113
   },
   "attentionSummary": {
-    "critical": 13,
+    "critical": 14,
     "high": 7,
-    "medium": 111,
+    "medium": 110,
     "low": 11,
     "clear": 4
   },
@@ -87,7 +87,23 @@
           "durationSeconds": 34,
           "url": "https://github.com/dinatalediego/mvp_product/actions/runs/21908485668",
           "runNumber": 1
-        }
+        },
+        "runs": [
+          {
+            "id": 21908485668,
+            "name": "NodeJS with Webpack",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-02-11T14:12:48Z",
+            "startedAt": "2026-02-11T14:12:48Z",
+            "updatedAt": "2026-02-11T14:13:22Z",
+            "durationSeconds": 34,
+            "url": "https://github.com/dinatalediego/mvp_product/actions/runs/21908485668",
+            "runNumber": 1
+          }
+        ]
       },
       "tags": [
         "TypeScript"
@@ -165,6 +181,7 @@
         "label": "Actions not observable",
         "workflowCount": 4,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -245,6 +262,7 @@
         "label": "Actions not observable",
         "workflowCount": 1,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -326,6 +344,7 @@
         "label": "Actions not observable",
         "workflowCount": 5,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -352,6 +371,87 @@
             "points": 28,
             "reason": "GitHub Actions telemetry is unavailable",
             "code": "actions:unknown"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "owner_ceo_leadership",
+      "fullName": "dinatalediego/owner_ceo_leadership",
+      "url": "https://github.com/dinatalediego/owner_ceo_leadership",
+      "visibility": "private",
+      "score": 66,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-08-23T16:57:31Z",
+      "attention": [
+        "Add automated tests",
+        "No operability manifest detected",
+        "Tracked .env-like file detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 35,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "runs": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "JavaScript"
+      ],
+      "priority": {
+        "score": 86,
+        "severity": "critical",
+        "primaryReason": "Tracked .env-like file requires security review",
+        "signals": [
+          {
+            "points": 30,
+            "reason": "Tracked .env-like file requires security review",
+            "code": "security:tracked-env"
+          },
+          {
+            "points": 28,
+            "reason": "GitHub Actions telemetry is unavailable",
+            "code": "actions:unknown"
+          },
+          {
+            "points": 18,
+            "reason": "Repository structural health needs attention",
+            "code": "repository:watch"
           },
           {
             "points": 10,
@@ -419,7 +519,23 @@
           "durationSeconds": 8,
           "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
           "runNumber": 1
-        }
+        },
+        "runs": [
+          {
+            "id": 32558036008,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T06:51:11Z",
+            "startedAt": "2026-08-22T06:51:11Z",
+            "updatedAt": "2026-08-22T06:51:19Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
+            "runNumber": 1
+          }
+        ]
       },
       "tags": [
         "TypeScript"
@@ -486,6 +602,7 @@
         "label": "Actions not observable",
         "workflowCount": 1,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -561,6 +678,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -636,6 +754,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -711,6 +830,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -786,6 +906,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -862,6 +983,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -938,6 +1060,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -1014,6 +1137,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -1088,6 +1212,7 @@
         "label": "Actions not observable",
         "workflowCount": 2,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1162,6 +1287,7 @@
         "label": "Actions not observable",
         "workflowCount": 1,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1237,6 +1363,7 @@
         "label": "Actions not observable",
         "workflowCount": 2,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1310,6 +1437,7 @@
         "label": "Actions not observable",
         "workflowCount": 2,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1385,6 +1513,7 @@
         "label": "Actions not observable",
         "workflowCount": 8,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1461,6 +1590,7 @@
         "label": "Actions not observable",
         "workflowCount": 1,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1534,6 +1664,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -1602,6 +1733,7 @@
         "label": "Actions not observable",
         "workflowCount": 1,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1670,6 +1802,7 @@
         "label": "Actions not observable",
         "workflowCount": 1,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1739,6 +1872,7 @@
         "label": "Actions not observable",
         "workflowCount": 2,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -1822,7 +1956,23 @@
           "durationSeconds": 19,
           "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/19016847921",
           "runNumber": 1
-        }
+        },
+        "runs": [
+          {
+            "id": 19016847921,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2025-11-02T19:08:30Z",
+            "startedAt": "2025-11-02T19:08:30Z",
+            "updatedAt": "2025-11-02T19:08:49Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/19016847921",
+            "runNumber": 1
+          }
+        ]
       },
       "tags": [
         "Python"
@@ -1888,6 +2038,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -1956,6 +2107,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2025,80 +2177,12 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
       },
       "tags": [],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
-      "name": "owner_ceo_leadership",
-      "fullName": "dinatalediego/owner_ceo_leadership",
-      "url": "https://github.com/dinatalediego/owner_ceo_leadership",
-      "visibility": "private",
-      "score": 50,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-08-22T19:58:26Z",
-      "attention": [
-        "Add automated tests",
-        "Add CI workflow",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 0,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 10,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [
-        "JavaScript"
-      ],
       "priority": {
         "score": 45,
         "severity": "medium",
@@ -2176,7 +2260,149 @@
           "durationSeconds": 18,
           "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389697185",
           "runNumber": 14
-        }
+        },
+        "runs": [
+          {
+            "id": 16389697185,
+            "name": "🚀 Deploy MkDocs to Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2025-07-19T14:35:23Z",
+            "startedAt": "2025-07-19T14:35:23Z",
+            "updatedAt": "2025-07-19T14:35:41Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389697185",
+            "runNumber": 14
+          },
+          {
+            "id": 16389697145,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2025-07-19T14:35:23Z",
+            "startedAt": "2025-07-19T14:35:23Z",
+            "updatedAt": "2025-07-19T14:35:51Z",
+            "durationSeconds": 28,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389697145",
+            "runNumber": 11
+          },
+          {
+            "id": 16389442553,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2025-07-19T14:04:44Z",
+            "startedAt": "2025-07-19T14:04:44Z",
+            "updatedAt": "2025-07-19T14:05:22Z",
+            "durationSeconds": 38,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389442553",
+            "runNumber": 10
+          },
+          {
+            "id": 16384179527,
+            "name": "🚀 Deploy MkDocs to Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2025-07-19T02:54:35Z",
+            "startedAt": "2025-07-19T02:54:35Z",
+            "updatedAt": "2025-07-19T02:54:55Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16384179527",
+            "runNumber": 13
+          },
+          {
+            "id": 16384060035,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "gh-pages",
+            "createdAt": "2025-07-19T02:40:21Z",
+            "startedAt": "2025-07-19T02:40:21Z",
+            "updatedAt": "2025-07-19T02:40:44Z",
+            "durationSeconds": 23,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16384060035",
+            "runNumber": 9
+          },
+          {
+            "id": 16384027384,
+            "name": "🚀 Deploy MkDocs to Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2025-07-19T02:36:42Z",
+            "startedAt": "2025-07-19T02:36:42Z",
+            "updatedAt": "2025-07-19T02:37:04Z",
+            "durationSeconds": 22,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16384027384",
+            "runNumber": 12
+          },
+          {
+            "id": 16384027340,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2025-07-19T02:36:42Z",
+            "startedAt": "2025-07-19T02:36:42Z",
+            "updatedAt": "2025-07-19T02:37:19Z",
+            "durationSeconds": 37,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16384027340",
+            "runNumber": 8
+          },
+          {
+            "id": 16383944557,
+            "name": "🚀 Deploy MkDocs to Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2025-07-19T02:26:11Z",
+            "startedAt": "2025-07-19T02:26:11Z",
+            "updatedAt": "2025-07-19T02:26:31Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16383944557",
+            "runNumber": 11
+          },
+          {
+            "id": 16383944515,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2025-07-19T02:26:11Z",
+            "startedAt": "2025-07-19T02:26:11Z",
+            "updatedAt": "2025-07-19T02:26:49Z",
+            "durationSeconds": 38,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16383944515",
+            "runNumber": 7
+          },
+          {
+            "id": 16383844535,
+            "name": "🚀 Deploy MkDocs to Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2025-07-19T02:12:53Z",
+            "startedAt": "2025-07-19T02:12:53Z",
+            "updatedAt": "2025-07-19T02:13:09Z",
+            "durationSeconds": 16,
+            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16383844535",
+            "runNumber": 10
+          }
+        ]
       },
       "tags": [
         "Python"
@@ -2242,6 +2468,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2310,6 +2537,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2394,7 +2622,149 @@
           "durationSeconds": 36,
           "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21261190949",
           "runNumber": 3008
-        }
+        },
+        "runs": [
+          {
+            "id": 21261190949,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T19:01:52Z",
+            "startedAt": "2026-01-22T19:01:52Z",
+            "updatedAt": "2026-01-22T19:02:28Z",
+            "durationSeconds": 36,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21261190949",
+            "runNumber": 3008
+          },
+          {
+            "id": 21260259018,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T18:31:35Z",
+            "startedAt": "2026-01-22T18:31:35Z",
+            "updatedAt": "2026-01-22T18:32:09Z",
+            "durationSeconds": 34,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21260259018",
+            "runNumber": 3007
+          },
+          {
+            "id": 21258977162,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T17:51:59Z",
+            "startedAt": "2026-01-22T17:51:59Z",
+            "updatedAt": "2026-01-22T17:52:30Z",
+            "durationSeconds": 31,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21258977162",
+            "runNumber": 3006
+          },
+          {
+            "id": 21257998955,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T17:20:37Z",
+            "startedAt": "2026-01-22T17:20:37Z",
+            "updatedAt": "2026-01-22T17:21:14Z",
+            "durationSeconds": 37,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21257998955",
+            "runNumber": 3005
+          },
+          {
+            "id": 21256942173,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T16:48:32Z",
+            "startedAt": "2026-01-22T16:48:32Z",
+            "updatedAt": "2026-01-22T16:49:06Z",
+            "durationSeconds": 34,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21256942173",
+            "runNumber": 3004
+          },
+          {
+            "id": 21255274350,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T15:59:32Z",
+            "startedAt": "2026-01-22T15:59:32Z",
+            "updatedAt": "2026-01-22T16:00:01Z",
+            "durationSeconds": 29,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21255274350",
+            "runNumber": 3003
+          },
+          {
+            "id": 21254379390,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T15:33:26Z",
+            "startedAt": "2026-01-22T15:33:26Z",
+            "updatedAt": "2026-01-22T15:34:25Z",
+            "durationSeconds": 59,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21254379390",
+            "runNumber": 3002
+          },
+          {
+            "id": 21252959152,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T14:53:00Z",
+            "startedAt": "2026-01-22T14:53:00Z",
+            "updatedAt": "2026-01-22T14:53:36Z",
+            "durationSeconds": 36,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21252959152",
+            "runNumber": 3001
+          },
+          {
+            "id": 21251795271,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T14:17:20Z",
+            "startedAt": "2026-01-22T14:17:20Z",
+            "updatedAt": "2026-01-22T14:18:11Z",
+            "durationSeconds": 51,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21251795271",
+            "runNumber": 3000
+          },
+          {
+            "id": 21250541038,
+            "name": "CarWash Reports + Email",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-01-22T13:37:04Z",
+            "startedAt": "2026-01-22T13:37:04Z",
+            "updatedAt": "2026-01-22T13:37:34Z",
+            "durationSeconds": 30,
+            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21250541038",
+            "runNumber": 2999
+          }
+        ]
       },
       "tags": [
         "Python"
@@ -2461,6 +2831,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2530,6 +2901,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2599,6 +2971,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2668,6 +3041,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2735,6 +3109,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2804,6 +3179,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2873,6 +3249,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -2942,6 +3319,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3011,6 +3389,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3080,6 +3459,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3149,6 +3529,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3218,6 +3599,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3287,6 +3669,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3358,6 +3741,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3427,6 +3811,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3496,6 +3881,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3563,6 +3949,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3633,6 +4020,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3701,6 +4089,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3771,6 +4160,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3841,6 +4231,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3909,6 +4300,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -3979,6 +4371,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4049,6 +4442,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4119,6 +4513,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4190,6 +4585,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4259,6 +4655,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4327,6 +4724,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4397,6 +4795,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4467,6 +4866,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4537,6 +4937,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4607,6 +5008,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4677,6 +5079,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4747,6 +5150,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4817,6 +5221,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4887,6 +5292,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -4958,6 +5364,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5027,6 +5434,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5096,6 +5504,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5165,6 +5574,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5234,6 +5644,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5303,6 +5714,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5374,6 +5786,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5443,6 +5856,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5514,6 +5928,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5585,6 +6000,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5656,6 +6072,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5727,6 +6144,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5798,6 +6216,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5869,6 +6288,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -5940,6 +6360,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6011,6 +6432,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6080,6 +6502,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6150,6 +6573,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6220,6 +6644,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6290,6 +6715,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6360,6 +6786,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6430,6 +6857,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6500,6 +6928,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6570,6 +6999,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6640,6 +7070,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6710,6 +7141,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6780,6 +7212,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6850,6 +7283,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6920,6 +7354,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -6990,6 +7425,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7060,6 +7496,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7130,6 +7567,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7200,6 +7638,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7270,6 +7709,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7340,6 +7780,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7410,6 +7851,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7480,6 +7922,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7550,6 +7993,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7620,6 +8064,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7690,6 +8135,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7760,6 +8206,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7830,6 +8277,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7900,6 +8348,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -7970,6 +8419,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8040,6 +8490,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8110,6 +8561,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8180,6 +8632,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8250,6 +8703,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8320,6 +8774,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8390,6 +8845,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8460,6 +8916,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8530,6 +8987,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8600,6 +9058,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8666,6 +9125,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8729,6 +9189,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8792,6 +9253,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8856,6 +9318,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8920,6 +9383,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -8983,6 +9447,7 @@
         "label": "Actions not observable",
         "workflowCount": 1,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -9046,6 +9511,7 @@
         "label": "Actions not observable",
         "workflowCount": 1,
         "latest": null,
+        "runs": null,
         "recentRuns": null,
         "successRateLast10": null,
         "failedRecentCount": null
@@ -9108,6 +9574,7 @@
         "label": "Configured · no runs",
         "workflowCount": 3,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9175,6 +9642,7 @@
         "label": "Configured · no runs",
         "workflowCount": 1,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9243,6 +9711,7 @@
         "label": "Configured · no runs",
         "workflowCount": 1,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9310,6 +9779,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9372,6 +9842,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9434,6 +9905,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9496,6 +9968,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9558,6 +10031,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9620,6 +10094,7 @@
         "label": "No workflows",
         "workflowCount": 0,
         "latest": null,
+        "runs": [],
         "recentRuns": 0,
         "successRateLast10": null,
         "failedRecentCount": 0
@@ -9697,7 +10172,149 @@
           "durationSeconds": 30,
           "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32494375042",
           "runNumber": 49
-        }
+        },
+        "runs": [
+          {
+            "id": 32494375042,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "feature/public-batch-data-hub",
+            "createdAt": "2026-08-21T14:51:04Z",
+            "startedAt": "2026-08-21T14:51:04Z",
+            "updatedAt": "2026-08-21T14:51:34Z",
+            "durationSeconds": 30,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32494375042",
+            "runNumber": 49
+          },
+          {
+            "id": 32493302022,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:39:18Z",
+            "startedAt": "2026-08-21T14:39:18Z",
+            "updatedAt": "2026-08-21T14:39:47Z",
+            "durationSeconds": 29,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493302022",
+            "runNumber": 48
+          },
+          {
+            "id": 32493297128,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:39:15Z",
+            "startedAt": "2026-08-21T14:39:15Z",
+            "updatedAt": "2026-08-21T14:39:41Z",
+            "durationSeconds": 26,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493297128",
+            "runNumber": 47
+          },
+          {
+            "id": 32493290415,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:39:10Z",
+            "startedAt": "2026-08-21T14:39:10Z",
+            "updatedAt": "2026-08-21T14:39:40Z",
+            "durationSeconds": 30,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493290415",
+            "runNumber": 46
+          },
+          {
+            "id": 32493285376,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:39:07Z",
+            "startedAt": "2026-08-21T14:39:07Z",
+            "updatedAt": "2026-08-21T14:39:34Z",
+            "durationSeconds": 27,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493285376",
+            "runNumber": 45
+          },
+          {
+            "id": 32493199245,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:38:08Z",
+            "startedAt": "2026-08-21T14:38:08Z",
+            "updatedAt": "2026-08-21T14:38:37Z",
+            "durationSeconds": 29,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493199245",
+            "runNumber": 44
+          },
+          {
+            "id": 32493168059,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:37:46Z",
+            "startedAt": "2026-08-21T14:37:46Z",
+            "updatedAt": "2026-08-21T14:38:15Z",
+            "durationSeconds": 29,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493168059",
+            "runNumber": 43
+          },
+          {
+            "id": 32493123375,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:37:17Z",
+            "startedAt": "2026-08-21T14:37:17Z",
+            "updatedAt": "2026-08-21T14:37:47Z",
+            "durationSeconds": 30,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493123375",
+            "runNumber": 42
+          },
+          {
+            "id": 32493075889,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:36:46Z",
+            "startedAt": "2026-08-21T14:36:46Z",
+            "updatedAt": "2026-08-21T14:37:18Z",
+            "durationSeconds": 32,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493075889",
+            "runNumber": 41
+          },
+          {
+            "id": 32493054038,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "feature/dntl-datos-explorer",
+            "createdAt": "2026-08-21T14:36:31Z",
+            "startedAt": "2026-08-21T14:36:31Z",
+            "updatedAt": "2026-08-21T14:36:58Z",
+            "durationSeconds": 27,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32493054038",
+            "runNumber": 40
+          }
+        ]
       },
       "tags": [
         "Python"
@@ -9772,7 +10389,149 @@
           "durationSeconds": 10,
           "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680295",
           "runNumber": 18
-        }
+        },
+        "runs": [
+          {
+            "id": 32551680295,
+            "name": "verify-static",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:25:57Z",
+            "startedAt": "2026-08-22T04:25:57Z",
+            "updatedAt": "2026-08-22T04:26:07Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680295",
+            "runNumber": 18
+          },
+          {
+            "id": 32551680247,
+            "name": "Static checks",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:25:57Z",
+            "startedAt": "2026-08-22T04:25:57Z",
+            "updatedAt": "2026-08-22T04:26:12Z",
+            "durationSeconds": 15,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680247",
+            "runNumber": 10
+          },
+          {
+            "id": 32551679943,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:25:56Z",
+            "startedAt": "2026-08-22T04:25:56Z",
+            "updatedAt": "2026-08-22T04:26:38Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551679943",
+            "runNumber": 23
+          },
+          {
+            "id": 32551585967,
+            "name": "Static checks",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:42Z",
+            "startedAt": "2026-08-22T04:23:42Z",
+            "updatedAt": "2026-08-22T04:23:55Z",
+            "durationSeconds": 13,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585967",
+            "runNumber": 9
+          },
+          {
+            "id": 32551585964,
+            "name": "verify-static",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:42Z",
+            "startedAt": "2026-08-22T04:23:42Z",
+            "updatedAt": "2026-08-22T04:23:53Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585964",
+            "runNumber": 17
+          },
+          {
+            "id": 32551585612,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:42Z",
+            "startedAt": "2026-08-22T04:23:42Z",
+            "updatedAt": "2026-08-22T04:24:30Z",
+            "durationSeconds": 48,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585612",
+            "runNumber": 22
+          },
+          {
+            "id": 32551569813,
+            "name": "Static checks",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:21Z",
+            "startedAt": "2026-08-22T04:23:21Z",
+            "updatedAt": "2026-08-22T04:23:32Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569813",
+            "runNumber": 8
+          },
+          {
+            "id": 32551569805,
+            "name": "verify-static",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:21Z",
+            "startedAt": "2026-08-22T04:23:21Z",
+            "updatedAt": "2026-08-22T04:23:30Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569805",
+            "runNumber": 16
+          },
+          {
+            "id": 32551569503,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:21Z",
+            "startedAt": "2026-08-22T04:23:21Z",
+            "updatedAt": "2026-08-22T04:23:48Z",
+            "durationSeconds": 27,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569503",
+            "runNumber": 21
+          },
+          {
+            "id": 32551411538,
+            "name": "Static checks",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:19:49Z",
+            "startedAt": "2026-08-22T04:19:49Z",
+            "updatedAt": "2026-08-22T04:19:58Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551411538",
+            "runNumber": 7
+          }
+        ]
       },
       "tags": [
         "JavaScript"
@@ -9852,7 +10611,93 @@
           "durationSeconds": 20,
           "url": "https://github.com/dinatalediego/dntl_chatbot/actions/runs/32446042949",
           "runNumber": 6
-        }
+        },
+        "runs": [
+          {
+            "id": 32446042949,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:11:16Z",
+            "startedAt": "2026-08-21T04:11:16Z",
+            "updatedAt": "2026-08-21T04:11:36Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/dntl_chatbot/actions/runs/32446042949",
+            "runNumber": 6
+          },
+          {
+            "id": 32445873480,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/nido-v0.1-closed-loop",
+            "createdAt": "2026-08-21T04:08:33Z",
+            "startedAt": "2026-08-21T04:08:33Z",
+            "updatedAt": "2026-08-21T04:09:00Z",
+            "durationSeconds": 27,
+            "url": "https://github.com/dinatalediego/dntl_chatbot/actions/runs/32445873480",
+            "runNumber": 5
+          },
+          {
+            "id": 32445862069,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/nido-v0.1-closed-loop",
+            "createdAt": "2026-08-21T04:08:22Z",
+            "startedAt": "2026-08-21T04:08:22Z",
+            "updatedAt": "2026-08-21T04:08:40Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/dntl_chatbot/actions/runs/32445862069",
+            "runNumber": 4
+          },
+          {
+            "id": 32445854080,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/nido-v0.1-closed-loop",
+            "createdAt": "2026-08-21T04:08:14Z",
+            "startedAt": "2026-08-21T04:08:14Z",
+            "updatedAt": "2026-08-21T04:08:35Z",
+            "durationSeconds": 21,
+            "url": "https://github.com/dinatalediego/dntl_chatbot/actions/runs/32445854080",
+            "runNumber": 3
+          },
+          {
+            "id": 32445838583,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/nido-v0.1-closed-loop",
+            "createdAt": "2026-08-21T04:07:59Z",
+            "startedAt": "2026-08-21T04:07:59Z",
+            "updatedAt": "2026-08-21T04:08:17Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/dntl_chatbot/actions/runs/32445838583",
+            "runNumber": 2
+          },
+          {
+            "id": 32445749786,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/nido-v0.1-closed-loop",
+            "createdAt": "2026-08-21T04:06:31Z",
+            "startedAt": "2026-08-21T04:06:31Z",
+            "updatedAt": "2026-08-21T04:06:51Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/dntl_chatbot/actions/runs/32445749786",
+            "runNumber": 1
+          }
+        ]
       },
       "tags": [
         "Python"
@@ -9882,7 +10727,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-08-23T13:44:26Z",
+      "lastActivity": "2026-08-23T17:12:48Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -9903,7 +10748,7 @@
         "hasDocker": false,
         "hasVercelConfig": false,
         "trackedEnvFile": false,
-        "fileCount": 16,
+        "fileCount": 19,
         "recursiveTree": true
       },
       "actions": {
@@ -9912,22 +10757,164 @@
         "label": "in_progress",
         "workflowCount": 1,
         "recentRuns": 10,
-        "successRateLast10": 56,
+        "successRateLast10": 78,
         "failedRecentCount": 0,
         "latest": {
-          "id": 32643374530,
+          "id": 32654108724,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
-          "event": "schedule",
+          "event": "push",
           "branch": "main",
-          "createdAt": "2026-08-23T13:46:29Z",
-          "startedAt": "2026-08-23T13:46:29Z",
-          "updatedAt": "2026-08-23T13:46:32Z",
+          "createdAt": "2026-08-23T17:12:51Z",
+          "startedAt": "2026-08-23T17:12:51Z",
+          "updatedAt": "2026-08-23T17:12:54Z",
           "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643374530",
-          "runNumber": 16
-        }
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32654108724",
+          "runNumber": 18
+        },
+        "runs": [
+          {
+            "id": 32654108724,
+            "name": "Refresh engineering inventory",
+            "status": "in_progress",
+            "conclusion": null,
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T17:12:51Z",
+            "startedAt": "2026-08-23T17:12:51Z",
+            "updatedAt": "2026-08-23T17:12:54Z",
+            "durationSeconds": 3,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32654108724",
+            "runNumber": 18
+          },
+          {
+            "id": 32654072919,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/close-next-control-surfaces",
+            "createdAt": "2026-08-23T17:12:11Z",
+            "startedAt": "2026-08-23T17:12:11Z",
+            "updatedAt": "2026-08-23T17:12:39Z",
+            "durationSeconds": 28,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32654072919",
+            "runNumber": 17
+          },
+          {
+            "id": 32643374530,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-08-23T13:46:29Z",
+            "startedAt": "2026-08-23T13:46:29Z",
+            "updatedAt": "2026-08-23T13:47:02Z",
+            "durationSeconds": 33,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643374530",
+            "runNumber": 16
+          },
+          {
+            "id": 32643228963,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T13:43:42Z",
+            "startedAt": "2026-08-23T13:43:42Z",
+            "updatedAt": "2026-08-23T13:44:30Z",
+            "durationSeconds": 48,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643228963",
+            "runNumber": 15
+          },
+          {
+            "id": 32643215883,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T13:43:28Z",
+            "startedAt": "2026-08-23T13:43:28Z",
+            "updatedAt": "2026-08-23T13:43:49Z",
+            "durationSeconds": 21,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643215883",
+            "runNumber": 14
+          },
+          {
+            "id": 32643070987,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T13:40:36Z",
+            "startedAt": "2026-08-23T13:40:36Z",
+            "updatedAt": "2026-08-23T13:41:17Z",
+            "durationSeconds": 41,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643070987",
+            "runNumber": 13
+          },
+          {
+            "id": 32643021081,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/attention-queue-side-detail",
+            "createdAt": "2026-08-23T13:39:44Z",
+            "startedAt": "2026-08-23T13:39:44Z",
+            "updatedAt": "2026-08-23T13:40:23Z",
+            "durationSeconds": 39,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643021081",
+            "runNumber": 12
+          },
+          {
+            "id": 32641843931,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T13:16:27Z",
+            "startedAt": "2026-08-23T13:16:27Z",
+            "updatedAt": "2026-08-23T13:17:10Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32641843931",
+            "runNumber": 11
+          },
+          {
+            "id": 32641818458,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T13:15:59Z",
+            "startedAt": "2026-08-23T13:15:59Z",
+            "updatedAt": "2026-08-23T13:16:36Z",
+            "durationSeconds": 37,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32641818458",
+            "runNumber": 10
+          },
+          {
+            "id": 32641775540,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T13:15:10Z",
+            "startedAt": "2026-08-23T13:15:10Z",
+            "updatedAt": "2026-08-23T13:15:46Z",
+            "durationSeconds": 36,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32641775540",
+            "runNumber": 9
+          }
+        ]
       },
       "tags": [
         "TypeScript"
@@ -10002,7 +10989,149 @@
           "durationSeconds": 20,
           "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631497",
           "runNumber": 3
-        }
+        },
+        "runs": [
+          {
+            "id": 32486631497,
+            "name": "Deploy GitHub Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T13:23:58Z",
+            "startedAt": "2026-08-21T13:23:58Z",
+            "updatedAt": "2026-08-21T13:24:18Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631497",
+            "runNumber": 3
+          },
+          {
+            "id": 32486631454,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T13:23:58Z",
+            "startedAt": "2026-08-21T13:23:58Z",
+            "updatedAt": "2026-08-21T13:24:11Z",
+            "durationSeconds": 13,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631454",
+            "runNumber": 8
+          },
+          {
+            "id": 32486630690,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-21T13:23:57Z",
+            "startedAt": "2026-08-21T13:23:57Z",
+            "updatedAt": "2026-08-21T13:24:37Z",
+            "durationSeconds": 40,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486630690",
+            "runNumber": 7
+          },
+          {
+            "id": 32447143133,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/adaptive-polymath-curator",
+            "createdAt": "2026-08-21T04:29:44Z",
+            "startedAt": "2026-08-21T04:29:44Z",
+            "updatedAt": "2026-08-21T04:29:56Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32447143133",
+            "runNumber": 7
+          },
+          {
+            "id": 32445870862,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/living-exhibits-complete",
+            "createdAt": "2026-08-21T04:08:31Z",
+            "startedAt": "2026-08-21T04:08:31Z",
+            "updatedAt": "2026-08-21T04:08:49Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445870862",
+            "runNumber": 6
+          },
+          {
+            "id": 32445551083,
+            "name": "Deploy GitHub Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:03:18Z",
+            "startedAt": "2026-08-21T04:03:18Z",
+            "updatedAt": "2026-08-21T04:03:37Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445551083",
+            "runNumber": 2
+          },
+          {
+            "id": 32445551049,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:03:18Z",
+            "startedAt": "2026-08-21T04:03:18Z",
+            "updatedAt": "2026-08-21T04:03:26Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445551049",
+            "runNumber": 5
+          },
+          {
+            "id": 32445549915,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:03:17Z",
+            "startedAt": "2026-08-21T04:03:17Z",
+            "updatedAt": "2026-08-21T04:04:04Z",
+            "durationSeconds": 47,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445549915",
+            "runNumber": 6
+          },
+          {
+            "id": 32445523222,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feature/living-exhibits",
+            "createdAt": "2026-08-21T04:02:49Z",
+            "startedAt": "2026-08-21T04:02:49Z",
+            "updatedAt": "2026-08-21T04:02:58Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445523222",
+            "runNumber": 4
+          },
+          {
+            "id": 32444773047,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T03:50:01Z",
+            "startedAt": "2026-08-21T03:50:01Z",
+            "updatedAt": "2026-08-21T03:50:20Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32444773047",
+            "runNumber": 3
+          }
+        ]
       },
       "tags": [
         "JavaScript"
@@ -10077,7 +11206,149 @@
           "durationSeconds": 43,
           "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32640398384",
           "runNumber": 39
-        }
+        },
+        "runs": [
+          {
+            "id": 32640398384,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T12:47:21Z",
+            "startedAt": "2026-08-23T12:47:21Z",
+            "updatedAt": "2026-08-23T12:48:04Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32640398384",
+            "runNumber": 39
+          },
+          {
+            "id": 32614975769,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T03:17:19Z",
+            "startedAt": "2026-08-23T03:17:19Z",
+            "updatedAt": "2026-08-23T03:17:58Z",
+            "durationSeconds": 39,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32614975769",
+            "runNumber": 38
+          },
+          {
+            "id": 32612565683,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T02:19:13Z",
+            "startedAt": "2026-08-23T02:19:13Z",
+            "updatedAt": "2026-08-23T02:19:22Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32612565683",
+            "runNumber": 37
+          },
+          {
+            "id": 32612561122,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T02:19:07Z",
+            "startedAt": "2026-08-23T02:19:07Z",
+            "updatedAt": "2026-08-23T02:19:18Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32612561122",
+            "runNumber": 36
+          },
+          {
+            "id": 32612558342,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T02:19:03Z",
+            "startedAt": "2026-08-23T02:19:03Z",
+            "updatedAt": "2026-08-23T02:19:12Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32612558342",
+            "runNumber": 35
+          },
+          {
+            "id": 32612555598,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T02:18:59Z",
+            "startedAt": "2026-08-23T02:18:59Z",
+            "updatedAt": "2026-08-23T02:19:12Z",
+            "durationSeconds": 13,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32612555598",
+            "runNumber": 34
+          },
+          {
+            "id": 32612552351,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T02:18:55Z",
+            "startedAt": "2026-08-23T02:18:55Z",
+            "updatedAt": "2026-08-23T02:19:04Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32612552351",
+            "runNumber": 33
+          },
+          {
+            "id": 32612549898,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T02:18:52Z",
+            "startedAt": "2026-08-23T02:18:52Z",
+            "updatedAt": "2026-08-23T02:19:05Z",
+            "durationSeconds": 13,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32612549898",
+            "runNumber": 32
+          },
+          {
+            "id": 32607772780,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T00:24:32Z",
+            "startedAt": "2026-08-23T00:24:32Z",
+            "updatedAt": "2026-08-23T00:24:43Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32607772780",
+            "runNumber": 31
+          },
+          {
+            "id": 32607768592,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-23T00:24:26Z",
+            "startedAt": "2026-08-23T00:24:26Z",
+            "updatedAt": "2026-08-23T00:24:33Z",
+            "durationSeconds": 7,
+            "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32607768592",
+            "runNumber": 30
+          }
+        ]
       },
       "tags": [
         "TypeScript"
@@ -10146,7 +11417,149 @@
           "durationSeconds": 41,
           "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32555871890",
           "runNumber": 1
-        }
+        },
+        "runs": [
+          {
+            "id": 32555871890,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T06:01:29Z",
+            "startedAt": "2026-08-22T06:01:29Z",
+            "updatedAt": "2026-08-22T06:02:10Z",
+            "durationSeconds": 41,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32555871890",
+            "runNumber": 1
+          },
+          {
+            "id": 32554777819,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:36:19Z",
+            "startedAt": "2026-08-22T05:36:19Z",
+            "updatedAt": "2026-08-22T05:36:29Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554777819",
+            "runNumber": 17
+          },
+          {
+            "id": 32554762713,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:35:56Z",
+            "startedAt": "2026-08-22T05:35:56Z",
+            "updatedAt": "2026-08-22T05:36:05Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554762713",
+            "runNumber": 16
+          },
+          {
+            "id": 32554751613,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:35:41Z",
+            "startedAt": "2026-08-22T05:35:41Z",
+            "updatedAt": "2026-08-22T05:35:49Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554751613",
+            "runNumber": 15
+          },
+          {
+            "id": 32554734939,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:35:18Z",
+            "startedAt": "2026-08-22T05:35:18Z",
+            "updatedAt": "2026-08-22T05:35:25Z",
+            "durationSeconds": 7,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554734939",
+            "runNumber": 14
+          },
+          {
+            "id": 32554725700,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:35:06Z",
+            "startedAt": "2026-08-22T05:35:06Z",
+            "updatedAt": "2026-08-22T05:35:14Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554725700",
+            "runNumber": 13
+          },
+          {
+            "id": 32554704497,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:34:34Z",
+            "startedAt": "2026-08-22T05:34:34Z",
+            "updatedAt": "2026-08-22T05:34:45Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554704497",
+            "runNumber": 12
+          },
+          {
+            "id": 32554687695,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:34:11Z",
+            "startedAt": "2026-08-22T05:34:11Z",
+            "updatedAt": "2026-08-22T05:34:20Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554687695",
+            "runNumber": 11
+          },
+          {
+            "id": 32554668504,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:33:46Z",
+            "startedAt": "2026-08-22T05:33:46Z",
+            "updatedAt": "2026-08-22T05:33:58Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554668504",
+            "runNumber": 10
+          },
+          {
+            "id": 32554653312,
+            "name": "Growth OS tests",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T05:33:23Z",
+            "startedAt": "2026-08-22T05:33:23Z",
+            "updatedAt": "2026-08-22T05:33:34Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32554653312",
+            "runNumber": 9
+          }
+        ]
       },
       "tags": [
         "JavaScript"
@@ -10215,7 +11628,93 @@
           "durationSeconds": 8,
           "url": "https://github.com/dinatalediego/prompt-maestros/actions/runs/32551902462",
           "runNumber": 4
-        }
+        },
+        "runs": [
+          {
+            "id": 32551902462,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/business-wayfinding-main",
+            "createdAt": "2026-08-22T04:31:00Z",
+            "startedAt": "2026-08-22T04:31:00Z",
+            "updatedAt": "2026-08-22T04:31:08Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/prompt-maestros/actions/runs/32551902462",
+            "runNumber": 4
+          },
+          {
+            "id": 32550069632,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/business-wayfinding-vercel",
+            "createdAt": "2026-08-22T03:50:22Z",
+            "startedAt": "2026-08-22T03:50:22Z",
+            "updatedAt": "2026-08-22T03:50:32Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/prompt-maestros/actions/runs/32550069632",
+            "runNumber": 3
+          },
+          {
+            "id": 32546286649,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T02:27:14Z",
+            "startedAt": "2026-08-22T02:27:14Z",
+            "updatedAt": "2026-08-22T02:28:00Z",
+            "durationSeconds": 46,
+            "url": "https://github.com/dinatalediego/prompt-maestros/actions/runs/32546286649",
+            "runNumber": 2
+          },
+          {
+            "id": 32546271251,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T02:26:54Z",
+            "startedAt": "2026-08-22T02:26:54Z",
+            "updatedAt": "2026-08-22T02:27:17Z",
+            "durationSeconds": 23,
+            "url": "https://github.com/dinatalediego/prompt-maestros/actions/runs/32546271251",
+            "runNumber": 1
+          },
+          {
+            "id": 32546244153,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T02:26:17Z",
+            "startedAt": "2026-08-22T02:26:17Z",
+            "updatedAt": "2026-08-22T02:26:30Z",
+            "durationSeconds": 13,
+            "url": "https://github.com/dinatalediego/prompt-maestros/actions/runs/32546244153",
+            "runNumber": 2
+          },
+          {
+            "id": 32546065722,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/prompt-masters-foundation",
+            "createdAt": "2026-08-22T02:22:17Z",
+            "startedAt": "2026-08-22T02:22:17Z",
+            "updatedAt": "2026-08-22T02:22:27Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/prompt-maestros/actions/runs/32546065722",
+            "runNumber": 1
+          }
+        ]
       },
       "tags": [
         "CSS"
@@ -10284,7 +11783,149 @@
           "durationSeconds": 40,
           "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32446166168",
           "runNumber": 62
-        }
+        },
+        "runs": [
+          {
+            "id": 32446166168,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:13:20Z",
+            "startedAt": "2026-08-21T04:13:20Z",
+            "updatedAt": "2026-08-21T04:14:00Z",
+            "durationSeconds": 40,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32446166168",
+            "runNumber": 62
+          },
+          {
+            "id": 32446135241,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:12:49Z",
+            "startedAt": "2026-08-21T04:12:49Z",
+            "updatedAt": "2026-08-21T04:13:38Z",
+            "durationSeconds": 49,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32446135241",
+            "runNumber": 61
+          },
+          {
+            "id": 32193816772,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "agent/cygnus-decision-engine-foundation",
+            "createdAt": "2026-08-18T22:40:54Z",
+            "startedAt": "2026-08-18T22:40:54Z",
+            "updatedAt": "2026-08-18T22:41:37Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32193816772",
+            "runNumber": 60
+          },
+          {
+            "id": 32193797539,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "agent/cygnus-decision-engine-foundation",
+            "createdAt": "2026-08-18T22:40:39Z",
+            "startedAt": "2026-08-18T22:40:39Z",
+            "updatedAt": "2026-08-18T22:41:24Z",
+            "durationSeconds": 45,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32193797539",
+            "runNumber": 59
+          },
+          {
+            "id": 32188991794,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "agent/cygnus-decision-engine-foundation",
+            "createdAt": "2026-08-18T21:41:04Z",
+            "startedAt": "2026-08-18T21:41:04Z",
+            "updatedAt": "2026-08-18T21:41:39Z",
+            "durationSeconds": 35,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32188991794",
+            "runNumber": 58
+          },
+          {
+            "id": 32188972068,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "agent/cygnus-decision-engine-foundation",
+            "createdAt": "2026-08-18T21:40:50Z",
+            "startedAt": "2026-08-18T21:40:50Z",
+            "updatedAt": "2026-08-18T21:41:35Z",
+            "durationSeconds": 45,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32188972068",
+            "runNumber": 57
+          },
+          {
+            "id": 32187591110,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "agent/cygnus-decision-engine-foundation",
+            "createdAt": "2026-08-18T21:24:58Z",
+            "startedAt": "2026-08-18T21:24:58Z",
+            "updatedAt": "2026-08-18T21:25:38Z",
+            "durationSeconds": 40,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32187591110",
+            "runNumber": 56
+          },
+          {
+            "id": 32187573844,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "agent/cygnus-decision-engine-foundation",
+            "createdAt": "2026-08-18T21:24:46Z",
+            "startedAt": "2026-08-18T21:24:46Z",
+            "updatedAt": "2026-08-18T21:25:28Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32187573844",
+            "runNumber": 55
+          },
+          {
+            "id": 32186412441,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "agent/cygnus-decision-engine-foundation",
+            "createdAt": "2026-08-18T21:11:30Z",
+            "startedAt": "2026-08-18T21:11:30Z",
+            "updatedAt": "2026-08-18T21:12:09Z",
+            "durationSeconds": 39,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32186412441",
+            "runNumber": 54
+          },
+          {
+            "id": 32186394314,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "agent/cygnus-decision-engine-foundation",
+            "createdAt": "2026-08-18T21:11:17Z",
+            "startedAt": "2026-08-18T21:11:17Z",
+            "updatedAt": "2026-08-18T21:12:15Z",
+            "durationSeconds": 58,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32186394314",
+            "runNumber": 53
+          }
+        ]
       },
       "tags": [
         "Python"
