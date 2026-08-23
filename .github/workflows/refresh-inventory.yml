@@ -12,12 +12,20 @@ on:
       - "app/**"
       - "package.json"
       - ".github/workflows/refresh-inventory.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "config/**"
+      - "app/**"
+      - "package.json"
+      - ".github/workflows/refresh-inventory.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: engineering-inventory
+  group: engineering-inventory-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -50,6 +58,7 @@ jobs:
         run: npm run build
 
       - name: Commit refreshed snapshot
+        if: github.event_name != 'pull_request'
         run: |
           if git diff --quiet -- data/inventory.json package-lock.json; then
             echo "No inventory changes."
