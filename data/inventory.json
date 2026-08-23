@@ -1,33 +1,1768 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-23T04:05:00.000Z",
+  "generatedAt": "2026-08-23T04:08:07.995Z",
   "owner": "dinatalediego",
-  "source": "bootstrap",
+  "source": "github-api",
   "fullPrivateCoverage": false,
   "coverage": {
-    "discovered": 1,
-    "scored": 0,
-    "unknown": 1
+    "discovered": 48,
+    "scored": 36,
+    "unknown": 12
   },
-  "portfolioScore": null,
+  "portfolioScore": 53,
   "repositories": [
+    {
+      "name": "helpful_support",
+      "fullName": "dinatalediego/helpful_support",
+      "url": "https://github.com/dinatalediego/helpful_support",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-08-23T03:17:18Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 55,
+        "recursiveTree": true
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "expertos_en_lavados",
+      "fullName": "dinatalediego/expertos_en_lavados",
+      "url": "https://github.com/dinatalediego/expertos_en_lavados",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-22T05:36:17Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 38,
+        "recursiveTree": true
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "prompt-maestros",
+      "fullName": "dinatalediego/prompt-maestros",
+      "url": "https://github.com/dinatalediego/prompt-maestros",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-22T04:30:32Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 25,
+        "recursiveTree": true
+      },
+      "tags": [
+        "CSS"
+      ]
+    },
+    {
+      "name": "dntl_datos",
+      "fullName": "dinatalediego/dntl_datos",
+      "url": "https://github.com/dinatalediego/dntl_datos",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-21T14:51:01Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "bd_replica_crm",
+      "fullName": "dinatalediego/bd_replica_crm",
+      "url": "https://github.com/dinatalediego/bd_replica_crm",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Redshift",
+      "tests": "Detected",
+      "lastActivity": "2026-08-21T04:13:18Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 348,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "dntl_chatbot",
+      "fullName": "dinatalediego/dntl_chatbot",
+      "url": "https://github.com/dinatalediego/dntl_chatbot",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-21T04:11:14Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 30,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
     {
       "name": "dntl_engineering_os",
       "fullName": "dinatalediego/dntl_engineering_os",
       "url": "https://github.com/dinatalediego/dntl_engineering_os",
       "visibility": "public",
+      "score": 94,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-23T04:07:41Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 11,
+        "recursiveTree": true
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "dntl_economia",
+      "fullName": "dinatalediego/dntl_economia",
+      "url": "https://github.com/dinatalediego/dntl_economia",
+      "visibility": "public",
+      "score": 90,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-21T13:24:38Z",
+      "attention": [
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": true,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 38,
+        "recursiveTree": true
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "limpia-fast",
+      "fullName": "dinatalediego/limpia-fast",
+      "url": "https://github.com/dinatalediego/limpia-fast",
+      "visibility": "public",
+      "score": 80,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-08-22T06:51:07Z",
+      "attention": [
+        "Add automated tests"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 25,
+        "recursiveTree": true
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "dntl_art",
+      "fullName": "dinatalediego/dntl_art",
+      "url": "https://github.com/dinatalediego/dntl_art",
+      "visibility": "public",
+      "score": 80,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-08-22T04:25:55Z",
+      "attention": [
+        "Add automated tests"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 17,
+        "recursiveTree": true
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "mlops-deployment-dinatale",
+      "fullName": "dinatalediego/mlops-deployment-dinatale",
+      "url": "https://github.com/dinatalediego/mlops-deployment-dinatale",
+      "visibility": "public",
+      "score": 75,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-06-18T01:27:30Z",
+      "attention": [
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 3,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 43,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "encuesta-deep-insights",
+      "fullName": "dinatalediego/encuesta-deep-insights",
+      "url": "https://github.com/dinatalediego/encuesta-deep-insights",
+      "visibility": "public",
+      "score": 75,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-06-02T05:28:24Z",
+      "attention": [
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 24,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "FortunaCore",
+      "fullName": "dinatalediego/FortunaCore",
+      "url": "https://github.com/dinatalediego/FortunaCore",
+      "visibility": "public",
+      "score": 64,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-05-25T01:04:17Z",
+      "attention": [
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 63,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "property_web",
+      "fullName": "dinatalediego/property_web",
+      "url": "https://github.com/dinatalediego/property_web",
+      "visibility": "public",
+      "score": 60,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2025-06-20T05:00:34Z",
+      "attention": [
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 9027,
+        "recursiveTree": true
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Thinking-Patterns",
+      "fullName": "dinatalediego/Thinking-Patterns",
+      "url": "https://github.com/dinatalediego/Thinking-Patterns",
+      "visibility": "public",
+      "score": 55,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-02T19:08:26Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "bot-command-center",
+      "fullName": "dinatalediego/bot-command-center",
+      "url": "https://github.com/dinatalediego/bot-command-center",
+      "visibility": "public",
+      "score": 53,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-05-25T09:15:27Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 11,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "mvp_product",
+      "fullName": "dinatalediego/mvp_product",
+      "url": "https://github.com/dinatalediego/mvp_product",
+      "visibility": "public",
+      "score": 51,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-02-11T14:12:42Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": true,
+        "fileCount": 33,
+        "recursiveTree": true
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "marketing_digital",
+      "fullName": "dinatalediego/marketing_digital",
+      "url": "https://github.com/dinatalediego/marketing_digital",
+      "visibility": "public",
+      "score": 50,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-08-23T03:02:07Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 22,
+        "recursiveTree": true
+      },
+      "tags": []
+    },
+    {
+      "name": "RealEstateDataAgent",
+      "fullName": "dinatalediego/RealEstateDataAgent",
+      "url": "https://github.com/dinatalediego/RealEstateDataAgent",
+      "visibility": "public",
+      "score": 49,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-05-20T08:10:44Z",
+      "attention": [
+        "Add CI workflow",
+        "Add operational README"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 116,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "crew-up",
+      "fullName": "dinatalediego/crew-up",
+      "url": "https://github.com/dinatalediego/crew-up",
+      "visibility": "public",
+      "score": 45,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-07-19T14:35:22Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "AutoClean_Carwash_BI_and_DataAnalytics",
+      "fullName": "dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics",
+      "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics",
+      "visibility": "public",
+      "score": 40,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-25T14:26:08Z",
+      "attention": [
+        "Add automated tests",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 2,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 36,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "decide_casa",
+      "fullName": "dinatalediego/decide_casa",
+      "url": "https://github.com/dinatalediego/decide_casa",
+      "visibility": "public",
+      "score": 35,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-01-25T22:28:23Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 35,
+        "recursiveTree": true
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "Report-Engine",
+      "fullName": "dinatalediego/Report-Engine",
+      "url": "https://github.com/dinatalediego/Report-Engine",
+      "visibility": "public",
+      "score": 35,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-10-13T19:10:55Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 10,
+        "recursiveTree": true
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "wie_spat_ist_es_app",
+      "fullName": "dinatalediego/wie_spat_ist_es_app",
+      "url": "https://github.com/dinatalediego/wie_spat_ist_es_app",
+      "visibility": "public",
+      "score": 35,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-27T18:57:47Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 12,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "web-apis-with-python",
+      "fullName": "dinatalediego/web-apis-with-python",
+      "url": "https://github.com/dinatalediego/web-apis-with-python",
+      "visibility": "public",
+      "score": 35,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2022-02-13T08:26:44Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 8,
+        "recursiveTree": true
+      },
+      "tags": []
+    },
+    {
+      "name": "Gravity_Capital",
+      "fullName": "dinatalediego/Gravity_Capital",
+      "url": "https://github.com/dinatalediego/Gravity_Capital",
+      "visibility": "public",
+      "score": 25,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-28T06:26:02Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 2,
+        "recursiveTree": true
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "dinatalediego.github.io",
+      "fullName": "dinatalediego/dinatalediego.github.io",
+      "url": "https://github.com/dinatalediego/dinatalediego.github.io",
+      "visibility": "public",
+      "score": 25,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-27T04:30:03Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 8,
+        "recursiveTree": true
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "my-strategy-for-making-my-creation-for-here",
+      "fullName": "dinatalediego/my-strategy-for-making-my-creation-for-here",
+      "url": "https://github.com/dinatalediego/my-strategy-for-making-my-creation-for-here",
+      "visibility": "public",
+      "score": 20,
+      "health": "risk",
+      "type": "Automation",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-28T16:04:48Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 34,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "deu-sprechen-2",
+      "fullName": "dinatalediego/deu-sprechen-2",
+      "url": "https://github.com/dinatalediego/deu-sprechen-2",
+      "visibility": "public",
+      "score": 20,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-30T21:38:53Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 88,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "visualize_dem",
+      "fullName": "dinatalediego/visualize_dem",
+      "url": "https://github.com/dinatalediego/visualize_dem",
+      "visibility": "public",
+      "score": 20,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-05T17:42:58Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 30,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "time_tracker_bi",
+      "fullName": "dinatalediego/time_tracker_bi",
+      "url": "https://github.com/dinatalediego/time_tracker_bi",
+      "visibility": "public",
+      "score": 20,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-31T21:01:43Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 6,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "hello-word",
+      "fullName": "dinatalediego/hello-word",
+      "url": "https://github.com/dinatalediego/hello-word",
+      "visibility": "public",
+      "score": 19,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2020-05-06T16:03:38Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 1,
+        "recursiveTree": true
+      },
+      "tags": []
+    },
+    {
+      "name": "precios-nexo-sperant-etl",
+      "fullName": "dinatalediego/precios-nexo-sperant-etl",
+      "url": "https://github.com/dinatalediego/precios-nexo-sperant-etl",
+      "visibility": "public",
+      "score": 10,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-14T17:50:54Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 14,
+        "recursiveTree": true
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "PORTFOLIO",
+      "fullName": "dinatalediego/PORTFOLIO",
+      "url": "https://github.com/dinatalediego/PORTFOLIO",
+      "visibility": "public",
+      "score": 10,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-10-01T16:52:35Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 1,
+        "recursiveTree": true
+      },
+      "tags": []
+    },
+    {
+      "name": "web_ml",
+      "fullName": "dinatalediego/web_ml",
+      "url": "https://github.com/dinatalediego/web_ml",
+      "visibility": "public",
+      "score": 10,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-08-14T13:19:17Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 4,
+        "recursiveTree": true
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "econoagents",
+      "fullName": "dinatalediego/econoagents",
+      "url": "https://github.com/dinatalediego/econoagents",
+      "visibility": "public",
+      "score": 10,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-04T05:56:44Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 3,
+        "recursiveTree": true
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "mejoras_de_vivir_en_2026",
+      "fullName": "dinatalediego/mejoras_de_vivir_en_2026",
+      "url": "https://github.com/dinatalediego/mejoras_de_vivir_en_2026",
+      "visibility": "public",
       "score": null,
       "health": "unknown",
-      "type": "App",
-      "criticality": "High",
+      "type": "Unknown",
+      "criticality": "Unclassified",
       "deployment": "Unknown",
-      "database": "Not detected",
+      "database": "Unknown",
       "tests": "Unknown",
-      "lastActivity": null,
-      "attention": ["Waiting for first automated GitHub scan"],
+      "lastActivity": "2026-08-22T19:55:39Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
       "components": {},
-      "evidence": { "coverage": "bootstrap" },
-      "tags": ["control-plane"]
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "juegas_como_entrenas",
+      "fullName": "dinatalediego/juegas_como_entrenas",
+      "url": "https://github.com/dinatalediego/juegas_como_entrenas",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2026-08-21T04:52:04Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "big_data_upload",
+      "fullName": "dinatalediego/big_data_upload",
+      "url": "https://github.com/dinatalediego/big_data_upload",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2026-05-19T20:26:30Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "mds-python-data-science",
+      "fullName": "dinatalediego/mds-python-data-science",
+      "url": "https://github.com/dinatalediego/mds-python-data-science",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2026-03-28T00:37:56Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "mds-2026-hub",
+      "fullName": "dinatalediego/mds-2026-hub",
+      "url": "https://github.com/dinatalediego/mds-2026-hub",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2026-03-28T00:33:24Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "help_inversion",
+      "fullName": "dinatalediego/help_inversion",
+      "url": "https://github.com/dinatalediego/help_inversion",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2026-02-15T06:41:32Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "calculo-nuevos-precios-al-cambiar-p2_final-etl",
+      "fullName": "dinatalediego/calculo-nuevos-precios-al-cambiar-p2_final-etl",
+      "url": "https://github.com/dinatalediego/calculo-nuevos-precios-al-cambiar-p2_final-etl",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2025-11-20T00:02:08Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "ECO_BI_RECOMMENDER",
+      "fullName": "dinatalediego/ECO_BI_RECOMMENDER",
+      "url": "https://github.com/dinatalediego/ECO_BI_RECOMMENDER",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2025-11-09T17:17:08Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "Metodologia",
+      "fullName": "dinatalediego/Metodologia",
+      "url": "https://github.com/dinatalediego/Metodologia",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2025-11-02T20:18:54Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "thinking_patterns",
+      "fullName": "dinatalediego/thinking_patterns",
+      "url": "https://github.com/dinatalediego/thinking_patterns",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2025-11-02T19:55:15Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "find_your_home_pretty_bone",
+      "fullName": "dinatalediego/find_your_home_pretty_bone",
+      "url": "https://github.com/dinatalediego/find_your_home_pretty_bone",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2025-09-22T04:38:54Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
+    },
+    {
+      "name": "prediccion_una_casa",
+      "fullName": "dinatalediego/prediccion_una_casa",
+      "url": "https://github.com/dinatalediego/prediccion_una_casa",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2025-08-15T06:23:25Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "tags": []
     }
   ]
 }
