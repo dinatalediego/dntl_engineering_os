@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { scoreRepository } from "./health-score.mjs";
+import { summarizeActions } from "./actions-health.mjs";
 
 const owner = process.env.DNTL_GITHUB_OWNER || "dinatalediego";
 const privateToken = process.env.DNTL_GITHUB_TOKEN || "";
@@ -76,6 +77,20 @@ function tagsFor(repo) {
   return [...new Set([...(repo.topics || []), repo.language].filter(Boolean))].slice(0, 6);
 }
 
+function unknownActions(reason = "Repository not observable") {
+  return {
+    state: "unknown",
+    color: "gray",
+    label: "Actions not observable",
+    workflowCount: null,
+    latest: null,
+    recentRuns: null,
+    successRateLast10: null,
+    failedRecentCount: null,
+    reason,
+  };
+}
+
 function unknownRepo(repo, reason, coverage = "unavailable") {
   return {
     name: repo.name,
@@ -93,13 +108,18 @@ function unknownRepo(repo, reason, coverage = "unavailable") {
     attention: [reason],
     components: {},
     evidence: { coverage },
+    actions: unknownActions(reason),
     tags: tagsFor(repo),
   };
 }
 
-function observedRepo(repo, paths, evidence) {
+function observedRepo(repo, paths, evidence, actions) {
   const scoring = scoreRepository(repo, evidence, rules);
   const text = `${repo.name} ${repo.description || ""} ${(repo.topics || []).join(" ")} ${paths.join(" ")}`;
+  const attention = [...scoring.attention];
+  if (actions.state === "red") attention.unshift(`GitHub Actions failing: ${actions.latest?.name || "latest workflow"}`);
+  if (actions.state === "unknown" && evidence.workflowCount > 0) attention.push("GitHub Actions telemetry unavailable");
+
   return {
     name: repo.name,
     fullName: repo.full_name,
@@ -113,16 +133,23 @@ function observedRepo(repo, paths, evidence) {
     database: inferDatabase(text),
     tests: evidence.hasTests ? "Detected" : "Missing",
     lastActivity: repo.pushed_at || repo.updated_at || null,
-    attention: scoring.attention,
+    attention,
     components: scoring.components,
     evidence,
+    actions,
     tags: tagsFor(repo),
   };
 }
 
+async function actionsFor(encoded, workflowCount) {
+  if (!workflowCount) return summarizeActions(0, { workflow_runs: [] });
+  const payload = await github(`/repos/${encoded}/actions/runs?per_page=10`, { optional: true });
+  return summarizeActions(workflowCount, payload);
+}
+
 async function inspectRepo(repo) {
   if (repo.size === 0) {
-    return observedRepo(repo, [], {
+    const evidence = {
       coverage: "full",
       hasReadme: false,
       workflowCount: 0,
@@ -133,7 +160,8 @@ async function inspectRepo(repo) {
       trackedEnvFile: false,
       fileCount: 0,
       recursiveTree: true,
-    });
+    };
+    return observedRepo(repo, [], evidence, summarizeActions(0, { workflow_runs: [] }));
   }
 
   const encoded = repo.full_name.split("/").map(encodeURIComponent).join("/");
@@ -164,7 +192,7 @@ async function inspectRepo(repo) {
     return (file === ".env" || file.startsWith(".env.")) && ![".env.example", ".env.sample", ".env.template"].includes(file);
   });
 
-  return observedRepo(repo, paths, {
+  const evidence = {
     coverage: "full",
     hasReadme,
     workflowCount,
@@ -175,7 +203,10 @@ async function inspectRepo(repo) {
     trackedEnvFile,
     fileCount: paths.length,
     recursiveTree: Boolean(tree?.tree),
-  });
+  };
+
+  const actions = await actionsFor(encoded, workflowCount);
+  return observedRepo(repo, paths, evidence, actions);
 }
 
 async function mapLimit(items, limit, fn) {
@@ -197,11 +228,26 @@ async function mapLimit(items, limit, fn) {
 
 const { repos, fullPrivateCoverage } = await discoverRepos();
 const inspected = await mapLimit(repos, 6, inspectRepo);
-inspected.sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+inspected.sort((a, b) => {
+  const actionPriority = { red: 5, running: 4, yellow: 3, unknown: 2, green: 1, idle: 0, "not-configured": 0 };
+  const ap = (actionPriority[b.actions?.state] || 0) - (actionPriority[a.actions?.state] || 0);
+  return ap || (b.score ?? -1) - (a.score ?? -1);
+});
 
 const scored = inspected.filter((r) => typeof r.score === "number");
+const actionsConfigured = inspected.filter((r) => (r.actions?.workflowCount || 0) > 0);
+const actionsSummary = {
+  configured: actionsConfigured.length,
+  green: inspected.filter((r) => r.actions?.state === "green").length,
+  red: inspected.filter((r) => r.actions?.state === "red").length,
+  yellow: inspected.filter((r) => ["yellow", "running"].includes(r.actions?.state)).length,
+  unknown: inspected.filter((r) => r.actions?.state === "unknown").length,
+  idle: inspected.filter((r) => r.actions?.state === "idle").length,
+  notConfigured: inspected.filter((r) => r.actions?.state === "not-configured").length,
+};
+
 const snapshot = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   generatedAt: new Date().toISOString(),
   owner,
   source: "github-api",
@@ -212,9 +258,10 @@ const snapshot = {
     unknown: inspected.length - scored.length,
   },
   portfolioScore: scored.length ? Math.round(scored.reduce((s, r) => s + r.score, 0) / scored.length) : null,
+  actionsSummary,
   repositories: inspected,
 };
 
 await mkdir(new URL("../data", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/inventory.json", import.meta.url), `${JSON.stringify(snapshot, null, 2)}\n`);
-console.log(`Scanned ${snapshot.coverage.scored}/${snapshot.coverage.discovered} repositories. Private coverage: ${fullPrivateCoverage ? "full" : "public-only"}.`);
+console.log(`Scanned ${snapshot.coverage.scored}/${snapshot.coverage.discovered} repositories. Actions: ${actionsSummary.green} green, ${actionsSummary.red} red, ${actionsSummary.yellow} active/attention, ${actionsSummary.unknown} unknown.`);
