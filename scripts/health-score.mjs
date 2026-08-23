@@ -9,7 +9,10 @@ export function scoreRepository(repo, evidence, rules) {
   }
 
   const max = rules.dimensions;
-  const daysSincePush = Math.max(0, (Date.now() - new Date(repo.pushed_at).getTime()) / 86400000);
+  const pushedAt = repo.pushed_at ? new Date(repo.pushed_at).getTime() : Number.NaN;
+  const daysSincePush = Number.isFinite(pushedAt)
+    ? Math.max(0, (Date.now() - pushedAt) / 86400000)
+    : Number.POSITIVE_INFINITY;
 
   let freshness = max.freshness;
   if (daysSincePush > rules.freshnessDays.stale) freshness = 0;
@@ -34,10 +37,12 @@ export function scoreRepository(repo, evidence, rules) {
   const health = score >= rules.thresholds.healthy ? "healthy" : score >= rules.thresholds.watch ? "watch" : "risk";
 
   const attention = [];
+  if (repo.size === 0) attention.push("Repository is empty");
   if (!evidence.hasTests) attention.push("Add automated tests");
   if (evidence.workflowCount === 0) attention.push("Add CI workflow");
   if (!evidence.hasReadme) attention.push("Add operational README");
-  if (daysSincePush > rules.freshnessDays.stale) attention.push("Repository is stale");
+  if (!Number.isFinite(pushedAt)) attention.push("No repository push detected");
+  else if (daysSincePush > rules.freshnessDays.stale) attention.push("Repository is stale");
   if (!evidence.hasManifest && !evidence.hasDocker && !evidence.hasVercelConfig) attention.push("No operability manifest detected");
   if (evidence.trackedEnvFile) attention.push("Tracked .env-like file detected");
   if (repo.archived) attention.push("Repository is archived");
