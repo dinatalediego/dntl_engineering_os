@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./control-surfaces.css";
 
 export const metadata: Metadata = {
   title: "DNTL Engineering OS",
