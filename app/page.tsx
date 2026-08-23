@@ -20,73 +20,72 @@ import {
   TriangleAlert,
   X,
 } from "lucide-react";
+import inventory from "../data/inventory.json";
 
-type Health = "healthy" | "watch" | "risk";
-type SystemType = "Data" | "App" | "ML" | "Analytics" | "Automation";
-type Deployment = "Vercel" | "Local" | "GitHub" | "Not deployed";
-type Criticality = "High" | "Medium" | "Low";
+type Health = "healthy" | "watch" | "risk" | "unknown";
+type Repo = (typeof inventory.repositories)[number];
 
-type Repo = {
-  name: string;
-  type: SystemType;
-  health: Health;
-  score: number;
-  criticality: Criticality;
-  deployment: Deployment;
-  database: string;
-  tests: "Good" | "Partial" | "Missing";
-  lastRun: string;
-  attention: string;
-  tags: string[];
+const repos = inventory.repositories as Repo[];
+
+const statusMeta: Record<Health, { label: string; icon: typeof CheckCircle2; css: string }> = {
+  healthy: { label: "Healthy", icon: CheckCircle2, css: "healthy" },
+  watch: { label: "Watch", icon: AlertTriangle, css: "watch" },
+  risk: { label: "At risk", icon: TriangleAlert, css: "risk" },
+  unknown: { label: "Not scanned", icon: CircleDot, css: "watch" },
 };
 
-const repos: Repo[] = [
-  { name: "bd_replica_crm", type: "Data", health: "watch", score: 82, criticality: "High", deployment: "Local", database: "PostgreSQL", tests: "Partial", lastRun: "38 min", attention: "Validate replica freshness", tags: ["ETL", "CRM", "Redshift"] },
-  { name: "dntl_chatbot", type: "App", health: "watch", score: 79, criticality: "High", deployment: "Vercel", database: "PostgreSQL", tests: "Good", lastRun: "2 h", attention: "Webhook integration pending", tags: ["API", "WhatsApp", "AI"] },
-  { name: "dntl_datos", type: "Data", health: "healthy", score: 93, criticality: "Medium", deployment: "Vercel", database: "None", tests: "Good", lastRun: "today", attention: "No blockers", tags: ["PWA", "Public Data", "Explorer"] },
-  { name: "dntl_economia", type: "Analytics", health: "healthy", score: 91, criticality: "Medium", deployment: "Vercel", database: "None", tests: "Good", lastRun: "today", attention: "No blockers", tags: ["Economics", "Museum", "Research"] },
-  { name: "expertos_en_lavados", type: "App", health: "watch", score: 76, criticality: "Medium", deployment: "Vercel", database: "Supabase", tests: "Partial", lastRun: "today", attention: "Meta integration incomplete", tags: ["Growth", "Leads", "Supabase"] },
-  { name: "limpia-fast", type: "App", health: "healthy", score: 88, criticality: "Medium", deployment: "Vercel", database: "None", tests: "Partial", lastRun: "today", attention: "Add conversion telemetry", tags: ["Landing", "Leads", "Marketing"] },
-  { name: "pricing-regression-lab", type: "ML", health: "risk", score: 63, criticality: "High", deployment: "Not deployed", database: "PostgreSQL", tests: "Missing", lastRun: "12 d", attention: "No production contract", tags: ["Pricing", "ML", "Experiment"] },
-  { name: "ml_redshift", type: "ML", health: "watch", score: 71, criticality: "High", deployment: "Local", database: "Redshift", tests: "Partial", lastRun: "5 d", attention: "Model monitoring missing", tags: ["ML", "Redshift", "Scoring"] },
-  { name: "precios-nexo-sperant-etl", type: "Automation", health: "healthy", score: 90, criticality: "High", deployment: "GitHub", database: "None", tests: "Good", lastRun: "1 d", attention: "No blockers", tags: ["ETL", "Pricing", "Sperant"] },
-  { name: "cygnusbi-reportes-comerciales", type: "Analytics", health: "watch", score: 74, criticality: "High", deployment: "Not deployed", database: "Redshift", tests: "Missing", lastRun: "8 d", attention: "Manual reporting dependency", tags: ["Power BI", "CRM", "Reporting"] },
-  { name: "MetricHouse", type: "Analytics", health: "healthy", score: 86, criticality: "Medium", deployment: "GitHub", database: "None", tests: "Partial", lastRun: "4 d", attention: "No blockers", tags: ["Metrics", "BI", "Real Estate"] },
-  { name: "real-estate-recommender", type: "ML", health: "risk", score: 58, criticality: "Medium", deployment: "Not deployed", database: "None", tests: "Missing", lastRun: "21 d", attention: "Large repo; no operating path", tags: ["ML", "Real Estate", "Recommender"] },
-];
+function unique(values: string[]) {
+  return ["All", ...Array.from(new Set(values.filter(Boolean))).sort()];
+}
 
-const statusMeta = {
-  healthy: { label: "Healthy", icon: CheckCircle2 },
-  watch: { label: "Watch", icon: AlertTriangle },
-  risk: { label: "At risk", icon: TriangleAlert },
-};
+function ageLabel(value: string | null) {
+  if (!value) return "unknown";
+  const ms = Date.now() - new Date(value).getTime();
+  const days = Math.max(0, Math.floor(ms / 86400000));
+  if (days === 0) return "today";
+  if (days === 1) return "1 day";
+  if (days < 30) return `${days} days`;
+  const months = Math.floor(days / 30);
+  return `${months} mo`;
+}
 
 export default function Dashboard() {
   const [query, setQuery] = useState("");
   const [health, setHealth] = useState("All");
   const [type, setType] = useState("All");
-  const [criticality, setCriticality] = useState("All");
+  const [visibility, setVisibility] = useState("All");
+  const [observability, setObservability] = useState("All");
   const [deployment, setDeployment] = useState("All");
   const [focus, setFocus] = useState(false);
 
+  const healthOptions = unique(repos.map((r) => r.health));
+  const typeOptions = unique(repos.map((r) => r.type));
+  const visibilityOptions = unique(repos.map((r) => r.visibility));
+  const deploymentOptions = unique(repos.map((r) => r.deployment));
+
   const filtered = useMemo(() => repos.filter((repo) => {
-    const matchesQuery = repo.name.toLowerCase().includes(query.toLowerCase()) || repo.tags.some(t => t.toLowerCase().includes(query.toLowerCase()));
+    const haystack = `${repo.name} ${repo.fullName} ${(repo.tags || []).join(" ")} ${repo.type} ${repo.database}`.toLowerCase();
+    const matchesQuery = haystack.includes(query.toLowerCase());
     const matchesHealth = health === "All" || repo.health === health;
     const matchesType = type === "All" || repo.type === type;
-    const matchesCriticality = criticality === "All" || repo.criticality === criticality;
+    const matchesVisibility = visibility === "All" || repo.visibility === visibility;
+    const coverage = repo.evidence?.coverage || "unknown";
+    const matchesObservability = observability === "All" || coverage === observability;
     const matchesDeployment = deployment === "All" || repo.deployment === deployment;
-    const matchesFocus = !focus || repo.health !== "healthy" || repo.tests !== "Good";
-    return matchesQuery && matchesHealth && matchesType && matchesCriticality && matchesDeployment && matchesFocus;
-  }), [query, health, type, criticality, deployment, focus]);
+    const matchesFocus = !focus || repo.health === "risk" || repo.health === "watch" || repo.health === "unknown" || repo.tests === "Missing";
+    return matchesQuery && matchesHealth && matchesType && matchesVisibility && matchesObservability && matchesDeployment && matchesFocus;
+  }), [query, health, type, visibility, observability, deployment, focus]);
 
-  const activeFilters = [health, type, criticality, deployment].filter(v => v !== "All").length + (focus ? 1 : 0);
-  const avgScore = Math.round(filtered.reduce((sum, r) => sum + r.score, 0) / Math.max(filtered.length, 1));
+  const activeFilters = [health, type, visibility, observability, deployment].filter(v => v !== "All").length + (focus ? 1 : 0);
+  const scoredVisible = filtered.filter((r) => typeof r.score === "number");
+  const avgScore = scoredVisible.length ? Math.round(scoredVisible.reduce((sum, r) => sum + (r.score || 0), 0) / scoredVisible.length) : null;
   const riskCount = filtered.filter(r => r.health === "risk").length;
   const watchCount = filtered.filter(r => r.health === "watch").length;
-  const testGaps = filtered.filter(r => r.tests !== "Good").length;
+  const unknownCount = filtered.filter(r => r.health === "unknown").length;
+  const testGaps = filtered.filter(r => r.tests === "Missing").length;
 
   const clearFilters = () => {
-    setHealth("All"); setType("All"); setCriticality("All"); setDeployment("All"); setFocus(false); setQuery("");
+    setHealth("All"); setType("All"); setVisibility("All"); setObservability("All"); setDeployment("All"); setFocus(false); setQuery("");
   };
 
   return (
@@ -102,31 +101,38 @@ export default function Dashboard() {
         </nav>
         <div className="sidebar-foot">
           <span className="tiny-label">CONTROL PLANE</span>
-          <div className="sync"><CircleDot size={14}/><div><strong>Portfolio synced</strong><span>GitHub inventory ready</span></div></div>
+          <div className="sync"><CircleDot size={14}/><div><strong>{inventory.source === "github-api" ? "Inventory generated" : "Bootstrap mode"}</strong><span>{inventory.coverage.scored}/{inventory.coverage.discovered} repos scored</span></div></div>
         </div>
       </aside>
 
       <section className="content">
         <header className="topbar">
-          <div><p className="eyebrow">PORTFOLIO CONTROL</p><h1>Engineering Command Center</h1><p className="subhead">Reduce a large repository portfolio into the few systems that need attention now.</p></div>
+          <div><p className="eyebrow">PORTFOLIO CONTROL</p><h1>Engineering Command Center</h1><p className="subhead">GitHub evidence → reproducible health score → intervention queue. Last snapshot: {new Date(inventory.generatedAt).toLocaleString()}.</p></div>
           <button className="focus-btn" onClick={() => setFocus(!focus)}><Gauge size={17}/>{focus ? "Showing attention only" : "Focus mode"}</button>
         </header>
 
+        {!inventory.fullPrivateCoverage && (
+          <section className="filter-panel" style={{ marginBottom: 18 }}>
+            <div className="filter-heading"><div><ShieldCheck size={17}/><strong>Coverage guardrail</strong><span>Public repositories are scannable now. Private repositories require DNTL_GITHUB_TOKEN for full evidence; they must remain “Not scanned” rather than receiving a fabricated score.</span></div></div>
+          </section>
+        )}
+
         <section className="metrics-grid">
-          <Metric label="Visible repositories" value={filtered.length} detail={`${repos.length} tracked in v0.1`} icon={<Boxes size={19}/>} />
-          <Metric label="Portfolio health" value={`${avgScore}%`} detail="Weighted operating score" icon={<Activity size={19}/>} />
-          <Metric label="Need attention" value={riskCount + watchCount} detail={`${riskCount} at risk · ${watchCount} watch`} icon={<AlertTriangle size={19}/>} warn />
-          <Metric label="Control gaps" value={testGaps} detail="Missing or partial tests" icon={<ShieldCheck size={19}/>} />
+          <Metric label="Discovered repositories" value={inventory.coverage.discovered} detail={`${inventory.coverage.scored} scored · ${inventory.coverage.unknown} unknown`} icon={<Boxes size={19}/>} />
+          <Metric label="Portfolio health" value={avgScore === null ? "—" : `${avgScore}%`} detail="Evidence-backed scored repos" icon={<Activity size={19}/>} />
+          <Metric label="Need attention" value={riskCount + watchCount} detail={`${riskCount} risk · ${watchCount} watch`} icon={<AlertTriangle size={19}/>} warn />
+          <Metric label="Observability gaps" value={unknownCount} detail={`${testGaps} visible test gaps`} icon={<ShieldCheck size={19}/>} />
         </section>
 
         <section className="filter-panel">
-          <div className="filter-heading"><div><Filter size={17}/><strong>Portfolio filters</strong><span>{activeFilters ? `${activeFilters} active` : "All systems"}</span></div>{activeFilters > 0 || query ? <button onClick={clearFilters}><X size={14}/>Clear</button> : null}</div>
+          <div className="filter-heading"><div><Filter size={17}/><strong>Portfolio filters</strong><span>{activeFilters ? `${activeFilters} active` : "All observable systems"}</span></div>{activeFilters > 0 || query ? <button onClick={clearFilters}><X size={14}/>Clear</button> : null}</div>
           <div className="filter-grid">
-            <label className="search-box"><Search size={16}/><input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search repo, tag or capability…" /></label>
-            <Select label="Health" value={health} onChange={setHealth} options={["All", "healthy", "watch", "risk"]} />
-            <Select label="System type" value={type} onChange={setType} options={["All", "Data", "App", "ML", "Analytics", "Automation"]} />
-            <Select label="Criticality" value={criticality} onChange={setCriticality} options={["All", "High", "Medium", "Low"]} />
-            <Select label="Deployment" value={deployment} onChange={setDeployment} options={["All", "Vercel", "Local", "GitHub", "Not deployed"]} />
+            <label className="search-box"><Search size={16}/><input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search repo, tag, database or capability…" /></label>
+            <Select label="Health" value={health} onChange={setHealth} options={healthOptions} />
+            <Select label="System type" value={type} onChange={setType} options={typeOptions} />
+            <Select label="Visibility" value={visibility} onChange={setVisibility} options={visibilityOptions} />
+            <Select label="Evidence" value={observability} onChange={setObservability} options={unique(repos.map(r => r.evidence?.coverage || "unknown"))} />
+            <Select label="Delivery" value={deployment} onChange={setDeployment} options={deploymentOptions} />
           </div>
         </section>
 
@@ -135,14 +141,15 @@ export default function Dashboard() {
             <div className="card-head"><div><p className="eyebrow">REPOSITORY HEALTH</p><h2>Where should I intervene?</h2></div><span>{filtered.length} results</span></div>
             <div className="repo-list">
               {filtered.map(repo => {
-                const StatusIcon = statusMeta[repo.health].icon;
+                const meta = statusMeta[(repo.health as Health) || "unknown"] || statusMeta.unknown;
+                const StatusIcon = meta.icon;
                 return (
-                  <article className="repo-row" key={repo.name}>
-                    <div className={`status-dot ${repo.health}`}><StatusIcon size={15}/></div>
-                    <div className="repo-main"><div className="repo-title"><strong>{repo.name}</strong><span className="type-badge">{repo.type}</span><span className={`criticality ${repo.criticality.toLowerCase()}`}>{repo.criticality}</span></div><div className="tags">{repo.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
-                    <div className="repo-meta"><span>Deploy<strong>{repo.deployment}</strong></span><span>Data<strong>{repo.database}</strong></span><span>Tests<strong>{repo.tests}</strong></span><span>Last run<strong>{repo.lastRun}</strong></span></div>
-                    <div className="score"><strong>{repo.score}</strong><span>/100</span></div>
-                    <div className="attention"><span>{repo.attention}</span><ChevronRight size={16}/></div>
+                  <article className="repo-row" key={repo.fullName}>
+                    <div className={`status-dot ${meta.css}`} title={meta.label}><StatusIcon size={15}/></div>
+                    <div className="repo-main"><div className="repo-title"><a href={repo.url} target="_blank" rel="noreferrer"><strong>{repo.name}</strong></a><span className="type-badge">{repo.type}</span><span className={`criticality ${repo.visibility === "private" ? "high" : "medium"}`}>{repo.visibility}</span></div><div className="tags">{(repo.tags || []).slice(0, 4).map(tag => <span key={tag}>{tag}</span>)}<span>{repo.evidence?.coverage || "unknown"} evidence</span></div></div>
+                    <div className="repo-meta"><span>Delivery<strong>{repo.deployment}</strong></span><span>Data<strong>{repo.database}</strong></span><span>Tests<strong>{repo.tests}</strong></span><span>Activity<strong>{ageLabel(repo.lastActivity)}</strong></span></div>
+                    <div className="score"><strong>{typeof repo.score === "number" ? repo.score : "—"}</strong><span>{typeof repo.score === "number" ? "/100" : ""}</span></div>
+                    <div className="attention"><span>{repo.attention?.[0] || "No signal"}</span><ChevronRight size={16}/></div>
                   </article>
                 );
               })}
@@ -151,9 +158,9 @@ export default function Dashboard() {
           </div>
 
           <aside className="right-rail">
-            <div className="rail-card priority-card"><p className="eyebrow">TODAY'S PRIORITY</p><h3>Control the highest-risk systems first.</h3><p>Focus mode combines health, test coverage and operating criticality into a short intervention queue.</p><button onClick={() => setFocus(true)}>Show intervention queue<ChevronRight size={16}/></button></div>
-            <div className="rail-card"><p className="eyebrow">CONTROL MODEL</p><div className="control-flow"><Flow icon={<Database size={16}/>} title="Data" detail="Freshness · lineage"/><Flow icon={<ServerCog size={16}/>} title="Runtime" detail="Deploy · executions"/><Flow icon={<ShieldCheck size={16}/>} title="Safety" detail="Tests · rollback"/><Flow icon={<Gauge size={16}/>} title="Decision" detail="Health · priority"/></div></div>
-            <div className="rail-card"><p className="eyebrow">NEXT SIGNALS</p><ul className="signal-list"><li><span className="signal risk"></span>Schema drift detected</li><li><span className="signal watch"></span>Manual dependency remains</li><li><span className="signal good"></span>No exposed secrets detected</li></ul></div>
+            <div className="rail-card priority-card"><p className="eyebrow">TODAY&apos;S PRIORITY</p><h3>Fix evidence gaps before treating unknowns as risk.</h3><p>Focus mode surfaces risk/watch repositories plus anything the control plane cannot inspect confidently.</p><button onClick={() => setFocus(true)}>Show intervention queue<ChevronRight size={16}/></button></div>
+            <div className="rail-card"><p className="eyebrow">HEALTH SCORE v1</p><div className="control-flow"><Flow icon={<Activity size={16}/>} title="Freshness · 25" detail="Recent repository activity"/><Flow icon={<Database size={16}/>} title="Docs + Ops · 25" detail="README · runtime manifest"/><Flow icon={<ServerCog size={16}/>} title="Automation · 20" detail="GitHub Actions workflows"/><Flow icon={<ShieldCheck size={16}/>} title="Tests + Hygiene · 30" detail="Tests · archive · env files"/></div></div>
+            <div className="rail-card"><p className="eyebrow">SCAN COVERAGE</p><ul className="signal-list"><li><span className="signal good"></span>{inventory.coverage.scored} evidence-backed scores</li><li><span className="signal watch"></span>{inventory.coverage.unknown} repositories not fully observable</li><li><span className="signal risk"></span>{testGaps} visible repositories missing tests</li></ul></div>
           </aside>
         </section>
       </section>
