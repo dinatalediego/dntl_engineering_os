@@ -9,6 +9,24 @@ function durationSeconds(run) {
   return Math.max(0, Math.round((new Date(end).getTime() - new Date(start).getTime()) / 1000));
 }
 
+function serializeRun(run) {
+  if (!run) return null;
+  return {
+    id: run.id,
+    name: run.name || run.display_title || "Workflow run",
+    status: run.status || null,
+    conclusion: run.conclusion || null,
+    event: run.event || null,
+    branch: run.head_branch || null,
+    createdAt: run.created_at || null,
+    startedAt: run.run_started_at || run.created_at || null,
+    updatedAt: run.updated_at || null,
+    durationSeconds: durationSeconds(run),
+    url: run.html_url || null,
+    runNumber: run.run_number || null,
+  };
+}
+
 export function summarizeActions(workflowCount, payload) {
   if (!workflowCount) {
     return {
@@ -17,6 +35,7 @@ export function summarizeActions(workflowCount, payload) {
       label: "No workflows",
       workflowCount: 0,
       latest: null,
+      runs: [],
       recentRuns: 0,
       successRateLast10: null,
       failedRecentCount: 0,
@@ -30,28 +49,30 @@ export function summarizeActions(workflowCount, payload) {
       label: "Actions not observable",
       workflowCount,
       latest: null,
+      runs: null,
       recentRuns: null,
       successRateLast10: null,
       failedRecentCount: null,
     };
   }
 
-  const runs = Array.isArray(payload.workflow_runs) ? payload.workflow_runs : [];
-  if (!runs.length) {
+  const sourceRuns = Array.isArray(payload.workflow_runs) ? payload.workflow_runs.slice(0, 10) : [];
+  if (!sourceRuns.length) {
     return {
       state: "idle",
       color: "gray",
       label: "Configured · no runs",
       workflowCount,
       latest: null,
+      runs: [],
       recentRuns: 0,
       successRateLast10: null,
       failedRecentCount: 0,
     };
   }
 
-  const latestRun = runs[0];
-  const completed = runs.filter((run) => run.status === "completed");
+  const latestRun = sourceRuns[0];
+  const completed = sourceRuns.filter((run) => run.status === "completed");
   const successes = completed.filter((run) => run.conclusion === "success").length;
   const failedRecentCount = completed.filter((run) => RED_CONCLUSIONS.has(run.conclusion)).length;
   const successRateLast10 = completed.length ? Math.round((successes / completed.length) * 100) : null;
@@ -80,27 +101,16 @@ export function summarizeActions(workflowCount, payload) {
     }
   }
 
+  const runs = sourceRuns.map(serializeRun);
   return {
     state,
     color,
     label,
     workflowCount,
-    recentRuns: runs.length,
+    recentRuns: sourceRuns.length,
     successRateLast10,
     failedRecentCount,
-    latest: {
-      id: latestRun.id,
-      name: latestRun.name || latestRun.display_title || "Workflow run",
-      status: latestRun.status || null,
-      conclusion: latestRun.conclusion || null,
-      event: latestRun.event || null,
-      branch: latestRun.head_branch || null,
-      createdAt: latestRun.created_at || null,
-      startedAt: latestRun.run_started_at || latestRun.created_at || null,
-      updatedAt: latestRun.updated_at || null,
-      durationSeconds: durationSeconds(latestRun),
-      url: latestRun.html_url || null,
-      runNumber: latestRun.run_number || null,
-    },
+    latest: runs[0],
+    runs,
   };
 }
