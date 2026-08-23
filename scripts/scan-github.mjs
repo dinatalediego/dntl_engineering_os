@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { scoreRepository } from "./health-score.mjs";
 import { summarizeActions } from "./actions-health.mjs";
+import { prioritizeRepository } from "./attention-priority.mjs";
 
 const owner = process.env.DNTL_GITHUB_OWNER || "dinatalediego";
 const privateToken = process.env.DNTL_GITHUB_TOKEN || "";
@@ -91,8 +92,12 @@ function unknownActions(reason = "Repository not observable") {
   };
 }
 
+function withPriority(repo) {
+  return { ...repo, priority: prioritizeRepository(repo) };
+}
+
 function unknownRepo(repo, reason, coverage = "unavailable") {
-  return {
+  return withPriority({
     name: repo.name,
     fullName: repo.full_name,
     url: repo.html_url,
@@ -110,7 +115,7 @@ function unknownRepo(repo, reason, coverage = "unavailable") {
     evidence: { coverage },
     actions: unknownActions(reason),
     tags: tagsFor(repo),
-  };
+  });
 }
 
 function observedRepo(repo, paths, evidence, actions) {
@@ -120,7 +125,7 @@ function observedRepo(repo, paths, evidence, actions) {
   if (actions.state === "red") attention.unshift(`GitHub Actions failing: ${actions.latest?.name || "latest workflow"}`);
   if (actions.state === "unknown" && evidence.workflowCount > 0) attention.push("GitHub Actions telemetry unavailable");
 
-  return {
+  return withPriority({
     name: repo.name,
     fullName: repo.full_name,
     url: repo.html_url,
@@ -138,7 +143,7 @@ function observedRepo(repo, paths, evidence, actions) {
     evidence,
     actions,
     tags: tagsFor(repo),
-  };
+  });
 }
 
 async function actionsFor(encoded, workflowCount) {
@@ -228,11 +233,7 @@ async function mapLimit(items, limit, fn) {
 
 const { repos, fullPrivateCoverage } = await discoverRepos();
 const inspected = await mapLimit(repos, 6, inspectRepo);
-inspected.sort((a, b) => {
-  const actionPriority = { red: 5, running: 4, yellow: 3, unknown: 2, green: 1, idle: 0, "not-configured": 0 };
-  const ap = (actionPriority[b.actions?.state] || 0) - (actionPriority[a.actions?.state] || 0);
-  return ap || (b.score ?? -1) - (a.score ?? -1);
-});
+inspected.sort((a, b) => (b.priority?.score || 0) - (a.priority?.score || 0) || (b.score ?? -1) - (a.score ?? -1));
 
 const scored = inspected.filter((r) => typeof r.score === "number");
 const actionsConfigured = inspected.filter((r) => (r.actions?.workflowCount || 0) > 0);
@@ -245,9 +246,16 @@ const actionsSummary = {
   idle: inspected.filter((r) => r.actions?.state === "idle").length,
   notConfigured: inspected.filter((r) => r.actions?.state === "not-configured").length,
 };
+const attentionSummary = {
+  critical: inspected.filter((r) => r.priority?.severity === "critical").length,
+  high: inspected.filter((r) => r.priority?.severity === "high").length,
+  medium: inspected.filter((r) => r.priority?.severity === "medium").length,
+  low: inspected.filter((r) => r.priority?.severity === "low").length,
+  clear: inspected.filter((r) => r.priority?.severity === "clear").length,
+};
 
 const snapshot = {
-  schemaVersion: 2,
+  schemaVersion: 3,
   generatedAt: new Date().toISOString(),
   owner,
   source: "github-api",
@@ -259,9 +267,10 @@ const snapshot = {
   },
   portfolioScore: scored.length ? Math.round(scored.reduce((s, r) => s + r.score, 0) / scored.length) : null,
   actionsSummary,
+  attentionSummary,
   repositories: inspected,
 };
 
 await mkdir(new URL("../data", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/inventory.json", import.meta.url), `${JSON.stringify(snapshot, null, 2)}\n`);
-console.log(`Scanned ${snapshot.coverage.scored}/${snapshot.coverage.discovered} repositories. Actions: ${actionsSummary.green} green, ${actionsSummary.red} red, ${actionsSummary.yellow} active/attention, ${actionsSummary.unknown} unknown.`);
+console.log(`Scanned ${snapshot.coverage.scored}/${snapshot.coverage.discovered} repositories. Attention: ${attentionSummary.critical} critical, ${attentionSummary.high} high, ${attentionSummary.medium} medium. Actions: ${actionsSummary.green} green, ${actionsSummary.red} red, ${actionsSummary.yellow} active/attention, ${actionsSummary.unknown} unknown.`);
