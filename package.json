@@ -1,13 +1,13 @@
 {
   "name": "dntl-engineering-os",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "scan:github": "node scripts/scan-github.mjs",
-    "test:health": "node --test scripts/health-score.test.mjs"
+    "test:health": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
