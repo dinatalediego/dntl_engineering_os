@@ -72,6 +72,10 @@ function inferDatabase(text) {
   return "Not detected";
 }
 
+function tagsFor(repo) {
+  return [...new Set([...(repo.topics || []), repo.language].filter(Boolean))].slice(0, 6);
+}
+
 function unknownRepo(repo, reason, coverage = "unavailable") {
   return {
     name: repo.name,
@@ -89,11 +93,49 @@ function unknownRepo(repo, reason, coverage = "unavailable") {
     attention: [reason],
     components: {},
     evidence: { coverage },
-    tags: [...new Set([...(repo.topics || []), repo.language].filter(Boolean))].slice(0, 6),
+    tags: tagsFor(repo),
+  };
+}
+
+function observedRepo(repo, paths, evidence) {
+  const scoring = scoreRepository(repo, evidence, rules);
+  const text = `${repo.name} ${repo.description || ""} ${(repo.topics || []).join(" ")} ${paths.join(" ")}`;
+  return {
+    name: repo.name,
+    fullName: repo.full_name,
+    url: repo.html_url,
+    visibility: repo.visibility || (repo.private ? "private" : "public"),
+    score: scoring.score,
+    health: scoring.health,
+    type: classify(repo, paths),
+    criticality: "Unclassified",
+    deployment: detectDelivery(paths, evidence.workflowCount),
+    database: inferDatabase(text),
+    tests: evidence.hasTests ? "Detected" : "Missing",
+    lastActivity: repo.pushed_at || repo.updated_at || null,
+    attention: scoring.attention,
+    components: scoring.components,
+    evidence,
+    tags: tagsFor(repo),
   };
 }
 
 async function inspectRepo(repo) {
+  if (repo.size === 0) {
+    return observedRepo(repo, [], {
+      coverage: "full",
+      hasReadme: false,
+      workflowCount: 0,
+      hasTests: false,
+      hasManifest: false,
+      hasDocker: false,
+      hasVercelConfig: false,
+      trackedEnvFile: false,
+      fileCount: 0,
+      recursiveTree: true,
+    });
+  }
+
   const encoded = repo.full_name.split("/").map(encodeURIComponent).join("/");
   const root = await github(`/repos/${encoded}/contents`, { optional: true });
   if (!Array.isArray(root)) return unknownRepo(repo, "Repository could not be inspected with current token");
@@ -122,7 +164,7 @@ async function inspectRepo(repo) {
     return (file === ".env" || file.startsWith(".env.")) && ![".env.example", ".env.sample", ".env.template"].includes(file);
   });
 
-  const evidence = {
+  return observedRepo(repo, paths, {
     coverage: "full",
     hasReadme,
     workflowCount,
@@ -133,28 +175,7 @@ async function inspectRepo(repo) {
     trackedEnvFile,
     fileCount: paths.length,
     recursiveTree: Boolean(tree?.tree),
-  };
-
-  const scoring = scoreRepository(repo, evidence, rules);
-  const text = `${repo.name} ${repo.description || ""} ${(repo.topics || []).join(" ")} ${paths.join(" ")}`;
-  return {
-    name: repo.name,
-    fullName: repo.full_name,
-    url: repo.html_url,
-    visibility: repo.visibility || (repo.private ? "private" : "public"),
-    score: scoring.score,
-    health: scoring.health,
-    type: classify(repo, paths),
-    criticality: "Unclassified",
-    deployment: detectDelivery(paths, workflowCount),
-    database: inferDatabase(text),
-    tests: hasTests ? "Detected" : "Missing",
-    lastActivity: repo.pushed_at || repo.updated_at || null,
-    attention: scoring.attention,
-    components: scoring.components,
-    evidence,
-    tags: [...new Set([...(repo.topics || []), repo.language].filter(Boolean))].slice(0, 6),
-  };
+  });
 }
 
 async function mapLimit(items, limit, fn) {
