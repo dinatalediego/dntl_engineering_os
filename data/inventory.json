@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-23T13:15:36.095Z",
+  "generatedAt": "2026-08-23T13:16:57.982Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -162,7 +162,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-08-23T13:15:08Z",
+      "lastActivity": "2026-08-23T13:16:25Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -191,22 +191,22 @@
         "color": "yellow",
         "label": "in_progress",
         "workflowCount": 1,
-        "recentRuns": 9,
-        "successRateLast10": 25,
-        "failedRecentCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 33,
+        "failedRecentCount": 1,
         "latest": {
-          "id": 32641775540,
+          "id": 32641843931,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "push",
           "branch": "main",
-          "createdAt": "2026-08-23T13:15:10Z",
-          "startedAt": "2026-08-23T13:15:10Z",
-          "updatedAt": "2026-08-23T13:15:15Z",
-          "durationSeconds": 5,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32641775540",
-          "runNumber": 9
+          "createdAt": "2026-08-23T13:16:27Z",
+          "startedAt": "2026-08-23T13:16:27Z",
+          "updatedAt": "2026-08-23T13:16:38Z",
+          "durationSeconds": 11,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32641843931",
+          "runNumber": 11
         }
       },
       "tags": [
