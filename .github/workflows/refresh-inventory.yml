@@ -1,0 +1,63 @@
+name: Refresh engineering inventory
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 13 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "config/**"
+      - "app/**"
+      - "package.json"
+      - ".github/workflows/refresh-inventory.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: engineering-inventory
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      DNTL_GITHUB_OWNER: dinatalediego
+      DNTL_GITHUB_TOKEN: ${{ secrets.DNTL_GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Verify score rules
+        run: npm run test:health
+
+      - name: Scan GitHub portfolio
+        run: npm run scan:github
+
+      - name: Verify dashboard build
+        run: npm run build
+
+      - name: Commit refreshed snapshot
+        run: |
+          if git diff --quiet -- data/inventory.json package-lock.json; then
+            echo "No inventory changes."
+            exit 0
+          fi
+          git config user.name "dntl-engineering-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/inventory.json package-lock.json
+          git commit -m "chore: refresh engineering inventory [skip ci]"
+          git push
