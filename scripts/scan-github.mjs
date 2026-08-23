@@ -15,7 +15,7 @@ const rules = JSON.parse(await readFile(new URL("../config/health-rules.json", i
 
 async function github(path, { optional = false } = {}) {
   const res = await fetch(`https://api.github.com${path}`, { headers });
-  if (optional && (res.status === 404 || res.status === 403)) return null;
+  if (optional && [403, 404, 409].includes(res.status)) return null;
   if (!res.ok) throw new Error(`${res.status} ${res.statusText}: ${path}`);
   return res.json();
 }
@@ -34,14 +34,19 @@ async function paginate(path) {
 async function discoverRepos() {
   const publicRepos = await paginate(`/users/${owner}/repos?type=owner&sort=updated`);
   if (!privateToken) return { repos: publicRepos, fullPrivateCoverage: false };
+
   const authenticated = await paginate(`/user/repos?affiliation=owner&sort=updated`);
   const mine = authenticated.filter((r) => r.owner?.login?.toLowerCase() === owner.toLowerCase());
   const byName = new Map([...publicRepos, ...mine].map((r) => [r.full_name, r]));
   return { repos: [...byName.values()], fullPrivateCoverage: true };
 }
 
-function classify(repo, names) {
-  const text = `${repo.name} ${repo.description || ""} ${(repo.topics || []).join(" ")} ${names.join(" ")}`.toLowerCase();
+function basename(path) {
+  return path.split("/").pop() || path;
+}
+
+function classify(repo, paths) {
+  const text = `${repo.name} ${repo.description || ""} ${(repo.topics || []).join(" ")} ${paths.join(" ")}`.toLowerCase();
   if (/ml|model|predict|recommender|forecast|regression|scoring/.test(text)) return "ML";
   if (/etl|pipeline|warehouse|redshift|postgres|database|data|datos/.test(text)) return "Data";
   if (/bi|dashboard|report|analytics|insight|metric/.test(text)) return "Analytics";
@@ -49,9 +54,11 @@ function classify(repo, names) {
   return "App";
 }
 
-function detectDelivery(names, workflowCount) {
-  if (names.includes("vercel.json") || names.some((n) => /^next\.config\./.test(n))) return "Vercel-ready";
-  if (names.includes("Dockerfile") || names.includes("docker-compose.yml")) return "Container-ready";
+function detectDelivery(paths, workflowCount) {
+  const files = paths.map(basename);
+  const lower = files.map((n) => n.toLowerCase());
+  if (lower.includes("vercel.json") || lower.some((n) => /^next\.config\./.test(n))) return "Vercel-ready";
+  if (files.includes("Dockerfile") || lower.includes("docker-compose.yml")) return "Container-ready";
   if (workflowCount > 0) return "GitHub Actions";
   return "Not detected";
 }
@@ -65,48 +72,71 @@ function inferDatabase(text) {
   return "Not detected";
 }
 
+function unknownRepo(repo, reason, coverage = "unavailable") {
+  return {
+    name: repo.name,
+    fullName: repo.full_name,
+    url: repo.html_url,
+    visibility: repo.visibility || (repo.private ? "private" : "public"),
+    score: null,
+    health: "unknown",
+    type: "Unknown",
+    criticality: "Unclassified",
+    deployment: "Unknown",
+    database: "Unknown",
+    tests: "Unknown",
+    lastActivity: repo.pushed_at || repo.updated_at || null,
+    attention: [reason],
+    components: {},
+    evidence: { coverage },
+    tags: [...new Set([...(repo.topics || []), repo.language].filter(Boolean))].slice(0, 6),
+  };
+}
+
 async function inspectRepo(repo) {
   const encoded = repo.full_name.split("/").map(encodeURIComponent).join("/");
   const root = await github(`/repos/${encoded}/contents`, { optional: true });
-  if (!Array.isArray(root)) {
-    return {
-      name: repo.name,
-      fullName: repo.full_name,
-      url: repo.html_url,
-      visibility: repo.visibility || (repo.private ? "private" : "public"),
-      score: null,
-      health: "unknown",
-      type: "Unknown",
-      criticality: "Unclassified",
-      deployment: "Unknown",
-      database: "Unknown",
-      tests: "Unknown",
-      lastActivity: repo.pushed_at || repo.updated_at || null,
-      attention: ["Repository could not be inspected with current token"],
-      components: {},
-      evidence: { coverage: "unavailable" },
-    };
-  }
+  if (!Array.isArray(root)) return unknownRepo(repo, "Repository could not be inspected with current token");
 
-  const names = root.map((x) => x.name);
-  const lower = names.map((n) => n.toLowerCase());
-  const workflows = await github(`/repos/${encoded}/actions/workflows?per_page=100`, { optional: true });
-  const workflowCount = workflows?.total_count || 0;
-  const hasTests = lower.some((n) => /^(tests?|__tests__|spec|pytest\.ini|tox\.ini)$/.test(n)) || lower.some((n) => n.includes("test"));
-  const hasManifest = lower.some((n) => ["package.json", "pyproject.toml", "requirements.txt", "poetry.lock", "pom.xml", "go.mod", "cargo.toml"].includes(n));
+  const tree = await github(`/repos/${encoded}/git/trees/${encodeURIComponent(repo.default_branch)}?recursive=1`, { optional: true });
+  const paths = Array.isArray(tree?.tree)
+    ? tree.tree.filter((item) => item.type === "blob").map((item) => item.path)
+    : root.filter((item) => item.type === "file").map((item) => item.name);
+  const lowerPaths = paths.map((p) => p.toLowerCase());
+  const files = paths.map(basename);
+  const lowerFiles = files.map((n) => n.toLowerCase());
+
+  const workflowCount = lowerPaths.filter((p) => /^\.github\/workflows\/[^/]+\.ya?ml$/.test(p)).length;
+  const hasTests = lowerPaths.some((p) =>
+    /(^|\/)(tests?|__tests__|specs?)(\/|$)/.test(p) ||
+    /(^|\/)[^/]+(?:\.test|\.spec|_test|_spec)\.[^/]+$/.test(p) ||
+    /(^|\/)(pytest\.ini|tox\.ini)$/.test(p)
+  );
+  const manifestNames = ["package.json", "pyproject.toml", "requirements.txt", "poetry.lock", "pom.xml", "go.mod", "cargo.toml"];
+  const hasManifest = lowerFiles.some((n) => manifestNames.includes(n));
+  const hasReadme = lowerPaths.some((p) => !p.includes("/") && p.startsWith("readme"));
+  const hasDocker = files.includes("Dockerfile") || lowerFiles.includes("docker-compose.yml");
+  const hasVercelConfig = lowerFiles.includes("vercel.json") || lowerFiles.some((n) => n.startsWith("next.config."));
+  const trackedEnvFile = lowerPaths.some((p) => {
+    const file = basename(p).toLowerCase();
+    return (file === ".env" || file.startsWith(".env.")) && ![".env.example", ".env.sample", ".env.template"].includes(file);
+  });
+
   const evidence = {
     coverage: "full",
-    hasReadme: lower.some((n) => n.startsWith("readme")),
+    hasReadme,
     workflowCount,
     hasTests,
     hasManifest,
-    hasDocker: names.includes("Dockerfile") || lower.includes("docker-compose.yml"),
-    hasVercelConfig: lower.includes("vercel.json") || lower.some((n) => n.startsWith("next.config.")),
-    trackedEnvFile: lower.some((n) => n === ".env" || n.startsWith(".env.")) && !lower.includes(".env.example"),
+    hasDocker,
+    hasVercelConfig,
+    trackedEnvFile,
+    fileCount: paths.length,
+    recursiveTree: Boolean(tree?.tree),
   };
 
   const scoring = scoreRepository(repo, evidence, rules);
-  const text = `${repo.name} ${repo.description || ""} ${(repo.topics || []).join(" ")} ${names.join(" ")}`;
+  const text = `${repo.name} ${repo.description || ""} ${(repo.topics || []).join(" ")} ${paths.join(" ")}`;
   return {
     name: repo.name,
     fullName: repo.full_name,
@@ -114,9 +144,9 @@ async function inspectRepo(repo) {
     visibility: repo.visibility || (repo.private ? "private" : "public"),
     score: scoring.score,
     health: scoring.health,
-    type: classify(repo, names),
+    type: classify(repo, paths),
     criticality: "Unclassified",
-    deployment: detectDelivery(names, workflowCount),
+    deployment: detectDelivery(paths, workflowCount),
     database: inferDatabase(text),
     tests: hasTests ? "Detected" : "Missing",
     lastActivity: repo.pushed_at || repo.updated_at || null,
@@ -133,25 +163,10 @@ async function mapLimit(items, limit, fn) {
   async function worker() {
     while (cursor < items.length) {
       const i = cursor++;
-      try { out[i] = await fn(items[i]); }
-      catch (error) {
-        out[i] = {
-          name: items[i].name,
-          fullName: items[i].full_name,
-          url: items[i].html_url,
-          visibility: items[i].visibility || (items[i].private ? "private" : "public"),
-          score: null,
-          health: "unknown",
-          type: "Unknown",
-          criticality: "Unclassified",
-          deployment: "Unknown",
-          database: "Unknown",
-          tests: "Unknown",
-          lastActivity: items[i].pushed_at || null,
-          attention: [`Scan error: ${error.message}`],
-          components: {},
-          evidence: { coverage: "error" },
-        };
+      try {
+        out[i] = await fn(items[i]);
+      } catch (error) {
+        out[i] = unknownRepo(items[i], `Scan error: ${error.message}`, "error");
       }
     }
   }
