@@ -1,16 +1,999 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-08-23T04:10:59.227Z",
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-23T13:15:36.095Z",
   "owner": "dinatalediego",
   "source": "github-api",
-  "fullPrivateCoverage": false,
+  "fullPrivateCoverage": true,
   "coverage": {
-    "discovered": 48,
-    "scored": 48,
+    "discovered": 146,
+    "scored": 146,
     "unknown": 0
   },
-  "portfolioScore": 40,
+  "portfolioScore": 32,
+  "actionsSummary": {
+    "configured": 32,
+    "green": 11,
+    "red": 2,
+    "yellow": 1,
+    "unknown": 15,
+    "idle": 3,
+    "notConfigured": 114
+  },
   "repositories": [
+    {
+      "name": "limpia-fast",
+      "fullName": "dinatalediego/limpia-fast",
+      "url": "https://github.com/dinatalediego/limpia-fast",
+      "visibility": "public",
+      "score": 80,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-08-22T06:51:07Z",
+      "attention": [
+        "GitHub Actions failing: CI",
+        "Add automated tests"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 25,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "red",
+        "color": "red",
+        "label": "Failing",
+        "workflowCount": 1,
+        "recentRuns": 1,
+        "successRateLast10": 0,
+        "failedRecentCount": 1,
+        "latest": {
+          "id": 32558036008,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-22T06:51:11Z",
+          "startedAt": "2026-08-22T06:51:11Z",
+          "updatedAt": "2026-08-22T06:51:19Z",
+          "durationSeconds": 8,
+          "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
+          "runNumber": 1
+        }
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "mvp_product",
+      "fullName": "dinatalediego/mvp_product",
+      "url": "https://github.com/dinatalediego/mvp_product",
+      "visibility": "public",
+      "score": 51,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-02-11T14:12:42Z",
+      "attention": [
+        "GitHub Actions failing: NodeJS with Webpack",
+        "Add automated tests",
+        "Repository is stale",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": true,
+        "fileCount": 33,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "red",
+        "color": "red",
+        "label": "Failing",
+        "workflowCount": 1,
+        "recentRuns": 1,
+        "successRateLast10": 0,
+        "failedRecentCount": 1,
+        "latest": {
+          "id": 21908485668,
+          "name": "NodeJS with Webpack",
+          "status": "completed",
+          "conclusion": "failure",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-02-11T14:12:48Z",
+          "startedAt": "2026-02-11T14:12:48Z",
+          "updatedAt": "2026-02-11T14:13:22Z",
+          "durationSeconds": 34,
+          "url": "https://github.com/dinatalediego/mvp_product/actions/runs/21908485668",
+          "runNumber": 1
+        }
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "dntl_engineering_os",
+      "fullName": "dinatalediego/dntl_engineering_os",
+      "url": "https://github.com/dinatalediego/dntl_engineering_os",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-23T13:15:08Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 14,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "running",
+        "color": "yellow",
+        "label": "in_progress",
+        "workflowCount": 1,
+        "recentRuns": 9,
+        "successRateLast10": 25,
+        "failedRecentCount": 2,
+        "latest": {
+          "id": 32641775540,
+          "name": "Refresh engineering inventory",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-23T13:15:10Z",
+          "startedAt": "2026-08-23T13:15:10Z",
+          "updatedAt": "2026-08-23T13:15:15Z",
+          "durationSeconds": 5,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32641775540",
+          "runNumber": 9
+        }
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "intelligence_dashboard",
+      "fullName": "dinatalediego/intelligence_dashboard",
+      "url": "https://github.com/dinatalediego/intelligence_dashboard",
+      "visibility": "private",
+      "score": 93,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-06-25T06:05:05Z",
+      "attention": [
+        "No repository-level blockers detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 235,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "inmobiliaria-data",
+      "fullName": "dinatalediego/inmobiliaria-data",
+      "url": "https://github.com/dinatalediego/inmobiliaria-data",
+      "visibility": "private",
+      "score": 84,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-03-30T03:46:19Z",
+      "attention": [
+        "No repository-level blockers detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 1597,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "Match_Pagos_CRM",
+      "fullName": "dinatalediego/Match_Pagos_CRM",
+      "url": "https://github.com/dinatalediego/Match_Pagos_CRM",
+      "visibility": "private",
+      "score": 75,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-11-10T14:53:24Z",
+      "attention": [
+        "Repository is stale",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 28,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Reporteria_Pro",
+      "fullName": "dinatalediego/Reporteria_Pro",
+      "url": "https://github.com/dinatalediego/Reporteria_Pro",
+      "visibility": "private",
+      "score": 75,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-10-20T05:29:37Z",
+      "attention": [
+        "Repository is stale",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 54,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "MetricHouse",
+      "fullName": "dinatalediego/MetricHouse",
+      "url": "https://github.com/dinatalediego/MetricHouse",
+      "visibility": "private",
+      "score": 71,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-01-27T12:42:51Z",
+      "attention": [
+        "Repository is stale",
+        "Tracked .env-like file detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": true,
+        "fileCount": 182,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "crew-up-app",
+      "fullName": "dinatalediego/crew-up-app",
+      "url": "https://github.com/dinatalediego/crew-up-app",
+      "visibility": "private",
+      "score": 60,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-07-26T05:45:08Z",
+      "attention": [
+        "Add operational README",
+        "Repository is stale",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 2,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 43,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 2,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "puentes_reporting",
+      "fullName": "dinatalediego/puentes_reporting",
+      "url": "https://github.com/dinatalediego/puentes_reporting",
+      "visibility": "private",
+      "score": 55,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Redshift",
+      "tests": "Missing",
+      "lastActivity": "2026-01-08T16:10:38Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 19,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 2,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "a30-proj",
+      "fullName": "dinatalediego/a30-proj",
+      "url": "https://github.com/dinatalediego/a30-proj",
+      "visibility": "private",
+      "score": 55,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-16T05:57:08Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 11,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "cobranzas_con_analisis",
+      "fullName": "dinatalediego/cobranzas_con_analisis",
+      "url": "https://github.com/dinatalediego/cobranzas_con_analisis",
+      "visibility": "private",
+      "score": 51,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Redshift",
+      "tests": "Missing",
+      "lastActivity": "2025-12-30T15:36:36Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale",
+        "Tracked .env-like file detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 4,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 48,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 4,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "data-intelligence-crm",
+      "fullName": "dinatalediego/data-intelligence-crm",
+      "url": "https://github.com/dinatalediego/data-intelligence-crm",
+      "visibility": "private",
+      "score": 51,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Redshift",
+      "tests": "Missing",
+      "lastActivity": "2026-02-19T03:45:01Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale",
+        "Tracked .env-like file detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 34,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "cygnus-focus-workspace",
+      "fullName": "dinatalediego/cygnus-focus-workspace",
+      "url": "https://github.com/dinatalediego/cygnus-focus-workspace",
+      "visibility": "private",
+      "score": 45,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-12-30T03:46:33Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale",
+        "No operability manifest detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 7,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 2,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": []
+    },
+    {
+      "name": "Pricing-Strategy",
+      "fullName": "dinatalediego/Pricing-Strategy",
+      "url": "https://github.com/dinatalediego/Pricing-Strategy",
+      "visibility": "private",
+      "score": 40,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-26T22:51:51Z",
+      "attention": [
+        "Add automated tests",
+        "Add operational README",
+        "Repository is stale",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 2,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 19,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 2,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "pipeline_e2e_crewup",
+      "fullName": "dinatalediego/pipeline_e2e_crewup",
+      "url": "https://github.com/dinatalediego/pipeline_e2e_crewup",
+      "visibility": "private",
+      "score": 40,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-08-01T22:27:37Z",
+      "attention": [
+        "Add automated tests",
+        "Add operational README",
+        "Repository is stale",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 8,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 19,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 8,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "PowerShell"
+      ]
+    },
+    {
+      "name": "crewup_report_cto",
+      "fullName": "dinatalediego/crewup_report_cto",
+      "url": "https://github.com/dinatalediego/crewup_report_cto",
+      "visibility": "private",
+      "score": 36,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-07-21T06:40:34Z",
+      "attention": [
+        "Add automated tests",
+        "Add operational README",
+        "Repository is stale",
+        "Tracked .env-like file detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 5,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 22,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 5,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "private_branding",
+      "fullName": "dinatalediego/private_branding",
+      "url": "https://github.com/dinatalediego/private_branding",
+      "visibility": "private",
+      "score": 30,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-07T04:56:10Z",
+      "attention": [
+        "Add automated tests",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 20,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 1,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": []
+    },
     {
       "name": "helpful_support",
       "fullName": "dinatalediego/helpful_support",
@@ -23,7 +1006,7 @@
       "deployment": "Vercel-ready",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-08-23T03:17:18Z",
+      "lastActivity": "2026-08-23T12:47:19Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -44,8 +1027,31 @@
         "hasDocker": false,
         "hasVercelConfig": true,
         "trackedEnvFile": false,
-        "fileCount": 55,
+        "fileCount": 59,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 10,
+        "successRateLast10": 100,
+        "failedRecentCount": 0,
+        "latest": {
+          "id": 32640398384,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-23T12:47:21Z",
+          "startedAt": "2026-08-23T12:47:21Z",
+          "updatedAt": "2026-08-23T12:48:04Z",
+          "durationSeconds": 43,
+          "url": "https://github.com/dinatalediego/helpful_support/actions/runs/32640398384",
+          "runNumber": 39
+        }
       },
       "tags": [
         "TypeScript"
@@ -87,6 +1093,29 @@
         "fileCount": 38,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 10,
+        "successRateLast10": 100,
+        "failedRecentCount": 0,
+        "latest": {
+          "id": 32555871890,
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "dynamic",
+          "branch": "main",
+          "createdAt": "2026-08-22T06:01:29Z",
+          "startedAt": "2026-08-22T06:01:29Z",
+          "updatedAt": "2026-08-22T06:02:10Z",
+          "durationSeconds": 41,
+          "url": "https://github.com/dinatalediego/expertos_en_lavados/actions/runs/32555871890",
+          "runNumber": 1
+        }
+      },
       "tags": [
         "JavaScript"
       ]
@@ -126,6 +1155,29 @@
         "trackedEnvFile": false,
         "fileCount": 25,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 6,
+        "successRateLast10": 83,
+        "failedRecentCount": 0,
+        "latest": {
+          "id": 32551902462,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "branch": "feature/business-wayfinding-main",
+          "createdAt": "2026-08-22T04:31:00Z",
+          "startedAt": "2026-08-22T04:31:00Z",
+          "updatedAt": "2026-08-22T04:31:08Z",
+          "durationSeconds": 8,
+          "url": "https://github.com/dinatalediego/prompt-maestros/actions/runs/32551902462",
+          "runNumber": 4
+        }
       },
       "tags": [
         "CSS"
@@ -167,6 +1219,29 @@
         "fileCount": 20,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 40,
+        "failedRecentCount": 6,
+        "latest": {
+          "id": 32494375042,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "feature/public-batch-data-hub",
+          "createdAt": "2026-08-21T14:51:04Z",
+          "startedAt": "2026-08-21T14:51:04Z",
+          "updatedAt": "2026-08-21T14:51:34Z",
+          "durationSeconds": 30,
+          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/32494375042",
+          "runNumber": 49
+        }
+      },
       "tags": [
         "Python"
       ]
@@ -206,6 +1281,29 @@
         "trackedEnvFile": false,
         "fileCount": 348,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 10,
+        "successRateLast10": 100,
+        "failedRecentCount": 0,
+        "latest": {
+          "id": 32446166168,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-21T04:13:20Z",
+          "startedAt": "2026-08-21T04:13:20Z",
+          "updatedAt": "2026-08-21T04:14:00Z",
+          "durationSeconds": 40,
+          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/32446166168",
+          "runNumber": 62
+        }
       },
       "tags": [
         "Python"
@@ -247,6 +1345,29 @@
         "fileCount": 30,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 6,
+        "successRateLast10": 33,
+        "failedRecentCount": 4,
+        "latest": {
+          "id": 32446042949,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-21T04:11:16Z",
+          "startedAt": "2026-08-21T04:11:16Z",
+          "updatedAt": "2026-08-21T04:11:36Z",
+          "durationSeconds": 20,
+          "url": "https://github.com/dinatalediego/dntl_chatbot/actions/runs/32446042949",
+          "runNumber": 6
+        }
+      },
       "tags": [
         "Python"
       ]
@@ -287,48 +1408,31 @@
         "fileCount": 38,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 80,
+        "failedRecentCount": 2,
+        "latest": {
+          "id": 32486631497,
+          "name": "Deploy GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-21T13:23:58Z",
+          "startedAt": "2026-08-21T13:23:58Z",
+          "updatedAt": "2026-08-21T13:24:18Z",
+          "durationSeconds": 20,
+          "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631497",
+          "runNumber": 3
+        }
+      },
       "tags": [
         "JavaScript"
-      ]
-    },
-    {
-      "name": "limpia-fast",
-      "fullName": "dinatalediego/limpia-fast",
-      "url": "https://github.com/dinatalediego/limpia-fast",
-      "visibility": "public",
-      "score": 80,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Vercel-ready",
-      "database": "Supabase",
-      "tests": "Missing",
-      "lastActivity": "2026-08-22T06:51:07Z",
-      "attention": [
-        "Add automated tests"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": true,
-        "trackedEnvFile": false,
-        "fileCount": 25,
-        "recursiveTree": true
-      },
-      "tags": [
-        "TypeScript"
       ]
     },
     {
@@ -367,166 +1471,28 @@
         "fileCount": 17,
         "recursiveTree": true
       },
-      "tags": [
-        "JavaScript"
-      ]
-    },
-    {
-      "name": "mlops-deployment-dinatale",
-      "fullName": "dinatalediego/mlops-deployment-dinatale",
-      "url": "https://github.com/dinatalediego/mlops-deployment-dinatale",
-      "visibility": "public",
-      "score": 75,
-      "health": "watch",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Container-ready",
-      "database": "Not detected",
-      "tests": "Detected",
-      "lastActivity": "2025-06-18T01:27:30Z",
-      "attention": [
-        "Repository is stale"
-      ],
-      "components": {
-        "freshness": 0,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 3,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": true,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 43,
-        "recursiveTree": true
-      },
-      "tags": [
-        "Jupyter Notebook"
-      ]
-    },
-    {
-      "name": "encuesta-deep-insights",
-      "fullName": "dinatalediego/encuesta-deep-insights",
-      "url": "https://github.com/dinatalediego/encuesta-deep-insights",
-      "visibility": "public",
-      "score": 75,
-      "health": "watch",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Not detected",
-      "tests": "Detected",
-      "lastActivity": "2025-06-02T05:28:24Z",
-      "attention": [
-        "Repository is stale"
-      ],
-      "components": {
-        "freshness": 0,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 24,
-        "recursiveTree": true
-      },
-      "tags": [
-        "Python"
-      ]
-    },
-    {
-      "name": "FortunaCore",
-      "fullName": "dinatalediego/FortunaCore",
-      "url": "https://github.com/dinatalediego/FortunaCore",
-      "visibility": "public",
-      "score": 64,
-      "health": "watch",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Container-ready",
-      "database": "Not detected",
-      "tests": "Detected",
-      "lastActivity": "2026-05-25T01:04:17Z",
-      "attention": [
-        "Add CI workflow"
-      ],
-      "components": {
-        "freshness": 9,
-        "documentation": 15,
-        "automation": 0,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 0,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": true,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 63,
-        "recursiveTree": true
-      },
-      "tags": [
-        "Python"
-      ]
-    },
-    {
-      "name": "property_web",
-      "fullName": "dinatalediego/property_web",
-      "url": "https://github.com/dinatalediego/property_web",
-      "visibility": "public",
-      "score": 60,
-      "health": "watch",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Container-ready",
-      "database": "Supabase",
-      "tests": "Detected",
-      "lastActivity": "2025-06-20T05:00:34Z",
-      "attention": [
-        "Add operational README",
-        "Repository is stale"
-      ],
-      "components": {
-        "freshness": 0,
-        "documentation": 0,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": false,
-        "workflowCount": 1,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": true,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 9027,
-        "recursiveTree": true
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 70,
+        "failedRecentCount": 2,
+        "latest": {
+          "id": 32551680295,
+          "name": "verify-static",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-22T04:25:57Z",
+          "startedAt": "2026-08-22T04:25:57Z",
+          "updatedAt": "2026-08-22T04:26:07Z",
+          "durationSeconds": 10,
+          "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680295",
+          "runNumber": 18
+        }
       },
       "tags": [
         "JavaScript"
@@ -569,169 +1535,28 @@
         "fileCount": 20,
         "recursiveTree": true
       },
-      "tags": [
-        "Python"
-      ]
-    },
-    {
-      "name": "bot-command-center",
-      "fullName": "dinatalediego/bot-command-center",
-      "url": "https://github.com/dinatalediego/bot-command-center",
-      "visibility": "public",
-      "score": 53,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-05-25T09:15:27Z",
-      "attention": [
-        "Add automated tests",
-        "Add CI workflow"
-      ],
-      "components": {
-        "freshness": 18,
-        "documentation": 15,
-        "automation": 0,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 11,
-        "recursiveTree": true
-      },
-      "tags": [
-        "Python"
-      ]
-    },
-    {
-      "name": "mvp_product",
-      "fullName": "dinatalediego/mvp_product",
-      "url": "https://github.com/dinatalediego/mvp_product",
-      "visibility": "public",
-      "score": 51,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Vercel-ready",
-      "database": "Supabase",
-      "tests": "Missing",
-      "lastActivity": "2026-02-11T14:12:42Z",
-      "attention": [
-        "Add automated tests",
-        "Repository is stale",
-        "Tracked .env-like file detected"
-      ],
-      "components": {
-        "freshness": 0,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 6
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
         "workflowCount": 1,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": true,
-        "trackedEnvFile": true,
-        "fileCount": 33,
-        "recursiveTree": true
-      },
-      "tags": [
-        "TypeScript"
-      ]
-    },
-    {
-      "name": "marketing_digital",
-      "fullName": "dinatalediego/marketing_digital",
-      "url": "https://github.com/dinatalediego/marketing_digital",
-      "visibility": "public",
-      "score": 50,
-      "health": "risk",
-      "type": "Data",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-08-23T03:02:07Z",
-      "attention": [
-        "Add automated tests",
-        "Add CI workflow",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 0,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 22,
-        "recursiveTree": true
-      },
-      "tags": []
-    },
-    {
-      "name": "RealEstateDataAgent",
-      "fullName": "dinatalediego/RealEstateDataAgent",
-      "url": "https://github.com/dinatalediego/RealEstateDataAgent",
-      "visibility": "public",
-      "score": 49,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Supabase",
-      "tests": "Detected",
-      "lastActivity": "2026-05-20T08:10:44Z",
-      "attention": [
-        "Add CI workflow",
-        "Add operational README"
-      ],
-      "components": {
-        "freshness": 9,
-        "documentation": 0,
-        "automation": 0,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": false,
-        "workflowCount": 0,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 116,
-        "recursiveTree": true
+        "recentRuns": 1,
+        "successRateLast10": 100,
+        "failedRecentCount": 0,
+        "latest": {
+          "id": 19016847921,
+          "name": "ci",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2025-11-02T19:08:30Z",
+          "startedAt": "2025-11-02T19:08:30Z",
+          "updatedAt": "2025-11-02T19:08:49Z",
+          "durationSeconds": 19,
+          "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/19016847921",
+          "runNumber": 1
+        }
       },
       "tags": [
         "Python"
@@ -775,6 +1600,29 @@
         "fileCount": 20,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 10,
+        "successRateLast10": 90,
+        "failedRecentCount": 1,
+        "latest": {
+          "id": 16389697185,
+          "name": "🚀 Deploy MkDocs to Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2025-07-19T14:35:23Z",
+          "startedAt": "2025-07-19T14:35:23Z",
+          "updatedAt": "2025-07-19T14:35:41Z",
+          "durationSeconds": 18,
+          "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389697185",
+          "runNumber": 14
+        }
+      },
       "tags": [
         "Python"
       ]
@@ -817,8 +1665,1098 @@
         "fileCount": 36,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 100,
+        "failedRecentCount": 0,
+        "latest": {
+          "id": 21261190949,
+          "name": "CarWash Reports + Email",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "schedule",
+          "branch": "main",
+          "createdAt": "2026-01-22T19:01:52Z",
+          "startedAt": "2026-01-22T19:01:52Z",
+          "updatedAt": "2026-01-22T19:02:28Z",
+          "durationSeconds": 36,
+          "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21261190949",
+          "runNumber": 3008
+        }
+      },
       "tags": [
         "Python"
+      ]
+    },
+    {
+      "name": "mlops-deployment-dinatale",
+      "fullName": "dinatalediego/mlops-deployment-dinatale",
+      "url": "https://github.com/dinatalediego/mlops-deployment-dinatale",
+      "visibility": "public",
+      "score": 75,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-06-18T01:27:30Z",
+      "attention": [
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 3,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 43,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "idle",
+        "color": "gray",
+        "label": "Configured · no runs",
+        "workflowCount": 3,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "encuesta-deep-insights",
+      "fullName": "dinatalediego/encuesta-deep-insights",
+      "url": "https://github.com/dinatalediego/encuesta-deep-insights",
+      "visibility": "public",
+      "score": 75,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-06-02T05:28:24Z",
+      "attention": [
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 24,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "idle",
+        "color": "gray",
+        "label": "Configured · no runs",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "lista_precios_historico",
+      "fullName": "dinatalediego/lista_precios_historico",
+      "url": "https://github.com/dinatalediego/lista_precios_historico",
+      "visibility": "private",
+      "score": 73,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-07-14T22:58:02Z",
+      "attention": [
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 47,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "librerias_Crm",
+      "fullName": "dinatalediego/librerias_Crm",
+      "url": "https://github.com/dinatalediego/librerias_Crm",
+      "visibility": "private",
+      "score": 73,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-07-02T22:05:15Z",
+      "attention": [
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 1632,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "rag_platform",
+      "fullName": "dinatalediego/rag_platform",
+      "url": "https://github.com/dinatalediego/rag_platform",
+      "visibility": "private",
+      "score": 73,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-06-23T01:58:47Z",
+      "attention": [
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 50,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "intelligence_platform",
+      "fullName": "dinatalediego/intelligence_platform",
+      "url": "https://github.com/dinatalediego/intelligence_platform",
+      "visibility": "private",
+      "score": 73,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-06-22T05:58:08Z",
+      "attention": [
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 58,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "intelligence_api_platform",
+      "fullName": "dinatalediego/intelligence_api_platform",
+      "url": "https://github.com/dinatalediego/intelligence_api_platform",
+      "visibility": "private",
+      "score": 73,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-06-22T04:38:34Z",
+      "attention": [
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 59,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "FortunaCore",
+      "fullName": "dinatalediego/FortunaCore",
+      "url": "https://github.com/dinatalediego/FortunaCore",
+      "visibility": "public",
+      "score": 64,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-05-25T01:04:17Z",
+      "attention": [
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 63,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "property_web",
+      "fullName": "dinatalediego/property_web",
+      "url": "https://github.com/dinatalediego/property_web",
+      "visibility": "public",
+      "score": 60,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2025-06-20T05:00:34Z",
+      "attention": [
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 9027,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "idle",
+        "color": "gray",
+        "label": "Configured · no runs",
+        "workflowCount": 1,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "dashboard-app",
+      "fullName": "dinatalediego/dashboard-app",
+      "url": "https://github.com/dinatalediego/dashboard-app",
+      "visibility": "private",
+      "score": 55,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-08-04T05:15:12Z",
+      "attention": [
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 31,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "fluent_river",
+      "fullName": "dinatalediego/fluent_river",
+      "url": "https://github.com/dinatalediego/fluent_river",
+      "visibility": "private",
+      "score": 53,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "PostgreSQL",
+      "tests": "Missing",
+      "lastActivity": "2026-06-16T13:28:49Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "docbrown_ironman_cockkpit_app_lab",
+      "fullName": "dinatalediego/docbrown_ironman_cockkpit_app_lab",
+      "url": "https://github.com/dinatalediego/docbrown_ironman_cockkpit_app_lab",
+      "visibility": "private",
+      "score": 53,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "SQLite",
+      "tests": "Missing",
+      "lastActivity": "2026-06-14T20:13:12Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 26,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "marketing_digital",
+      "fullName": "dinatalediego/marketing_digital",
+      "url": "https://github.com/dinatalediego/marketing_digital",
+      "visibility": "public",
+      "score": 50,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-08-23T12:40:19Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 24,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "owner_ceo_leadership",
+      "fullName": "dinatalediego/owner_ceo_leadership",
+      "url": "https://github.com/dinatalediego/owner_ceo_leadership",
+      "visibility": "private",
+      "score": 50,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-08-22T19:58:26Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 10,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "RealEstateDataAgent",
+      "fullName": "dinatalediego/RealEstateDataAgent",
+      "url": "https://github.com/dinatalediego/RealEstateDataAgent",
+      "visibility": "public",
+      "score": 49,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-05-20T08:10:44Z",
+      "attention": [
+        "Add CI workflow",
+        "Add operational README"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 116,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "mi-recomendacion-real-state",
+      "fullName": "dinatalediego/mi-recomendacion-real-state",
+      "url": "https://github.com/dinatalediego/mi-recomendacion-real-state",
+      "visibility": "private",
+      "score": 49,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-03-29T19:11:22Z",
+      "attention": [
+        "Add CI workflow",
+        "Add operational README"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 491,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "bot-command-center",
+      "fullName": "dinatalediego/bot-command-center",
+      "url": "https://github.com/dinatalediego/bot-command-center",
+      "visibility": "public",
+      "score": 44,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-05-25T09:15:27Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 11,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "econoagents_saas",
+      "fullName": "dinatalediego/econoagents_saas",
+      "url": "https://github.com/dinatalediego/econoagents_saas",
+      "visibility": "private",
+      "score": 44,
+      "health": "risk",
+      "type": "Analytics",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-03-08T04:12:13Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 26,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "economia-de-familias-peruanas",
+      "fullName": "dinatalediego/economia-de-familias-peruanas",
+      "url": "https://github.com/dinatalediego/economia-de-familias-peruanas",
+      "visibility": "private",
+      "score": 40,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2025-06-25T05:11:31Z",
+      "attention": [
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 143,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "ml-conversion-insights",
+      "fullName": "dinatalediego/ml-conversion-insights",
+      "url": "https://github.com/dinatalediego/ml-conversion-insights",
+      "visibility": "private",
+      "score": 40,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2025-06-17T07:31:06Z",
+      "attention": [
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 44,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "datadojo",
+      "fullName": "dinatalediego/datadojo",
+      "url": "https://github.com/dinatalediego/datadojo",
+      "visibility": "private",
+      "score": 36,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2025-06-27T07:43:27Z",
+      "attention": [
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 35,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "JavaScript"
       ]
     },
     {
@@ -858,6 +2796,16 @@
         "trackedEnvFile": false,
         "fileCount": 35,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": [
         "TypeScript"
@@ -901,6 +2849,16 @@
         "fileCount": 10,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": [
         "HTML"
       ]
@@ -942,6 +2900,16 @@
         "trackedEnvFile": false,
         "fileCount": 12,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": [
         "Python"
@@ -985,50 +2953,643 @@
         "fileCount": 8,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
-      "name": "dntl_engineering_os",
-      "fullName": "dinatalediego/dntl_engineering_os",
-      "url": "https://github.com/dinatalediego/dntl_engineering_os",
-      "visibility": "public",
-      "score": 29,
+      "name": "real-estate-recommender",
+      "fullName": "dinatalediego/real-estate-recommender",
+      "url": "https://github.com/dinatalediego/real-estate-recommender",
+      "visibility": "private",
+      "score": 35,
       "health": "risk",
-      "type": "App",
+      "type": "ML",
       "criticality": "Unclassified",
       "deployment": "Not detected",
       "database": "Not detected",
       "tests": "Missing",
-      "lastActivity": "2026-08-23T04:10:30Z",
+      "lastActivity": "2026-01-18T02:25:46Z",
       "attention": [
-        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 109,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Last_Time",
+      "fullName": "dinatalediego/Last_Time",
+      "url": "https://github.com/dinatalediego/Last_Time",
+      "visibility": "private",
+      "score": 35,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-12-31T04:08:02Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 6,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "calculo-nuevos-precios-al-cambiar-metraje-etl",
+      "fullName": "dinatalediego/calculo-nuevos-precios-al-cambiar-metraje-etl",
+      "url": "https://github.com/dinatalediego/calculo-nuevos-precios-al-cambiar-metraje-etl",
+      "visibility": "private",
+      "score": 35,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-12T15:43:51Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 7,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "crm-saas",
+      "fullName": "dinatalediego/crm-saas",
+      "url": "https://github.com/dinatalediego/crm-saas",
+      "visibility": "private",
+      "score": 35,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-08-07T04:36:15Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 224,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "PowerShell"
+      ]
+    },
+    {
+      "name": "infinte_tune",
+      "fullName": "dinatalediego/infinte_tune",
+      "url": "https://github.com/dinatalediego/infinte_tune",
+      "visibility": "private",
+      "score": 35,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-28T01:04:04Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 15,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "base-de-datos",
+      "fullName": "dinatalediego/base-de-datos",
+      "url": "https://github.com/dinatalediego/base-de-datos",
+      "visibility": "private",
+      "score": 35,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2025-06-12T23:44:31Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 31,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "la-gente-que-dice",
+      "fullName": "dinatalediego/la-gente-que-dice",
+      "url": "https://github.com/dinatalediego/la-gente-que-dice",
+      "visibility": "private",
+      "score": 35,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-09T00:36:22Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 24,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Flask-app",
+      "fullName": "dinatalediego/Flask-app",
+      "url": "https://github.com/dinatalediego/Flask-app",
+      "visibility": "private",
+      "score": 35,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-10-01T14:43:25Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 4,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "sudoku-api",
+      "fullName": "dinatalediego/sudoku-api",
+      "url": "https://github.com/dinatalediego/sudoku-api",
+      "visibility": "private",
+      "score": 35,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-10-02T01:41:55Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 6,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "real_state_cobranzas",
+      "fullName": "dinatalediego/real_state_cobranzas",
+      "url": "https://github.com/dinatalediego/real_state_cobranzas",
+      "visibility": "private",
+      "score": 34,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Redshift",
+      "tests": "Missing",
+      "lastActivity": "2026-06-25T01:09:17Z",
+      "attention": [
         "Add automated tests",
         "Add CI workflow",
         "Add operational README",
-        "No operability manifest detected"
+        "Tracked .env-like file detected"
       ],
       "components": {
-        "freshness": 25,
+        "freshness": 18,
         "documentation": 0,
         "automation": 0,
         "testing": 0,
-        "operability": 0,
-        "hygiene": 4
+        "operability": 10,
+        "hygiene": 6
       },
       "evidence": {
         "coverage": "full",
         "hasReadme": false,
         "workflowCount": 0,
         "hasTests": false,
-        "hasManifest": false,
+        "hasManifest": true,
         "hasDocker": false,
         "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 0,
+        "trackedEnvFile": true,
+        "fileCount": 432,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": [
-        "TypeScript"
+        "Python"
+      ]
+    },
+    {
+      "name": "real_state_bi_for_marketing",
+      "fullName": "dinatalediego/real_state_bi_for_marketing",
+      "url": "https://github.com/dinatalediego/real_state_bi_for_marketing",
+      "visibility": "private",
+      "score": 34,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Redshift",
+      "tests": "Missing",
+      "lastActivity": "2026-05-26T18:13:17Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 25,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "deu-chat-app-BE",
+      "fullName": "dinatalediego/deu-chat-app-BE",
+      "url": "https://github.com/dinatalediego/deu-chat-app-BE",
+      "visibility": "private",
+      "score": 31,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-09-29T06:35:13Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": true,
+        "fileCount": 5,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
       ]
     },
     {
@@ -1070,6 +3631,16 @@
         "trackedEnvFile": false,
         "fileCount": 0,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": []
     },
@@ -1113,6 +3684,171 @@
         "fileCount": 0,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "econo_crm",
+      "fullName": "dinatalediego/econo_crm",
+      "url": "https://github.com/dinatalediego/econo_crm",
+      "visibility": "private",
+      "score": 29,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-08-16T17:00:45Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "cygnus_absorcion_model",
+      "fullName": "dinatalediego/cygnus_absorcion_model",
+      "url": "https://github.com/dinatalediego/cygnus_absorcion_model",
+      "visibility": "private",
+      "score": 29,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-05-08T22:56:33Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 45,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "abandono-o-seguridad",
+      "fullName": "dinatalediego/abandono-o-seguridad",
+      "url": "https://github.com/dinatalediego/abandono-o-seguridad",
+      "visibility": "private",
+      "score": 28,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-06-12T20:46:03Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 2,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
@@ -1153,6 +3889,16 @@
         "trackedEnvFile": false,
         "fileCount": 2,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": [
         "HTML"
@@ -1197,6 +3943,544 @@
         "fileCount": 8,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "real_estate_analytics_stack",
+      "fullName": "dinatalediego/real_estate_analytics_stack",
+      "url": "https://github.com/dinatalediego/real_estate_analytics_stack",
+      "visibility": "private",
+      "score": 25,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Redshift",
+      "tests": "Missing",
+      "lastActivity": "2026-05-11T14:47:33Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 71,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "portfolio_strategy_ai",
+      "fullName": "dinatalediego/portfolio_strategy_ai",
+      "url": "https://github.com/dinatalediego/portfolio_strategy_ai",
+      "visibility": "private",
+      "score": 25,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-21T12:14:12Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 1,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "Sick-Api-and-app",
+      "fullName": "dinatalediego/Sick-Api-and-app",
+      "url": "https://github.com/dinatalediego/Sick-Api-and-app",
+      "visibility": "private",
+      "score": 25,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-09-29T04:22:36Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 4,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "German-chatbot",
+      "fullName": "dinatalediego/German-chatbot",
+      "url": "https://github.com/dinatalediego/German-chatbot",
+      "visibility": "private",
+      "score": 25,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-09-29T04:37:41Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 5,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "DEU-CHAT-APP",
+      "fullName": "dinatalediego/DEU-CHAT-APP",
+      "url": "https://github.com/dinatalediego/DEU-CHAT-APP",
+      "visibility": "private",
+      "score": 25,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-09-30T06:43:43Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 4,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "CSS"
+      ]
+    },
+    {
+      "name": "Recomendaciones-DataLee",
+      "fullName": "dinatalediego/Recomendaciones-DataLee",
+      "url": "https://github.com/dinatalediego/Recomendaciones-DataLee",
+      "visibility": "private",
+      "score": 25,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-11-04T00:08:07Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 7,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "university_ml",
+      "fullName": "dinatalediego/university_ml",
+      "url": "https://github.com/dinatalediego/university_ml",
+      "visibility": "private",
+      "score": 22,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-07-03T16:15:05Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "real_estate_rag",
+      "fullName": "dinatalediego/real_estate_rag",
+      "url": "https://github.com/dinatalediego/real_estate_rag",
+      "visibility": "private",
+      "score": 22,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-06-22T07:20:15Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "Eco-Dashboard",
+      "fullName": "dinatalediego/Eco-Dashboard",
+      "url": "https://github.com/dinatalediego/Eco-Dashboard",
+      "visibility": "private",
+      "score": 21,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-11-04T04:18:46Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 6,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Web-Dashboard",
+      "fullName": "dinatalediego/Web-Dashboard",
+      "url": "https://github.com/dinatalediego/Web-Dashboard",
+      "visibility": "private",
+      "score": 21,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-11-04T04:41:55Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Repository is stale",
+        "No operability manifest detected",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 6,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": [
         "JavaScript"
       ]
@@ -1239,6 +4523,16 @@
         "trackedEnvFile": false,
         "fileCount": 34,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": [
         "Jupyter Notebook"
@@ -1283,6 +4577,16 @@
         "fileCount": 88,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": [
         "Jupyter Notebook"
       ]
@@ -1325,6 +4629,16 @@
         "trackedEnvFile": false,
         "fileCount": 30,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": [
         "Jupyter Notebook"
@@ -1369,8 +4683,337 @@
         "fileCount": 6,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": [
         "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "Boletas_enviadas",
+      "fullName": "dinatalediego/Boletas_enviadas",
+      "url": "https://github.com/dinatalediego/Boletas_enviadas",
+      "visibility": "private",
+      "score": 20,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-01-18T01:31:27Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 99,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "ml_redshift",
+      "fullName": "dinatalediego/ml_redshift",
+      "url": "https://github.com/dinatalediego/ml_redshift",
+      "visibility": "private",
+      "score": 20,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Redshift",
+      "tests": "Missing",
+      "lastActivity": "2025-11-30T06:12:37Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 62,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "nehmen-force",
+      "fullName": "dinatalediego/nehmen-force",
+      "url": "https://github.com/dinatalediego/nehmen-force",
+      "visibility": "private",
+      "score": 20,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-30T19:43:09Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20170,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "proyecto-read-loud",
+      "fullName": "dinatalediego/proyecto-read-loud",
+      "url": "https://github.com/dinatalediego/proyecto-read-loud",
+      "visibility": "private",
+      "score": 20,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-08-02T15:37:42Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 10,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "PowerShell"
+      ]
+    },
+    {
+      "name": "crewup_system",
+      "fullName": "dinatalediego/crewup_system",
+      "url": "https://github.com/dinatalediego/crewup_system",
+      "visibility": "private",
+      "score": 20,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2025-07-30T16:27:04Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 1069,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "freedom_notes",
+      "fullName": "dinatalediego/freedom_notes",
+      "url": "https://github.com/dinatalediego/freedom_notes",
+      "visibility": "private",
+      "score": 16,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-02-02T12:51:15Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "Tracked .env-like file detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": true,
+        "fileCount": 15,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
       ]
     },
     {
@@ -1412,6 +5055,16 @@
         "trackedEnvFile": false,
         "fileCount": 0,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": []
     },
@@ -1455,6 +5108,16 @@
         "fileCount": 0,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
@@ -1497,6 +5160,120 @@
         "fileCount": 0,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "lima-real-estate-map",
+      "fullName": "dinatalediego/lima-real-estate-map",
+      "url": "https://github.com/dinatalediego/lima-real-estate-map",
+      "visibility": "private",
+      "score": 13,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-05-18T01:11:02Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "machine_learning_models",
+      "fullName": "dinatalediego/machine_learning_models",
+      "url": "https://github.com/dinatalediego/machine_learning_models",
+      "visibility": "private",
+      "score": 13,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-05-16T19:26:54Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
@@ -1538,6 +5315,16 @@
         "trackedEnvFile": false,
         "fileCount": 14,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": [
         "Python"
@@ -1583,6 +5370,16 @@
         "fileCount": 1,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
@@ -1624,6 +5421,16 @@
         "trackedEnvFile": false,
         "fileCount": 4,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": [
         "HTML"
@@ -1669,9 +5476,447 @@
         "fileCount": 3,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": [
         "TypeScript"
       ]
+    },
+    {
+      "name": "To_Do_Master",
+      "fullName": "dinatalediego/To_Do_Master",
+      "url": "https://github.com/dinatalediego/To_Do_Master",
+      "visibility": "private",
+      "score": 10,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-12-30T01:58:21Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 13,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "PowerShell"
+      ]
+    },
+    {
+      "name": "si_model",
+      "fullName": "dinatalediego/si_model",
+      "url": "https://github.com/dinatalediego/si_model",
+      "visibility": "private",
+      "score": 10,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-30T07:54:23Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ]
+    },
+    {
+      "name": "predecir-machine-learning",
+      "fullName": "dinatalediego/predecir-machine-learning",
+      "url": "https://github.com/dinatalediego/predecir-machine-learning",
+      "visibility": "private",
+      "score": 10,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-08-14T13:28:08Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 73,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "name": "deu-sprechen-1",
+      "fullName": "dinatalediego/deu-sprechen-1",
+      "url": "https://github.com/dinatalediego/deu-sprechen-1",
+      "visibility": "private",
+      "score": 10,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-30T20:28:33Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 68,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "help_as_much_as_possible_for_money",
+      "fullName": "dinatalediego/help_as_much_as_possible_for_money",
+      "url": "https://github.com/dinatalediego/help_as_much_as_possible_for_money",
+      "visibility": "private",
+      "score": 10,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-05T22:34:43Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 10,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "IBM-Data-Science",
+      "fullName": "dinatalediego/IBM-Data-Science",
+      "url": "https://github.com/dinatalediego/IBM-Data-Science",
+      "visibility": "private",
+      "score": 10,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-02-10T17:46:09Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 1,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "name": "helloword_git",
+      "fullName": "dinatalediego/helloword_git",
+      "url": "https://github.com/dinatalediego/helloword_git",
+      "visibility": "private",
+      "score": 10,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2022-04-19T06:42:47Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 3,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "Diego-DN-s-Portafolio",
+      "fullName": "dinatalediego/Diego-DN-s-Portafolio",
+      "url": "https://github.com/dinatalediego/Diego-DN-s-Portafolio",
+      "visibility": "private",
+      "score": 10,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2021-04-04T18:59:43Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 13,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
     },
     {
       "name": "help_inversion",
@@ -1713,6 +5958,16 @@
         "trackedEnvFile": false,
         "fileCount": 0,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": []
     },
@@ -1757,6 +6012,16 @@
         "fileCount": 0,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
@@ -1799,6 +6064,16 @@
         "trackedEnvFile": false,
         "fileCount": 0,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": []
     },
@@ -1843,6 +6118,16 @@
         "fileCount": 0,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
@@ -1885,6 +6170,16 @@
         "trackedEnvFile": false,
         "fileCount": 0,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": []
     },
@@ -1929,6 +6224,16 @@
         "fileCount": 0,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
@@ -1972,6 +6277,16 @@
         "fileCount": 0,
         "recursiveTree": true
       },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
       "tags": []
     },
     {
@@ -2014,6 +6329,1500 @@
         "trackedEnvFile": false,
         "fileCount": 0,
         "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "mvp_recomender",
+      "fullName": "dinatalediego/mvp_recomender",
+      "url": "https://github.com/dinatalediego/mvp_recomender",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-02-11T05:55:50Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "Pricing-Engine",
+      "fullName": "dinatalediego/Pricing-Engine",
+      "url": "https://github.com/dinatalediego/Pricing-Engine",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-30T07:57:49Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "pricing-regression-lab",
+      "fullName": "dinatalediego/pricing-regression-lab",
+      "url": "https://github.com/dinatalediego/pricing-regression-lab",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-15T05:08:58Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "cygnusbi-reportes-comerciales",
+      "fullName": "dinatalediego/cygnusbi-reportes-comerciales",
+      "url": "https://github.com/dinatalediego/cygnusbi-reportes-comerciales",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "Analytics",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-14T14:54:50Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "13_nov_2025",
+      "fullName": "dinatalediego/13_nov_2025",
+      "url": "https://github.com/dinatalediego/13_nov_2025",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-14T04:00:30Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "inmoBI",
+      "fullName": "dinatalediego/inmoBI",
+      "url": "https://github.com/dinatalediego/inmoBI",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "Analytics",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-07T04:02:04Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "enahoInsights",
+      "fullName": "dinatalediego/enahoInsights",
+      "url": "https://github.com/dinatalediego/enahoInsights",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-07T04:01:45Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "ecoRecomender",
+      "fullName": "dinatalediego/ecoRecomender",
+      "url": "https://github.com/dinatalediego/ecoRecomender",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-11-07T04:01:33Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "proyecto-forecast-comercial",
+      "fullName": "dinatalediego/proyecto-forecast-comercial",
+      "url": "https://github.com/dinatalediego/proyecto-forecast-comercial",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-09-01T03:13:41Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "el_ciclo_cygnus_con_diego",
+      "fullName": "dinatalediego/el_ciclo_cygnus_con_diego",
+      "url": "https://github.com/dinatalediego/el_ciclo_cygnus_con_diego",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-08-21T19:39:00Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "pc_operativo",
+      "fullName": "dinatalediego/pc_operativo",
+      "url": "https://github.com/dinatalediego/pc_operativo",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-30T21:41:19Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "crewup_onboarding",
+      "fullName": "dinatalediego/crewup_onboarding",
+      "url": "https://github.com/dinatalediego/crewup_onboarding",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-07-29T15:40:43Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "CrewUp-Agent",
+      "fullName": "dinatalediego/CrewUp-Agent",
+      "url": "https://github.com/dinatalediego/CrewUp-Agent",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-07-18T10:46:11Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "data-de-mercado",
+      "fullName": "dinatalediego/data-de-mercado",
+      "url": "https://github.com/dinatalediego/data-de-mercado",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-28T15:14:11Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "deutsch-data-sprechen",
+      "fullName": "dinatalediego/deutsch-data-sprechen",
+      "url": "https://github.com/dinatalediego/deutsch-data-sprechen",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-13T04:12:36Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "inmobiliaria-dashboard",
+      "fullName": "dinatalediego/inmobiliaria-dashboard",
+      "url": "https://github.com/dinatalediego/inmobiliaria-dashboard",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "Analytics",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-10T03:10:03Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "site",
+      "fullName": "dinatalediego/site",
+      "url": "https://github.com/dinatalediego/site",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-03T18:46:39Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "AI-R-eality",
+      "fullName": "dinatalediego/AI-R-eality",
+      "url": "https://github.com/dinatalediego/AI-R-eality",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-06-03T17:28:52Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "my_vision_to_bi",
+      "fullName": "dinatalediego/my_vision_to_bi",
+      "url": "https://github.com/dinatalediego/my_vision_to_bi",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "Analytics",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-22T18:31:49Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "RapGeniusAI",
+      "fullName": "dinatalediego/RapGeniusAI",
+      "url": "https://github.com/dinatalediego/RapGeniusAI",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-20T05:01:47Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "Stocks_analysis",
+      "fullName": "dinatalediego/Stocks_analysis",
+      "url": "https://github.com/dinatalediego/Stocks_analysis",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-16T06:14:18Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "github-demo",
+      "fullName": "dinatalediego/github-demo",
+      "url": "https://github.com/dinatalediego/github-demo",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-05-14T01:03:46Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "Sudoku",
+      "fullName": "dinatalediego/Sudoku",
+      "url": "https://github.com/dinatalediego/Sudoku",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-10-02T00:28:35Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "sudoku-local",
+      "fullName": "dinatalediego/sudoku-local",
+      "url": "https://github.com/dinatalediego/sudoku-local",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-10-02T02:32:28Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "SVC_DR",
+      "fullName": "dinatalediego/SVC_DR",
+      "url": "https://github.com/dinatalediego/SVC_DR",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-11-17T22:36:59Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "personal-habits-tracker",
+      "fullName": "dinatalediego/personal-habits-tracker",
+      "url": "https://github.com/dinatalediego/personal-habits-tracker",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "Analytics",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2024-11-17T22:45:58Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "The-Proyects",
+      "fullName": "dinatalediego/The-Proyects",
+      "url": "https://github.com/dinatalediego/The-Proyects",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2022-04-16T20:11:55Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": []
+    },
+    {
+      "name": "Prueba",
+      "fullName": "dinatalediego/Prueba",
+      "url": "https://github.com/dinatalediego/Prueba",
+      "visibility": "private",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2020-12-11T00:43:01Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
       },
       "tags": []
     }
