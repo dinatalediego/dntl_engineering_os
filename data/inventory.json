@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-08-28T23:03:06.335Z",
+  "generatedAt": "2026-08-29T17:08:53.062Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -10850,7 +10850,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-08-27T22:58:18Z",
+      "lastActivity": "2026-08-28T23:03:14Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -10880,34 +10880,48 @@
         "label": "in_progress",
         "workflowCount": 1,
         "recentRuns": 10,
-        "successRateLast10": 89,
+        "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 33219035547,
+          "id": 33264840749,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-08-28T23:02:43Z",
-          "startedAt": "2026-08-28T23:02:43Z",
-          "updatedAt": "2026-08-28T23:02:46Z",
+          "createdAt": "2026-08-29T17:08:24Z",
+          "startedAt": "2026-08-29T17:08:24Z",
+          "updatedAt": "2026-08-29T17:08:27Z",
           "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33219035547",
-          "runNumber": 23
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33264840749",
+          "runNumber": 24
         },
         "runs": [
           {
-            "id": 33219035547,
+            "id": 33264840749,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-08-29T17:08:24Z",
+            "startedAt": "2026-08-29T17:08:24Z",
+            "updatedAt": "2026-08-29T17:08:27Z",
+            "durationSeconds": 3,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33264840749",
+            "runNumber": 24
+          },
+          {
+            "id": 33219035547,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-08-28T23:02:43Z",
             "startedAt": "2026-08-28T23:02:43Z",
-            "updatedAt": "2026-08-28T23:02:46Z",
-            "durationSeconds": 3,
+            "updatedAt": "2026-08-28T23:03:17Z",
+            "durationSeconds": 34,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33219035547",
             "runNumber": 23
           },
@@ -11022,20 +11036,6 @@
             "durationSeconds": 48,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643228963",
             "runNumber": 15
-          },
-          {
-            "id": 32643215883,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "cancelled",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-23T13:43:28Z",
-            "startedAt": "2026-08-23T13:43:28Z",
-            "updatedAt": "2026-08-23T13:43:49Z",
-            "durationSeconds": 21,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643215883",
-            "runNumber": 14
           }
         ]
       },
@@ -12078,7 +12078,7 @@
       "deployment": "GitHub Actions",
       "database": "Redshift",
       "tests": "Detected",
-      "lastActivity": "2026-08-28T22:56:18Z",
+      "lastActivity": "2026-08-28T23:26:33Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12111,20 +12111,62 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 33218665461,
+          "id": 33220442741,
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
           "event": "pull_request",
           "branch": "feat/raw-mercado-loader",
-          "createdAt": "2026-08-28T22:56:28Z",
-          "startedAt": "2026-08-28T22:56:28Z",
-          "updatedAt": "2026-08-28T22:57:17Z",
-          "durationSeconds": 49,
-          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33218665461",
-          "runNumber": 79
+          "createdAt": "2026-08-28T23:26:37Z",
+          "startedAt": "2026-08-28T23:26:37Z",
+          "updatedAt": "2026-08-28T23:27:19Z",
+          "durationSeconds": 42,
+          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33220442741",
+          "runNumber": 82
         },
         "runs": [
+          {
+            "id": 33220442741,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/raw-mercado-loader",
+            "createdAt": "2026-08-28T23:26:37Z",
+            "startedAt": "2026-08-28T23:26:37Z",
+            "updatedAt": "2026-08-28T23:27:19Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33220442741",
+            "runNumber": 82
+          },
+          {
+            "id": 33220395561,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/raw-mercado-loader",
+            "createdAt": "2026-08-28T23:25:42Z",
+            "startedAt": "2026-08-28T23:25:42Z",
+            "updatedAt": "2026-08-28T23:26:28Z",
+            "durationSeconds": 46,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33220395561",
+            "runNumber": 81
+          },
+          {
+            "id": 33220226389,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/raw-mercado-loader",
+            "createdAt": "2026-08-28T23:22:39Z",
+            "startedAt": "2026-08-28T23:22:39Z",
+            "updatedAt": "2026-08-28T23:23:22Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33220226389",
+            "runNumber": 80
+          },
           {
             "id": 33218665461,
             "name": "CI",
@@ -12222,48 +12264,6 @@
             "durationSeconds": 44,
             "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33181725627",
             "runNumber": 73
-          },
-          {
-            "id": 33181703833,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/unit-semantics-absorption-scope-v11",
-            "createdAt": "2026-08-28T14:44:45Z",
-            "startedAt": "2026-08-28T14:44:45Z",
-            "updatedAt": "2026-08-28T14:45:22Z",
-            "durationSeconds": 37,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33181703833",
-            "runNumber": 72
-          },
-          {
-            "id": 33181575369,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/unit-semantics-absorption-scope-v11",
-            "createdAt": "2026-08-28T14:43:12Z",
-            "startedAt": "2026-08-28T14:43:12Z",
-            "updatedAt": "2026-08-28T14:44:03Z",
-            "durationSeconds": 51,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33181575369",
-            "runNumber": 71
-          },
-          {
-            "id": 33181541176,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/unit-semantics-absorption-scope-v11",
-            "createdAt": "2026-08-28T14:42:47Z",
-            "startedAt": "2026-08-28T14:42:47Z",
-            "updatedAt": "2026-08-28T14:43:31Z",
-            "durationSeconds": 44,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33181541176",
-            "runNumber": 70
           }
         ]
       },
