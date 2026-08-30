@@ -1,12 +1,12 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-08-29T17:08:53.062Z",
+  "generatedAt": "2026-08-30T17:30:11.760Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
   "coverage": {
-    "discovered": 152,
-    "scored": 152,
+    "discovered": 153,
+    "scored": 153,
     "unknown": 0
   },
   "portfolioScore": 34,
@@ -17,12 +17,12 @@
     "yellow": 1,
     "unknown": 18,
     "idle": 3,
-    "notConfigured": 117
+    "notConfigured": 118
   },
   "attentionSummary": {
     "critical": 14,
     "high": 7,
-    "medium": 115,
+    "medium": 116,
     "low": 11,
     "clear": 5
   },
@@ -2307,6 +2307,74 @@
         "hasVercelConfig": false,
         "trackedEnvFile": false,
         "fileCount": 24,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dntl_decision_memory",
+      "fullName": "dinatalediego/dntl_decision_memory",
+      "url": "https://github.com/dinatalediego/dntl_decision_memory",
+      "visibility": "private",
+      "score": 50,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-08-30T10:04:19Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 1,
         "recursiveTree": true
       },
       "actions": {
@@ -10850,7 +10918,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-08-28T23:03:14Z",
+      "lastActivity": "2026-08-29T17:09:02Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -10883,31 +10951,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 33264840749,
+          "id": 33325404811,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-08-29T17:08:24Z",
-          "startedAt": "2026-08-29T17:08:24Z",
-          "updatedAt": "2026-08-29T17:08:27Z",
-          "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33264840749",
-          "runNumber": 24
+          "createdAt": "2026-08-30T17:29:41Z",
+          "startedAt": "2026-08-30T17:29:41Z",
+          "updatedAt": "2026-08-30T17:29:45Z",
+          "durationSeconds": 4,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33325404811",
+          "runNumber": 25
         },
         "runs": [
           {
-            "id": 33264840749,
+            "id": 33325404811,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-08-30T17:29:41Z",
+            "startedAt": "2026-08-30T17:29:41Z",
+            "updatedAt": "2026-08-30T17:29:45Z",
+            "durationSeconds": 4,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33325404811",
+            "runNumber": 25
+          },
+          {
+            "id": 33264840749,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-08-29T17:08:24Z",
             "startedAt": "2026-08-29T17:08:24Z",
-            "updatedAt": "2026-08-29T17:08:27Z",
-            "durationSeconds": 3,
+            "updatedAt": "2026-08-29T17:09:08Z",
+            "durationSeconds": 44,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33264840749",
             "runNumber": 24
           },
@@ -11022,20 +11104,6 @@
             "durationSeconds": 33,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643374530",
             "runNumber": 16
-          },
-          {
-            "id": 32643228963,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-23T13:43:42Z",
-            "startedAt": "2026-08-23T13:43:42Z",
-            "updatedAt": "2026-08-23T13:44:30Z",
-            "durationSeconds": 48,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32643228963",
-            "runNumber": 15
           }
         ]
       },
