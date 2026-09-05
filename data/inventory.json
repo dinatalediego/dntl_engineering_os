@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-04T16:53:00.275Z",
+  "generatedAt": "2026-09-05T16:05:27.667Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -12,17 +12,17 @@
   "portfolioScore": 35,
   "actionsSummary": {
     "configured": 36,
-    "green": 11,
+    "green": 10,
     "red": 3,
     "yellow": 1,
     "unknown": 18,
-    "idle": 3,
+    "idle": 4,
     "notConfigured": 121
   },
   "attentionSummary": {
     "critical": 14,
-    "high": 8,
-    "medium": 118,
+    "high": 9,
+    "medium": 117,
     "low": 12,
     "clear": 5
   },
@@ -1914,6 +1914,81 @@
       }
     },
     {
+      "name": "crew-up",
+      "fullName": "dinatalediego/crew-up",
+      "url": "https://github.com/dinatalediego/crew-up",
+      "visibility": "public",
+      "score": 45,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2025-07-19T14:35:22Z",
+      "attention": [
+        "Add automated tests",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "idle",
+        "color": "gray",
+        "label": "Configured · no runs",
+        "workflowCount": 1,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 53,
+        "severity": "high",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          },
+          {
+            "points": 8,
+            "reason": "GitHub Actions is configured but has no recorded runs",
+            "code": "actions:idle"
+          }
+        ]
+      }
+    },
+    {
       "name": "Match_Pagos_CRM",
       "fullName": "dinatalediego/Match_Pagos_CRM",
       "url": "https://github.com/dinatalediego/Match_Pagos_CRM",
@@ -2614,230 +2689,6 @@
         "failedRecentCount": 0
       },
       "tags": [],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
-      "name": "crew-up",
-      "fullName": "dinatalediego/crew-up",
-      "url": "https://github.com/dinatalediego/crew-up",
-      "visibility": "public",
-      "score": 45,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2025-07-19T14:35:22Z",
-      "attention": [
-        "Add automated tests",
-        "Repository is stale",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 0,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 20,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 1,
-        "recentRuns": 10,
-        "successRateLast10": 90,
-        "failedRecentCount": 1,
-        "latest": {
-          "id": 16389697185,
-          "name": "🚀 Deploy MkDocs to Pages",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "push",
-          "branch": "main",
-          "createdAt": "2025-07-19T14:35:23Z",
-          "startedAt": "2025-07-19T14:35:23Z",
-          "updatedAt": "2026-08-25T19:59:45Z",
-          "durationSeconds": 34752262,
-          "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389697185",
-          "runNumber": 14
-        },
-        "runs": [
-          {
-            "id": 16389697185,
-            "name": "🚀 Deploy MkDocs to Pages",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2025-07-19T14:35:23Z",
-            "startedAt": "2025-07-19T14:35:23Z",
-            "updatedAt": "2026-08-25T19:59:45Z",
-            "durationSeconds": 34752262,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389697185",
-            "runNumber": 14
-          },
-          {
-            "id": 16389697145,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2025-07-19T14:35:23Z",
-            "startedAt": "2025-07-19T14:35:23Z",
-            "updatedAt": "2026-08-25T19:59:45Z",
-            "durationSeconds": 34752262,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389697145",
-            "runNumber": 11
-          },
-          {
-            "id": 16389442553,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2025-07-19T14:04:44Z",
-            "startedAt": "2025-07-19T14:04:44Z",
-            "updatedAt": "2026-08-25T19:58:43Z",
-            "durationSeconds": 34754039,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16389442553",
-            "runNumber": 10
-          },
-          {
-            "id": 16384179527,
-            "name": "🚀 Deploy MkDocs to Pages",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2025-07-19T02:54:35Z",
-            "startedAt": "2025-07-19T02:54:35Z",
-            "updatedAt": "2026-08-25T19:29:42Z",
-            "durationSeconds": 34792507,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16384179527",
-            "runNumber": 13
-          },
-          {
-            "id": 16384060035,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "dynamic",
-            "branch": "gh-pages",
-            "createdAt": "2025-07-19T02:40:21Z",
-            "startedAt": "2025-07-19T02:40:21Z",
-            "updatedAt": "2026-08-25T19:28:46Z",
-            "durationSeconds": 34793305,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16384060035",
-            "runNumber": 9
-          },
-          {
-            "id": 16384027384,
-            "name": "🚀 Deploy MkDocs to Pages",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2025-07-19T02:36:42Z",
-            "startedAt": "2025-07-19T02:36:42Z",
-            "updatedAt": "2026-08-25T19:28:45Z",
-            "durationSeconds": 34793523,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16384027384",
-            "runNumber": 12
-          },
-          {
-            "id": 16384027340,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2025-07-19T02:36:42Z",
-            "startedAt": "2025-07-19T02:36:42Z",
-            "updatedAt": "2026-08-25T19:28:44Z",
-            "durationSeconds": 34793522,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16384027340",
-            "runNumber": 8
-          },
-          {
-            "id": 16383944557,
-            "name": "🚀 Deploy MkDocs to Pages",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2025-07-19T02:26:11Z",
-            "startedAt": "2025-07-19T02:26:11Z",
-            "updatedAt": "2026-08-25T19:27:46Z",
-            "durationSeconds": 34794095,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16383944557",
-            "runNumber": 11
-          },
-          {
-            "id": 16383944515,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2025-07-19T02:26:11Z",
-            "startedAt": "2025-07-19T02:26:11Z",
-            "updatedAt": "2026-08-25T19:27:46Z",
-            "durationSeconds": 34794095,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16383944515",
-            "runNumber": 7
-          },
-          {
-            "id": 16383844535,
-            "name": "🚀 Deploy MkDocs to Pages",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2025-07-19T02:12:53Z",
-            "startedAt": "2025-07-19T02:12:53Z",
-            "updatedAt": "2026-08-25T19:27:43Z",
-            "durationSeconds": 34794890,
-            "url": "https://github.com/dinatalediego/crew-up/actions/runs/16383844535",
-            "runNumber": 10
-          }
-        ]
-      },
-      "tags": [
-        "Python"
-      ],
       "priority": {
         "score": 45,
         "severity": "medium",
@@ -11348,7 +11199,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-03T17:03:28Z",
+      "lastActivity": "2026-09-04T16:53:09Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -11381,31 +11232,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 33897542318,
+          "id": 33976746125,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-04T16:52:33Z",
-          "startedAt": "2026-09-04T16:52:33Z",
-          "updatedAt": "2026-09-04T16:52:36Z",
-          "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33897542318",
-          "runNumber": 30
+          "createdAt": "2026-09-05T16:04:57Z",
+          "startedAt": "2026-09-05T16:04:57Z",
+          "updatedAt": "2026-09-05T16:05:01Z",
+          "durationSeconds": 4,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33976746125",
+          "runNumber": 31
         },
         "runs": [
           {
-            "id": 33897542318,
+            "id": 33976746125,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-05T16:04:57Z",
+            "startedAt": "2026-09-05T16:04:57Z",
+            "updatedAt": "2026-09-05T16:05:01Z",
+            "durationSeconds": 4,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33976746125",
+            "runNumber": 31
+          },
+          {
+            "id": 33897542318,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-04T16:52:33Z",
             "startedAt": "2026-09-04T16:52:33Z",
-            "updatedAt": "2026-09-04T16:52:36Z",
-            "durationSeconds": 3,
+            "updatedAt": "2026-09-04T16:53:12Z",
+            "durationSeconds": 39,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33897542318",
             "runNumber": 30
           },
@@ -11520,20 +11385,6 @@
             "durationSeconds": 47,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33124506842",
             "runNumber": 22
-          },
-          {
-            "id": 32977952443,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-08-26T14:03:40Z",
-            "startedAt": "2026-08-26T14:03:40Z",
-            "updatedAt": "2026-08-26T14:04:21Z",
-            "durationSeconds": 41,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/32977952443",
-            "runNumber": 21
           }
         ]
       },
@@ -12576,7 +12427,7 @@
       "deployment": "GitHub Actions",
       "database": "Redshift",
       "tests": "Detected",
-      "lastActivity": "2026-08-31T20:52:24Z",
+      "lastActivity": "2026-09-04T21:40:34Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12609,20 +12460,146 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 33438371988,
+          "id": 33922184835,
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
           "event": "pull_request",
           "branch": "feat/raw-mercado-loader",
-          "createdAt": "2026-08-31T20:52:29Z",
-          "startedAt": "2026-08-31T20:52:29Z",
-          "updatedAt": "2026-08-31T20:53:16Z",
-          "durationSeconds": 47,
-          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33438371988",
-          "runNumber": 93
+          "createdAt": "2026-09-04T21:40:39Z",
+          "startedAt": "2026-09-04T21:40:39Z",
+          "updatedAt": "2026-09-04T21:41:28Z",
+          "durationSeconds": 49,
+          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33922184835",
+          "runNumber": 102
         },
         "runs": [
+          {
+            "id": 33922184835,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/raw-mercado-loader",
+            "createdAt": "2026-09-04T21:40:39Z",
+            "startedAt": "2026-09-04T21:40:39Z",
+            "updatedAt": "2026-09-04T21:41:28Z",
+            "durationSeconds": 49,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33922184835",
+            "runNumber": 102
+          },
+          {
+            "id": 33922160060,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/raw-mercado-loader",
+            "createdAt": "2026-09-04T21:40:19Z",
+            "startedAt": "2026-09-04T21:40:19Z",
+            "updatedAt": "2026-09-04T21:41:08Z",
+            "durationSeconds": 49,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33922160060",
+            "runNumber": 101
+          },
+          {
+            "id": 33920821477,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/raw-mercado-loader",
+            "createdAt": "2026-09-04T21:22:51Z",
+            "startedAt": "2026-09-04T21:22:51Z",
+            "updatedAt": "2026-09-04T21:23:29Z",
+            "durationSeconds": 38,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33920821477",
+            "runNumber": 100
+          },
+          {
+            "id": 33920802016,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/raw-mercado-loader",
+            "createdAt": "2026-09-04T21:22:37Z",
+            "startedAt": "2026-09-04T21:22:37Z",
+            "updatedAt": "2026-09-04T21:23:27Z",
+            "durationSeconds": 50,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33920802016",
+            "runNumber": 99
+          },
+          {
+            "id": 33920766269,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/raw-mercado-loader",
+            "createdAt": "2026-09-04T21:22:08Z",
+            "startedAt": "2026-09-04T21:22:08Z",
+            "updatedAt": "2026-09-04T21:22:55Z",
+            "durationSeconds": 47,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33920766269",
+            "runNumber": 98
+          },
+          {
+            "id": 33916229021,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/pbi-cygnus-unidades-dw",
+            "createdAt": "2026-09-04T20:26:25Z",
+            "startedAt": "2026-09-04T20:26:25Z",
+            "updatedAt": "2026-09-04T20:27:11Z",
+            "durationSeconds": 46,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33916229021",
+            "runNumber": 97
+          },
+          {
+            "id": 33916209425,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/pbi-cygnus-unidades-dw",
+            "createdAt": "2026-09-04T20:26:11Z",
+            "startedAt": "2026-09-04T20:26:11Z",
+            "updatedAt": "2026-09-04T20:27:00Z",
+            "durationSeconds": 49,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33916209425",
+            "runNumber": 96
+          },
+          {
+            "id": 33916194392,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/pbi-cygnus-unidades-dw",
+            "createdAt": "2026-09-04T20:25:59Z",
+            "startedAt": "2026-09-04T20:25:59Z",
+            "updatedAt": "2026-09-04T20:26:55Z",
+            "durationSeconds": 56,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33916194392",
+            "runNumber": 95
+          },
+          {
+            "id": 33915646343,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/pbi-cygnus-unidades-dw",
+            "createdAt": "2026-09-04T20:19:26Z",
+            "startedAt": "2026-09-04T20:19:26Z",
+            "updatedAt": "2026-09-04T20:20:08Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33915646343",
+            "runNumber": 94
+          },
           {
             "id": 33438371988,
             "name": "CI",
@@ -12636,132 +12613,6 @@
             "durationSeconds": 47,
             "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33438371988",
             "runNumber": 93
-          },
-          {
-            "id": 33438358801,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:52:20Z",
-            "startedAt": "2026-08-31T20:52:20Z",
-            "updatedAt": "2026-08-31T20:53:04Z",
-            "durationSeconds": 44,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33438358801",
-            "runNumber": 92
-          },
-          {
-            "id": 33438333662,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:52:04Z",
-            "startedAt": "2026-08-31T20:52:04Z",
-            "updatedAt": "2026-08-31T20:52:51Z",
-            "durationSeconds": 47,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33438333662",
-            "runNumber": 91
-          },
-          {
-            "id": 33438302344,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:51:42Z",
-            "startedAt": "2026-08-31T20:51:42Z",
-            "updatedAt": "2026-08-31T20:52:27Z",
-            "durationSeconds": 45,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33438302344",
-            "runNumber": 90
-          },
-          {
-            "id": 33437071760,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:37:45Z",
-            "startedAt": "2026-08-31T20:37:45Z",
-            "updatedAt": "2026-08-31T20:38:28Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33437071760",
-            "runNumber": 89
-          },
-          {
-            "id": 33437057161,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:37:35Z",
-            "startedAt": "2026-08-31T20:37:35Z",
-            "updatedAt": "2026-08-31T20:38:18Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33437057161",
-            "runNumber": 88
-          },
-          {
-            "id": 33437041693,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:37:24Z",
-            "startedAt": "2026-08-31T20:37:24Z",
-            "updatedAt": "2026-08-31T20:38:13Z",
-            "durationSeconds": 49,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33437041693",
-            "runNumber": 87
-          },
-          {
-            "id": 33437010205,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:37:03Z",
-            "startedAt": "2026-08-31T20:37:03Z",
-            "updatedAt": "2026-08-31T20:37:50Z",
-            "durationSeconds": 47,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33437010205",
-            "runNumber": 86
-          },
-          {
-            "id": 33436111386,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:27:12Z",
-            "startedAt": "2026-08-31T20:27:12Z",
-            "updatedAt": "2026-08-31T20:27:56Z",
-            "durationSeconds": 44,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33436111386",
-            "runNumber": 85
-          },
-          {
-            "id": 33435932625,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/raw-mercado-loader",
-            "createdAt": "2026-08-31T20:25:15Z",
-            "startedAt": "2026-08-31T20:25:15Z",
-            "updatedAt": "2026-08-31T20:25:58Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/33435932625",
-            "runNumber": 84
           }
         ]
       },
