@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-09T17:10:13.257Z",
+  "generatedAt": "2026-09-10T17:00:02.537Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -12,19 +12,19 @@
   "portfolioScore": 35,
   "actionsSummary": {
     "configured": 36,
-    "green": 10,
-    "red": 3,
+    "green": 8,
+    "red": 5,
     "yellow": 1,
     "unknown": 18,
     "idle": 4,
     "notConfigured": 125
   },
   "attentionSummary": {
-    "critical": 14,
-    "high": 9,
+    "critical": 15,
+    "high": 10,
     "medium": 119,
-    "low": 12,
-    "clear": 7
+    "low": 11,
+    "clear": 6
   },
   "repositories": [
     {
@@ -554,6 +554,229 @@
             "points": 10,
             "reason": "Automated tests are missing",
             "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dntl_datos",
+      "fullName": "dinatalediego/dntl_datos",
+      "url": "https://github.com/dinatalediego/dntl_datos",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-21T14:51:01Z",
+      "attention": [
+        "GitHub Actions failing: Public batch ingest",
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "red",
+        "color": "red",
+        "label": "Failing",
+        "workflowCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 70,
+        "failedRecentCount": 3,
+        "latest": {
+          "id": 34492701241,
+          "name": "Public batch ingest",
+          "status": "completed",
+          "conclusion": "failure",
+          "event": "schedule",
+          "branch": "main",
+          "createdAt": "2026-09-10T14:59:39Z",
+          "startedAt": "2026-09-10T14:59:39Z",
+          "updatedAt": "2026-09-10T15:07:17Z",
+          "durationSeconds": 458,
+          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34492701241",
+          "runNumber": 15
+        },
+        "runs": [
+          {
+            "id": 34492701241,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-10T14:59:39Z",
+            "startedAt": "2026-09-10T14:59:39Z",
+            "updatedAt": "2026-09-10T15:07:17Z",
+            "durationSeconds": 458,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34492701241",
+            "runNumber": 15
+          },
+          {
+            "id": 34368186297,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-09T15:07:42Z",
+            "startedAt": "2026-09-09T15:07:42Z",
+            "updatedAt": "2026-09-09T15:10:21Z",
+            "durationSeconds": 159,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34368186297",
+            "runNumber": 14
+          },
+          {
+            "id": 34242776784,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-08T15:08:00Z",
+            "startedAt": "2026-09-08T15:08:00Z",
+            "updatedAt": "2026-09-08T15:09:41Z",
+            "durationSeconds": 101,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34242776784",
+            "runNumber": 13
+          },
+          {
+            "id": 34143431320,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-07T16:28:31Z",
+            "startedAt": "2026-09-07T16:28:31Z",
+            "updatedAt": "2026-09-07T16:32:13Z",
+            "durationSeconds": 222,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34143431320",
+            "runNumber": 12
+          },
+          {
+            "id": 33886819619,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-04T14:58:38Z",
+            "startedAt": "2026-09-04T14:58:38Z",
+            "updatedAt": "2026-09-04T14:59:50Z",
+            "durationSeconds": 72,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33886819619",
+            "runNumber": 11
+          },
+          {
+            "id": 33770190083,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-03T15:00:52Z",
+            "startedAt": "2026-09-03T15:00:52Z",
+            "updatedAt": "2026-09-03T15:01:53Z",
+            "durationSeconds": 61,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33770190083",
+            "runNumber": 10
+          },
+          {
+            "id": 33646437679,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-02T15:06:52Z",
+            "startedAt": "2026-09-02T15:06:52Z",
+            "updatedAt": "2026-09-02T15:09:09Z",
+            "durationSeconds": 137,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33646437679",
+            "runNumber": 9
+          },
+          {
+            "id": 33525911123,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-01T15:28:07Z",
+            "startedAt": "2026-09-01T15:28:07Z",
+            "updatedAt": "2026-09-01T15:29:36Z",
+            "durationSeconds": 89,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33525911123",
+            "runNumber": 8
+          },
+          {
+            "id": 33422674907,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-08-31T18:00:56Z",
+            "startedAt": "2026-08-31T18:00:56Z",
+            "updatedAt": "2026-08-31T18:02:17Z",
+            "durationSeconds": 81,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33422674907",
+            "runNumber": 7
+          },
+          {
+            "id": 33212546503,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-08-28T21:26:14Z",
+            "startedAt": "2026-08-28T21:26:14Z",
+            "updatedAt": "2026-08-28T21:27:25Z",
+            "durationSeconds": 71,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33212546503",
+            "runNumber": 6
+          }
+        ]
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 78,
+        "severity": "critical",
+        "primaryReason": "Latest GitHub Actions run is failing: Public batch ingest",
+        "signals": [
+          {
+            "points": 70,
+            "reason": "Latest GitHub Actions run is failing: Public batch ingest",
+            "code": "actions:red"
+          },
+          {
+            "points": 8,
+            "reason": "3 failures detected in recent workflow history",
+            "code": "actions:repeated-failures"
           }
         ]
       }
@@ -1838,6 +2061,224 @@
             "points": 10,
             "reason": "Automated tests are missing",
             "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bd_replica_crm",
+      "fullName": "dinatalediego/bd_replica_crm",
+      "url": "https://github.com/dinatalediego/bd_replica_crm",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Redshift",
+      "tests": "Detected",
+      "lastActivity": "2026-09-10T13:35:26Z",
+      "attention": [
+        "GitHub Actions failing: CI",
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 431,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "red",
+        "color": "red",
+        "label": "Failing",
+        "workflowCount": 1,
+        "recentRuns": 10,
+        "successRateLast10": 90,
+        "failedRecentCount": 1,
+        "latest": {
+          "id": 34483751768,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "event": "pull_request",
+          "branch": "feat/pricing-inmobiliario-study-v1",
+          "createdAt": "2026-09-10T13:37:00Z",
+          "startedAt": "2026-09-10T13:37:00Z",
+          "updatedAt": "2026-09-10T13:38:01Z",
+          "durationSeconds": 61,
+          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34483751768",
+          "runNumber": 130
+        },
+        "runs": [
+          {
+            "id": 34483751768,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/pricing-inmobiliario-study-v1",
+            "createdAt": "2026-09-10T13:37:00Z",
+            "startedAt": "2026-09-10T13:37:00Z",
+            "updatedAt": "2026-09-10T13:38:01Z",
+            "durationSeconds": 61,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34483751768",
+            "runNumber": 130
+          },
+          {
+            "id": 34481941617,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/economic-intelligence-ml",
+            "createdAt": "2026-09-10T13:19:41Z",
+            "startedAt": "2026-09-10T13:19:41Z",
+            "updatedAt": "2026-09-10T13:20:31Z",
+            "durationSeconds": 50,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34481941617",
+            "runNumber": 129
+          },
+          {
+            "id": 34481887905,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/economic-intelligence-ml",
+            "createdAt": "2026-09-10T13:19:09Z",
+            "startedAt": "2026-09-10T13:19:09Z",
+            "updatedAt": "2026-09-10T13:19:56Z",
+            "durationSeconds": 47,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34481887905",
+            "runNumber": 128
+          },
+          {
+            "id": 34481825060,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/economic-intelligence-ml",
+            "createdAt": "2026-09-10T13:18:33Z",
+            "startedAt": "2026-09-10T13:18:33Z",
+            "updatedAt": "2026-09-10T13:19:22Z",
+            "durationSeconds": 49,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34481825060",
+            "runNumber": 127
+          },
+          {
+            "id": 34481773604,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/economic-intelligence-ml",
+            "createdAt": "2026-09-10T13:18:02Z",
+            "startedAt": "2026-09-10T13:18:02Z",
+            "updatedAt": "2026-09-10T13:18:50Z",
+            "durationSeconds": 48,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34481773604",
+            "runNumber": 126
+          },
+          {
+            "id": 34435980777,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/economic-intelligence-ml",
+            "createdAt": "2026-09-10T04:08:06Z",
+            "startedAt": "2026-09-10T04:08:06Z",
+            "updatedAt": "2026-09-10T04:08:49Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34435980777",
+            "runNumber": 125
+          },
+          {
+            "id": 34417670183,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/absorption-history-excel",
+            "createdAt": "2026-09-09T23:36:23Z",
+            "startedAt": "2026-09-09T23:36:23Z",
+            "updatedAt": "2026-09-09T23:37:12Z",
+            "durationSeconds": 49,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34417670183",
+            "runNumber": 124
+          },
+          {
+            "id": 34406708679,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/monthly-stock-movement-export",
+            "createdAt": "2026-09-09T21:24:04Z",
+            "startedAt": "2026-09-09T21:24:04Z",
+            "updatedAt": "2026-09-09T21:24:50Z",
+            "durationSeconds": 46,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34406708679",
+            "runNumber": 123
+          },
+          {
+            "id": 34389138521,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-09T18:27:43Z",
+            "startedAt": "2026-09-09T18:27:43Z",
+            "updatedAt": "2026-09-09T18:28:30Z",
+            "durationSeconds": 47,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34389138521",
+            "runNumber": 122
+          },
+          {
+            "id": 34388098719,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/stock-disponible-export",
+            "createdAt": "2026-09-09T18:17:31Z",
+            "startedAt": "2026-09-09T18:17:31Z",
+            "updatedAt": "2026-09-09T18:18:16Z",
+            "durationSeconds": 45,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34388098719",
+            "runNumber": 121
+          }
+        ]
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ],
+      "priority": {
+        "score": 70,
+        "severity": "high",
+        "primaryReason": "Latest GitHub Actions run is failing: CI",
+        "signals": [
+          {
+            "points": 70,
+            "reason": "Latest GitHub Actions run is failing: CI",
+            "code": "actions:red"
           }
         ]
       }
@@ -11338,7 +11779,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-08T17:16:05Z",
+      "lastActivity": "2026-09-09T17:10:22Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -11371,31 +11812,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 34381198766,
+          "id": 34505458070,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-09T17:09:40Z",
-          "startedAt": "2026-09-09T17:09:40Z",
-          "updatedAt": "2026-09-09T17:09:44Z",
-          "durationSeconds": 4,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34381198766",
-          "runNumber": 35
+          "createdAt": "2026-09-10T16:59:34Z",
+          "startedAt": "2026-09-10T16:59:34Z",
+          "updatedAt": "2026-09-10T16:59:37Z",
+          "durationSeconds": 3,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34505458070",
+          "runNumber": 36
         },
         "runs": [
           {
-            "id": 34381198766,
+            "id": 34505458070,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-10T16:59:34Z",
+            "startedAt": "2026-09-10T16:59:34Z",
+            "updatedAt": "2026-09-10T16:59:37Z",
+            "durationSeconds": 3,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34505458070",
+            "runNumber": 36
+          },
+          {
+            "id": 34381198766,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-09T17:09:40Z",
             "startedAt": "2026-09-09T17:09:40Z",
-            "updatedAt": "2026-09-09T17:09:44Z",
-            "durationSeconds": 4,
+            "updatedAt": "2026-09-09T17:10:26Z",
+            "durationSeconds": 46,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34381198766",
             "runNumber": 35
           },
@@ -11510,20 +11965,6 @@
             "durationSeconds": 43,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33537104370",
             "runNumber": 27
-          },
-          {
-            "id": 33430909464,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-08-31T19:30:13Z",
-            "startedAt": "2026-08-31T19:30:13Z",
-            "updatedAt": "2026-08-31T19:30:56Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33430909464",
-            "runNumber": 26
           }
         ]
       },
@@ -11539,223 +11980,6 @@
             "points": 10,
             "reason": "GitHub Actions run is currently in progress",
             "code": "actions:running"
-          }
-        ]
-      }
-    },
-    {
-      "name": "dntl_datos",
-      "fullName": "dinatalediego/dntl_datos",
-      "url": "https://github.com/dinatalediego/dntl_datos",
-      "visibility": "public",
-      "score": 100,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Not detected",
-      "tests": "Detected",
-      "lastActivity": "2026-08-21T14:51:01Z",
-      "attention": [
-        "No repository-level blockers detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 2,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 20,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 2,
-        "recentRuns": 10,
-        "successRateLast10": 80,
-        "failedRecentCount": 2,
-        "latest": {
-          "id": 34368186297,
-          "name": "Public batch ingest",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "schedule",
-          "branch": "main",
-          "createdAt": "2026-09-09T15:07:42Z",
-          "startedAt": "2026-09-09T15:07:42Z",
-          "updatedAt": "2026-09-09T15:10:21Z",
-          "durationSeconds": 159,
-          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34368186297",
-          "runNumber": 14
-        },
-        "runs": [
-          {
-            "id": 34368186297,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-09T15:07:42Z",
-            "startedAt": "2026-09-09T15:07:42Z",
-            "updatedAt": "2026-09-09T15:10:21Z",
-            "durationSeconds": 159,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34368186297",
-            "runNumber": 14
-          },
-          {
-            "id": 34242776784,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-08T15:08:00Z",
-            "startedAt": "2026-09-08T15:08:00Z",
-            "updatedAt": "2026-09-08T15:09:41Z",
-            "durationSeconds": 101,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34242776784",
-            "runNumber": 13
-          },
-          {
-            "id": 34143431320,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-07T16:28:31Z",
-            "startedAt": "2026-09-07T16:28:31Z",
-            "updatedAt": "2026-09-07T16:32:13Z",
-            "durationSeconds": 222,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34143431320",
-            "runNumber": 12
-          },
-          {
-            "id": 33886819619,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-04T14:58:38Z",
-            "startedAt": "2026-09-04T14:58:38Z",
-            "updatedAt": "2026-09-04T14:59:50Z",
-            "durationSeconds": 72,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33886819619",
-            "runNumber": 11
-          },
-          {
-            "id": 33770190083,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-03T15:00:52Z",
-            "startedAt": "2026-09-03T15:00:52Z",
-            "updatedAt": "2026-09-03T15:01:53Z",
-            "durationSeconds": 61,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33770190083",
-            "runNumber": 10
-          },
-          {
-            "id": 33646437679,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-02T15:06:52Z",
-            "startedAt": "2026-09-02T15:06:52Z",
-            "updatedAt": "2026-09-02T15:09:09Z",
-            "durationSeconds": 137,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33646437679",
-            "runNumber": 9
-          },
-          {
-            "id": 33525911123,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-01T15:28:07Z",
-            "startedAt": "2026-09-01T15:28:07Z",
-            "updatedAt": "2026-09-01T15:29:36Z",
-            "durationSeconds": 89,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33525911123",
-            "runNumber": 8
-          },
-          {
-            "id": 33422674907,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-08-31T18:00:56Z",
-            "startedAt": "2026-08-31T18:00:56Z",
-            "updatedAt": "2026-08-31T18:02:17Z",
-            "durationSeconds": 81,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33422674907",
-            "runNumber": 7
-          },
-          {
-            "id": 33212546503,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-08-28T21:26:14Z",
-            "startedAt": "2026-08-28T21:26:14Z",
-            "updatedAt": "2026-08-28T21:27:25Z",
-            "durationSeconds": 71,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33212546503",
-            "runNumber": 6
-          },
-          {
-            "id": 33116249218,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-08-27T21:02:32Z",
-            "startedAt": "2026-08-27T21:02:32Z",
-            "updatedAt": "2026-08-27T21:03:24Z",
-            "durationSeconds": 52,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33116249218",
-            "runNumber": 5
-          }
-        ]
-      },
-      "tags": [
-        "Python"
-      ],
-      "priority": {
-        "score": 4,
-        "severity": "low",
-        "primaryReason": "2 failures detected in recent workflow history",
-        "signals": [
-          {
-            "points": 4,
-            "reason": "2 failures detected in recent workflow history",
-            "code": "actions:repeated-failures"
           }
         ]
       }
@@ -11975,217 +12199,6 @@
             "code": "actions:repeated-failures"
           }
         ]
-      }
-    },
-    {
-      "name": "bd_replica_crm",
-      "fullName": "dinatalediego/bd_replica_crm",
-      "url": "https://github.com/dinatalediego/bd_replica_crm",
-      "visibility": "public",
-      "score": 100,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Redshift",
-      "tests": "Detected",
-      "lastActivity": "2026-09-08T14:42:57Z",
-      "attention": [
-        "No repository-level blockers detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 425,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 1,
-        "recentRuns": 10,
-        "successRateLast10": 100,
-        "failedRecentCount": 0,
-        "latest": {
-          "id": 34240049601,
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "push",
-          "branch": "main",
-          "createdAt": "2026-09-08T14:43:00Z",
-          "startedAt": "2026-09-08T14:43:00Z",
-          "updatedAt": "2026-09-08T14:43:49Z",
-          "durationSeconds": 49,
-          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34240049601",
-          "runNumber": 120
-        },
-        "runs": [
-          {
-            "id": 34240049601,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-08T14:43:00Z",
-            "startedAt": "2026-09-08T14:43:00Z",
-            "updatedAt": "2026-09-08T14:43:49Z",
-            "durationSeconds": 49,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34240049601",
-            "runNumber": 120
-          },
-          {
-            "id": 34220672574,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T11:26:09Z",
-            "startedAt": "2026-09-08T11:26:09Z",
-            "updatedAt": "2026-09-08T11:26:52Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34220672574",
-            "runNumber": 119
-          },
-          {
-            "id": 34181935285,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T02:59:22Z",
-            "startedAt": "2026-09-08T02:59:22Z",
-            "updatedAt": "2026-09-08T03:00:02Z",
-            "durationSeconds": 40,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34181935285",
-            "runNumber": 118
-          },
-          {
-            "id": 34181911258,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T02:58:55Z",
-            "startedAt": "2026-09-08T02:58:55Z",
-            "updatedAt": "2026-09-08T02:59:38Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34181911258",
-            "runNumber": 117
-          },
-          {
-            "id": 34181906521,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T02:58:48Z",
-            "startedAt": "2026-09-08T02:58:48Z",
-            "updatedAt": "2026-09-08T02:59:32Z",
-            "durationSeconds": 44,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34181906521",
-            "runNumber": 116
-          },
-          {
-            "id": 34181829269,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T02:57:21Z",
-            "startedAt": "2026-09-08T02:57:21Z",
-            "updatedAt": "2026-09-08T02:58:03Z",
-            "durationSeconds": 42,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34181829269",
-            "runNumber": 115
-          },
-          {
-            "id": 34181817906,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T02:57:08Z",
-            "startedAt": "2026-09-08T02:57:08Z",
-            "updatedAt": "2026-09-08T02:57:58Z",
-            "durationSeconds": 50,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34181817906",
-            "runNumber": 114
-          },
-          {
-            "id": 34181806645,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T02:56:56Z",
-            "startedAt": "2026-09-08T02:56:56Z",
-            "updatedAt": "2026-09-08T02:57:42Z",
-            "durationSeconds": 46,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34181806645",
-            "runNumber": 113
-          },
-          {
-            "id": 34181761194,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T02:56:05Z",
-            "startedAt": "2026-09-08T02:56:05Z",
-            "updatedAt": "2026-09-08T02:56:48Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34181761194",
-            "runNumber": 112
-          },
-          {
-            "id": 34172018041,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/powerbi-decision-intelligence-views",
-            "createdAt": "2026-09-08T00:02:43Z",
-            "startedAt": "2026-09-08T00:02:43Z",
-            "updatedAt": "2026-09-08T00:03:24Z",
-            "durationSeconds": 41,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34172018041",
-            "runNumber": 111
-          }
-        ]
-      },
-      "tags": [
-        "Jupyter Notebook"
-      ],
-      "priority": {
-        "score": 0,
-        "severity": "clear",
-        "primaryReason": "No active intervention signal",
-        "signals": []
       }
     },
     {
