@@ -1,30 +1,30 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-10T17:00:02.537Z",
+  "generatedAt": "2026-09-11T17:02:17.001Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
   "coverage": {
-    "discovered": 161,
-    "scored": 161,
+    "discovered": 162,
+    "scored": 162,
     "unknown": 0
   },
-  "portfolioScore": 35,
+  "portfolioScore": 36,
   "actionsSummary": {
     "configured": 36,
-    "green": 8,
-    "red": 5,
+    "green": 9,
+    "red": 4,
     "yellow": 1,
     "unknown": 18,
     "idle": 4,
-    "notConfigured": 125
+    "notConfigured": 126
   },
   "attentionSummary": {
-    "critical": 15,
+    "critical": 14,
     "high": 10,
-    "medium": 119,
-    "low": 11,
-    "clear": 6
+    "medium": 120,
+    "low": 10,
+    "clear": 8
   },
   "repositories": [
     {
@@ -462,103 +462,6 @@
       }
     },
     {
-      "name": "limpia-fast",
-      "fullName": "dinatalediego/limpia-fast",
-      "url": "https://github.com/dinatalediego/limpia-fast",
-      "visibility": "public",
-      "score": 80,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Vercel-ready",
-      "database": "Supabase",
-      "tests": "Missing",
-      "lastActivity": "2026-08-22T06:51:07Z",
-      "attention": [
-        "GitHub Actions failing: CI",
-        "Add automated tests"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": true,
-        "trackedEnvFile": false,
-        "fileCount": 25,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "red",
-        "color": "red",
-        "label": "Failing",
-        "workflowCount": 1,
-        "recentRuns": 1,
-        "successRateLast10": 0,
-        "failedRecentCount": 1,
-        "latest": {
-          "id": 32558036008,
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "event": "push",
-          "branch": "main",
-          "createdAt": "2026-08-22T06:51:11Z",
-          "startedAt": "2026-08-22T06:51:11Z",
-          "updatedAt": "2026-08-22T06:51:19Z",
-          "durationSeconds": 8,
-          "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
-          "runNumber": 1
-        },
-        "runs": [
-          {
-            "id": 32558036008,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T06:51:11Z",
-            "startedAt": "2026-08-22T06:51:11Z",
-            "updatedAt": "2026-08-22T06:51:19Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
-            "runNumber": 1
-          }
-        ]
-      },
-      "tags": [
-        "TypeScript"
-      ],
-      "priority": {
-        "score": 80,
-        "severity": "critical",
-        "primaryReason": "Latest GitHub Actions run is failing: CI",
-        "signals": [
-          {
-            "points": 70,
-            "reason": "Latest GitHub Actions run is failing: CI",
-            "code": "actions:red"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
       "name": "dntl_datos",
       "fullName": "dinatalediego/dntl_datos",
       "url": "https://github.com/dinatalediego/dntl_datos",
@@ -601,23 +504,37 @@
         "label": "Failing",
         "workflowCount": 2,
         "recentRuns": 10,
-        "successRateLast10": 70,
-        "failedRecentCount": 3,
+        "successRateLast10": 60,
+        "failedRecentCount": 4,
         "latest": {
-          "id": 34492701241,
+          "id": 34613720580,
           "name": "Public batch ingest",
           "status": "completed",
           "conclusion": "failure",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-10T14:59:39Z",
-          "startedAt": "2026-09-10T14:59:39Z",
-          "updatedAt": "2026-09-10T15:07:17Z",
-          "durationSeconds": 458,
-          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34492701241",
-          "runNumber": 15
+          "createdAt": "2026-09-11T15:02:19Z",
+          "startedAt": "2026-09-11T15:02:19Z",
+          "updatedAt": "2026-09-11T15:03:48Z",
+          "durationSeconds": 89,
+          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34613720580",
+          "runNumber": 16
         },
         "runs": [
+          {
+            "id": 34613720580,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-11T15:02:19Z",
+            "startedAt": "2026-09-11T15:02:19Z",
+            "updatedAt": "2026-09-11T15:03:48Z",
+            "durationSeconds": 89,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34613720580",
+            "runNumber": 16
+          },
           {
             "id": 34492701241,
             "name": "Public batch ingest",
@@ -743,20 +660,6 @@
             "durationSeconds": 81,
             "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33422674907",
             "runNumber": 7
-          },
-          {
-            "id": 33212546503,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-08-28T21:26:14Z",
-            "startedAt": "2026-08-28T21:26:14Z",
-            "updatedAt": "2026-08-28T21:27:25Z",
-            "durationSeconds": 71,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33212546503",
-            "runNumber": 6
           }
         ]
       },
@@ -764,7 +667,7 @@
         "Python"
       ],
       "priority": {
-        "score": 78,
+        "score": 82,
         "severity": "critical",
         "primaryReason": "Latest GitHub Actions run is failing: Public batch ingest",
         "signals": [
@@ -774,84 +677,106 @@
             "code": "actions:red"
           },
           {
-            "points": 8,
-            "reason": "3 failures detected in recent workflow history",
+            "points": 12,
+            "reason": "4 failures detected in recent workflow history",
             "code": "actions:repeated-failures"
           }
         ]
       }
     },
     {
-      "name": "MetricHouse",
-      "fullName": "dinatalediego/MetricHouse",
-      "url": "https://github.com/dinatalediego/MetricHouse",
-      "visibility": "private",
-      "score": 71,
-      "health": "watch",
+      "name": "limpia-fast",
+      "fullName": "dinatalediego/limpia-fast",
+      "url": "https://github.com/dinatalediego/limpia-fast",
+      "visibility": "public",
+      "score": 80,
+      "health": "healthy",
       "type": "ML",
       "criticality": "Unclassified",
       "deployment": "Vercel-ready",
       "database": "Supabase",
-      "tests": "Detected",
-      "lastActivity": "2026-01-27T12:42:51Z",
+      "tests": "Missing",
+      "lastActivity": "2026-08-22T06:51:07Z",
       "attention": [
-        "Repository is stale",
-        "Tracked .env-like file detected",
-        "GitHub Actions telemetry unavailable"
+        "GitHub Actions failing: CI",
+        "Add automated tests"
       ],
       "components": {
-        "freshness": 0,
+        "freshness": 25,
         "documentation": 15,
         "automation": 20,
-        "testing": 20,
+        "testing": 0,
         "operability": 10,
-        "hygiene": 6
+        "hygiene": 10
       },
       "evidence": {
         "coverage": "full",
         "hasReadme": true,
         "workflowCount": 1,
-        "hasTests": true,
+        "hasTests": false,
         "hasManifest": true,
         "hasDocker": false,
         "hasVercelConfig": true,
-        "trackedEnvFile": true,
-        "fileCount": 182,
+        "trackedEnvFile": false,
+        "fileCount": 25,
         "recursiveTree": true
       },
       "actions": {
-        "state": "unknown",
-        "color": "gray",
-        "label": "Actions not observable",
+        "state": "red",
+        "color": "red",
+        "label": "Failing",
         "workflowCount": 1,
-        "latest": null,
-        "runs": null,
-        "recentRuns": null,
-        "successRateLast10": null,
-        "failedRecentCount": null
+        "recentRuns": 1,
+        "successRateLast10": 0,
+        "failedRecentCount": 1,
+        "latest": {
+          "id": 32558036008,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-22T06:51:11Z",
+          "startedAt": "2026-08-22T06:51:11Z",
+          "updatedAt": "2026-08-22T06:51:19Z",
+          "durationSeconds": 8,
+          "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
+          "runNumber": 1
+        },
+        "runs": [
+          {
+            "id": 32558036008,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T06:51:11Z",
+            "startedAt": "2026-08-22T06:51:11Z",
+            "updatedAt": "2026-08-22T06:51:19Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
+            "runNumber": 1
+          }
+        ]
       },
       "tags": [
-        "HTML"
+        "TypeScript"
       ],
       "priority": {
-        "score": 76,
+        "score": 80,
         "severity": "critical",
-        "primaryReason": "Tracked .env-like file requires security review",
+        "primaryReason": "Latest GitHub Actions run is failing: CI",
         "signals": [
           {
-            "points": 30,
-            "reason": "Tracked .env-like file requires security review",
-            "code": "security:tracked-env"
+            "points": 70,
+            "reason": "Latest GitHub Actions run is failing: CI",
+            "code": "actions:red"
           },
           {
-            "points": 28,
-            "reason": "GitHub Actions telemetry is unavailable",
-            "code": "actions:unknown"
-          },
-          {
-            "points": 18,
-            "reason": "Repository structural health needs attention",
-            "code": "repository:watch"
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
           }
         ]
       }
@@ -2066,224 +1991,6 @@
       }
     },
     {
-      "name": "bd_replica_crm",
-      "fullName": "dinatalediego/bd_replica_crm",
-      "url": "https://github.com/dinatalediego/bd_replica_crm",
-      "visibility": "public",
-      "score": 100,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Redshift",
-      "tests": "Detected",
-      "lastActivity": "2026-09-10T13:35:26Z",
-      "attention": [
-        "GitHub Actions failing: CI",
-        "No repository-level blockers detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 431,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "red",
-        "color": "red",
-        "label": "Failing",
-        "workflowCount": 1,
-        "recentRuns": 10,
-        "successRateLast10": 90,
-        "failedRecentCount": 1,
-        "latest": {
-          "id": 34483751768,
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "event": "pull_request",
-          "branch": "feat/pricing-inmobiliario-study-v1",
-          "createdAt": "2026-09-10T13:37:00Z",
-          "startedAt": "2026-09-10T13:37:00Z",
-          "updatedAt": "2026-09-10T13:38:01Z",
-          "durationSeconds": 61,
-          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34483751768",
-          "runNumber": 130
-        },
-        "runs": [
-          {
-            "id": 34483751768,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "pull_request",
-            "branch": "feat/pricing-inmobiliario-study-v1",
-            "createdAt": "2026-09-10T13:37:00Z",
-            "startedAt": "2026-09-10T13:37:00Z",
-            "updatedAt": "2026-09-10T13:38:01Z",
-            "durationSeconds": 61,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34483751768",
-            "runNumber": 130
-          },
-          {
-            "id": 34481941617,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/economic-intelligence-ml",
-            "createdAt": "2026-09-10T13:19:41Z",
-            "startedAt": "2026-09-10T13:19:41Z",
-            "updatedAt": "2026-09-10T13:20:31Z",
-            "durationSeconds": 50,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34481941617",
-            "runNumber": 129
-          },
-          {
-            "id": 34481887905,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/economic-intelligence-ml",
-            "createdAt": "2026-09-10T13:19:09Z",
-            "startedAt": "2026-09-10T13:19:09Z",
-            "updatedAt": "2026-09-10T13:19:56Z",
-            "durationSeconds": 47,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34481887905",
-            "runNumber": 128
-          },
-          {
-            "id": 34481825060,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/economic-intelligence-ml",
-            "createdAt": "2026-09-10T13:18:33Z",
-            "startedAt": "2026-09-10T13:18:33Z",
-            "updatedAt": "2026-09-10T13:19:22Z",
-            "durationSeconds": 49,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34481825060",
-            "runNumber": 127
-          },
-          {
-            "id": 34481773604,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/economic-intelligence-ml",
-            "createdAt": "2026-09-10T13:18:02Z",
-            "startedAt": "2026-09-10T13:18:02Z",
-            "updatedAt": "2026-09-10T13:18:50Z",
-            "durationSeconds": 48,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34481773604",
-            "runNumber": 126
-          },
-          {
-            "id": 34435980777,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/economic-intelligence-ml",
-            "createdAt": "2026-09-10T04:08:06Z",
-            "startedAt": "2026-09-10T04:08:06Z",
-            "updatedAt": "2026-09-10T04:08:49Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34435980777",
-            "runNumber": 125
-          },
-          {
-            "id": 34417670183,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/absorption-history-excel",
-            "createdAt": "2026-09-09T23:36:23Z",
-            "startedAt": "2026-09-09T23:36:23Z",
-            "updatedAt": "2026-09-09T23:37:12Z",
-            "durationSeconds": 49,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34417670183",
-            "runNumber": 124
-          },
-          {
-            "id": 34406708679,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/monthly-stock-movement-export",
-            "createdAt": "2026-09-09T21:24:04Z",
-            "startedAt": "2026-09-09T21:24:04Z",
-            "updatedAt": "2026-09-09T21:24:50Z",
-            "durationSeconds": 46,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34406708679",
-            "runNumber": 123
-          },
-          {
-            "id": 34389138521,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-09T18:27:43Z",
-            "startedAt": "2026-09-09T18:27:43Z",
-            "updatedAt": "2026-09-09T18:28:30Z",
-            "durationSeconds": 47,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34389138521",
-            "runNumber": 122
-          },
-          {
-            "id": 34388098719,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/stock-disponible-export",
-            "createdAt": "2026-09-09T18:17:31Z",
-            "startedAt": "2026-09-09T18:17:31Z",
-            "updatedAt": "2026-09-09T18:18:16Z",
-            "durationSeconds": 45,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34388098719",
-            "runNumber": 121
-          }
-        ]
-      },
-      "tags": [
-        "Jupyter Notebook"
-      ],
-      "priority": {
-        "score": 70,
-        "severity": "high",
-        "primaryReason": "Latest GitHub Actions run is failing: CI",
-        "signals": [
-          {
-            "points": 70,
-            "reason": "Latest GitHub Actions run is failing: CI",
-            "code": "actions:red"
-          }
-        ]
-      }
-    },
-    {
       "name": "datadojo",
       "fullName": "dinatalediego/datadojo",
       "url": "https://github.com/dinatalediego/datadojo",
@@ -2350,6 +2057,75 @@
             "points": 30,
             "reason": "Tracked .env-like file requires security review",
             "code": "security:tracked-env"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MetricHouse",
+      "fullName": "dinatalediego/MetricHouse",
+      "url": "https://github.com/dinatalediego/MetricHouse",
+      "visibility": "private",
+      "score": 96,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-09-11T15:52:34Z",
+      "attention": [
+        "Tracked .env-like file detected",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 6
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": true,
+        "fileCount": 182,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "runs": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "HTML"
+      ],
+      "priority": {
+        "score": 58,
+        "severity": "high",
+        "primaryReason": "Tracked .env-like file requires security review",
+        "signals": [
+          {
+            "points": 30,
+            "reason": "Tracked .env-like file requires security review",
+            "code": "security:tracked-env"
+          },
+          {
+            "points": 28,
+            "reason": "GitHub Actions telemetry is unavailable",
+            "code": "actions:unknown"
           }
         ]
       }
@@ -2638,103 +2414,6 @@
       }
     },
     {
-      "name": "Thinking-Patterns",
-      "fullName": "dinatalediego/Thinking-Patterns",
-      "url": "https://github.com/dinatalediego/Thinking-Patterns",
-      "visibility": "public",
-      "score": 55,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2025-11-02T19:08:26Z",
-      "attention": [
-        "Add automated tests",
-        "Repository is stale"
-      ],
-      "components": {
-        "freshness": 0,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 20,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 1,
-        "recentRuns": 1,
-        "successRateLast10": 100,
-        "failedRecentCount": 0,
-        "latest": {
-          "id": 19016847921,
-          "name": "ci",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "push",
-          "branch": "main",
-          "createdAt": "2025-11-02T19:08:30Z",
-          "startedAt": "2025-11-02T19:08:30Z",
-          "updatedAt": "2025-11-02T19:08:49Z",
-          "durationSeconds": 19,
-          "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/19016847921",
-          "runNumber": 1
-        },
-        "runs": [
-          {
-            "id": 19016847921,
-            "name": "ci",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2025-11-02T19:08:30Z",
-            "startedAt": "2025-11-02T19:08:30Z",
-            "updatedAt": "2025-11-02T19:08:49Z",
-            "durationSeconds": 19,
-            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/19016847921",
-            "runNumber": 1
-          }
-        ]
-      },
-      "tags": [
-        "Python"
-      ],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
       "name": "fluent_river",
       "fullName": "dinatalediego/fluent_river",
       "url": "https://github.com/dinatalediego/fluent_river",
@@ -2838,6 +2517,76 @@
         "hasVercelConfig": false,
         "trackedEnvFile": false,
         "fileCount": 26,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "pa_pricing_in_peru",
+      "fullName": "dinatalediego/pa_pricing_in_peru",
+      "url": "https://github.com/dinatalediego/pa_pricing_in_peru",
+      "visibility": "public",
+      "score": 50,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-09-11T05:48:09Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 32,
         "recursiveTree": true
       },
       "actions": {
@@ -4910,75 +4659,6 @@
       }
     },
     {
-      "name": "abandono-o-seguridad",
-      "fullName": "dinatalediego/abandono-o-seguridad",
-      "url": "https://github.com/dinatalediego/abandono-o-seguridad",
-      "visibility": "private",
-      "score": 28,
-      "health": "risk",
-      "type": "App",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-06-12T20:46:03Z",
-      "attention": [
-        "Add automated tests",
-        "Add CI workflow",
-        "Add operational README",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 18,
-        "documentation": 0,
-        "automation": 0,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": false,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 2,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
       "name": "Gravity_Capital",
       "fullName": "dinatalediego/Gravity_Capital",
       "url": "https://github.com/dinatalediego/Gravity_Capital",
@@ -6234,6 +5914,75 @@
       "tags": [
         "Python"
       ],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "abandono-o-seguridad",
+      "fullName": "dinatalediego/abandono-o-seguridad",
+      "url": "https://github.com/dinatalediego/abandono-o-seguridad",
+      "visibility": "private",
+      "score": 19,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-06-12T20:46:03Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 2,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [],
       "priority": {
         "score": 45,
         "severity": "medium",
@@ -10414,7 +10163,7 @@
       "deployment": "Vercel-ready",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-08-24T00:27:33Z",
+      "lastActivity": "2026-09-11T03:06:25Z",
       "attention": [
         "Add operational README",
         "GitHub Actions telemetry unavailable"
@@ -10430,20 +10179,20 @@
       "evidence": {
         "coverage": "full",
         "hasReadme": false,
-        "workflowCount": 2,
+        "workflowCount": 3,
         "hasTests": true,
         "hasManifest": true,
         "hasDocker": false,
         "hasVercelConfig": true,
         "trackedEnvFile": false,
-        "fileCount": 553,
+        "fileCount": 561,
         "recursiveTree": true
       },
       "actions": {
         "state": "unknown",
         "color": "gray",
         "label": "Actions not observable",
-        "workflowCount": 2,
+        "workflowCount": 3,
         "latest": null,
         "runs": null,
         "recentRuns": null,
@@ -10938,6 +10687,228 @@
             "points": 8,
             "reason": "GitHub Actions is configured but has no recorded runs",
             "code": "actions:idle"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thinking-Patterns",
+      "fullName": "dinatalediego/Thinking-Patterns",
+      "url": "https://github.com/dinatalediego/Thinking-Patterns",
+      "visibility": "public",
+      "score": 80,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-09-11T15:51:11Z",
+      "attention": [
+        "Add automated tests"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 10,
+        "successRateLast10": 50,
+        "failedRecentCount": 5,
+        "latest": {
+          "id": 34618583937,
+          "name": "ci",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "branch": "feat/decision-compiler-v1",
+          "createdAt": "2026-09-11T15:51:15Z",
+          "startedAt": "2026-09-11T15:51:15Z",
+          "updatedAt": "2026-09-11T15:51:38Z",
+          "durationSeconds": 23,
+          "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34618583937",
+          "runNumber": 10
+        },
+        "runs": [
+          {
+            "id": 34618583937,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T15:51:15Z",
+            "startedAt": "2026-09-11T15:51:15Z",
+            "updatedAt": "2026-09-11T15:51:38Z",
+            "durationSeconds": 23,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34618583937",
+            "runNumber": 10
+          },
+          {
+            "id": 34618473622,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T15:50:08Z",
+            "startedAt": "2026-09-11T15:50:08Z",
+            "updatedAt": "2026-09-11T15:50:28Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34618473622",
+            "runNumber": 9
+          },
+          {
+            "id": 34618444431,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T15:49:51Z",
+            "startedAt": "2026-09-11T15:49:51Z",
+            "updatedAt": "2026-09-11T15:50:10Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34618444431",
+            "runNumber": 8
+          },
+          {
+            "id": 34618401101,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T15:49:24Z",
+            "startedAt": "2026-09-11T15:49:24Z",
+            "updatedAt": "2026-09-11T15:49:41Z",
+            "durationSeconds": 17,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34618401101",
+            "runNumber": 7
+          },
+          {
+            "id": 34613809536,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T15:03:11Z",
+            "startedAt": "2026-09-11T15:03:11Z",
+            "updatedAt": "2026-09-11T15:03:29Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34613809536",
+            "runNumber": 6
+          },
+          {
+            "id": 34613708611,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T15:02:12Z",
+            "startedAt": "2026-09-11T15:02:12Z",
+            "updatedAt": "2026-09-11T15:02:31Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34613708611",
+            "runNumber": 5
+          },
+          {
+            "id": 34613705343,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T15:02:10Z",
+            "startedAt": "2026-09-11T15:02:10Z",
+            "updatedAt": "2026-09-11T15:02:38Z",
+            "durationSeconds": 28,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34613705343",
+            "runNumber": 4
+          },
+          {
+            "id": 34613515688,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T15:00:21Z",
+            "startedAt": "2026-09-11T15:00:21Z",
+            "updatedAt": "2026-09-11T15:00:43Z",
+            "durationSeconds": 22,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34613515688",
+            "runNumber": 3
+          },
+          {
+            "id": 34613339615,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/decision-compiler-v1",
+            "createdAt": "2026-09-11T14:58:34Z",
+            "startedAt": "2026-09-11T14:58:34Z",
+            "updatedAt": "2026-09-11T14:58:53Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/34613339615",
+            "runNumber": 2
+          },
+          {
+            "id": 19016847921,
+            "name": "ci",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2025-11-02T19:08:30Z",
+            "startedAt": "2025-11-02T19:08:30Z",
+            "updatedAt": "2025-11-02T19:08:49Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/Thinking-Patterns/actions/runs/19016847921",
+            "runNumber": 1
+          }
+        ]
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 25,
+        "severity": "medium",
+        "primaryReason": "5 failures detected in recent workflow history",
+        "signals": [
+          {
+            "points": 15,
+            "reason": "5 failures detected in recent workflow history",
+            "code": "actions:repeated-failures"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
           }
         ]
       }
@@ -11779,7 +11750,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-09T17:10:22Z",
+      "lastActivity": "2026-09-10T17:00:10Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -11812,31 +11783,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 34505458070,
+          "id": 34625369150,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-10T16:59:34Z",
-          "startedAt": "2026-09-10T16:59:34Z",
-          "updatedAt": "2026-09-10T16:59:37Z",
+          "createdAt": "2026-09-11T17:01:51Z",
+          "startedAt": "2026-09-11T17:01:51Z",
+          "updatedAt": "2026-09-11T17:01:54Z",
           "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34505458070",
-          "runNumber": 36
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34625369150",
+          "runNumber": 37
         },
         "runs": [
           {
-            "id": 34505458070,
+            "id": 34625369150,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-11T17:01:51Z",
+            "startedAt": "2026-09-11T17:01:51Z",
+            "updatedAt": "2026-09-11T17:01:54Z",
+            "durationSeconds": 3,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34625369150",
+            "runNumber": 37
+          },
+          {
+            "id": 34505458070,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-10T16:59:34Z",
             "startedAt": "2026-09-10T16:59:34Z",
-            "updatedAt": "2026-09-10T16:59:37Z",
-            "durationSeconds": 3,
+            "updatedAt": "2026-09-10T17:00:13Z",
+            "durationSeconds": 39,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34505458070",
             "runNumber": 36
           },
@@ -11951,20 +11936,6 @@
             "durationSeconds": 36,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33659424170",
             "runNumber": 28
-          },
-          {
-            "id": 33537104370,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-01T17:19:40Z",
-            "startedAt": "2026-09-01T17:19:40Z",
-            "updatedAt": "2026-09-01T17:20:23Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33537104370",
-            "runNumber": 27
           }
         ]
       },
@@ -11985,220 +11956,214 @@
       }
     },
     {
-      "name": "dntl_economia",
-      "fullName": "dinatalediego/dntl_economia",
-      "url": "https://github.com/dinatalediego/dntl_economia",
+      "name": "bd_replica_crm",
+      "fullName": "dinatalediego/bd_replica_crm",
+      "url": "https://github.com/dinatalediego/bd_replica_crm",
       "visibility": "public",
-      "score": 90,
+      "score": 100,
       "health": "healthy",
       "type": "ML",
       "criticality": "Unclassified",
       "deployment": "GitHub Actions",
-      "database": "Not detected",
+      "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-08-21T13:24:38Z",
+      "lastActivity": "2026-09-11T05:49:31Z",
       "attention": [
-        "No operability manifest detected"
+        "No repository-level blockers detected"
       ],
       "components": {
         "freshness": 25,
         "documentation": 15,
         "automation": 20,
         "testing": 20,
-        "operability": 0,
+        "operability": 10,
         "hygiene": 10
       },
       "evidence": {
         "coverage": "full",
         "hasReadme": true,
-        "workflowCount": 2,
+        "workflowCount": 1,
         "hasTests": true,
-        "hasManifest": false,
+        "hasManifest": true,
         "hasDocker": false,
         "hasVercelConfig": false,
         "trackedEnvFile": false,
-        "fileCount": 38,
+        "fileCount": 452,
         "recursiveTree": true
       },
       "actions": {
         "state": "green",
         "color": "green",
         "label": "Passing",
-        "workflowCount": 2,
+        "workflowCount": 1,
         "recentRuns": 10,
-        "successRateLast10": 80,
-        "failedRecentCount": 2,
+        "successRateLast10": 90,
+        "failedRecentCount": 1,
         "latest": {
-          "id": 32486631497,
-          "name": "Deploy GitHub Pages",
+          "id": 34567450715,
+          "name": "CI",
           "status": "completed",
           "conclusion": "success",
           "event": "push",
           "branch": "main",
-          "createdAt": "2026-08-21T13:23:58Z",
-          "startedAt": "2026-08-21T13:23:58Z",
-          "updatedAt": "2026-08-21T13:24:18Z",
-          "durationSeconds": 20,
-          "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631497",
-          "runNumber": 3
+          "createdAt": "2026-09-11T05:49:33Z",
+          "startedAt": "2026-09-11T05:49:33Z",
+          "updatedAt": "2026-09-11T05:50:25Z",
+          "durationSeconds": 52,
+          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34567450715",
+          "runNumber": 139
         },
         "runs": [
           {
-            "id": 32486631497,
-            "name": "Deploy GitHub Pages",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-21T13:23:58Z",
-            "startedAt": "2026-08-21T13:23:58Z",
-            "updatedAt": "2026-08-21T13:24:18Z",
-            "durationSeconds": 20,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631497",
-            "runNumber": 3
-          },
-          {
-            "id": 32486631454,
+            "id": 34567450715,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
             "branch": "main",
-            "createdAt": "2026-08-21T13:23:58Z",
-            "startedAt": "2026-08-21T13:23:58Z",
-            "updatedAt": "2026-08-21T13:24:11Z",
-            "durationSeconds": 13,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631454",
-            "runNumber": 8
+            "createdAt": "2026-09-11T05:49:33Z",
+            "startedAt": "2026-09-11T05:49:33Z",
+            "updatedAt": "2026-09-11T05:50:25Z",
+            "durationSeconds": 52,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34567450715",
+            "runNumber": 139
           },
           {
-            "id": 32486630690,
-            "name": "pages build and deployment",
+            "id": 34567384638,
+            "name": "CI",
             "status": "completed",
             "conclusion": "success",
-            "event": "dynamic",
+            "event": "push",
             "branch": "main",
-            "createdAt": "2026-08-21T13:23:57Z",
-            "startedAt": "2026-08-21T13:23:57Z",
-            "updatedAt": "2026-08-21T13:24:37Z",
-            "durationSeconds": 40,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486630690",
-            "runNumber": 7
+            "createdAt": "2026-09-11T05:48:30Z",
+            "startedAt": "2026-09-11T05:48:30Z",
+            "updatedAt": "2026-09-11T05:49:13Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34567384638",
+            "runNumber": 138
           },
           {
-            "id": 32447143133,
+            "id": 34567323089,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "pull_request",
-            "branch": "feature/adaptive-polymath-curator",
-            "createdAt": "2026-08-21T04:29:44Z",
-            "startedAt": "2026-08-21T04:29:44Z",
-            "updatedAt": "2026-08-21T04:29:56Z",
-            "durationSeconds": 12,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32447143133",
-            "runNumber": 7
-          },
-          {
-            "id": 32445870862,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feature/living-exhibits-complete",
-            "createdAt": "2026-08-21T04:08:31Z",
-            "startedAt": "2026-08-21T04:08:31Z",
-            "updatedAt": "2026-08-21T04:08:49Z",
-            "durationSeconds": 18,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445870862",
-            "runNumber": 6
-          },
-          {
-            "id": 32445551083,
-            "name": "Deploy GitHub Pages",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-21T04:03:18Z",
-            "startedAt": "2026-08-21T04:03:18Z",
-            "updatedAt": "2026-08-21T04:03:37Z",
-            "durationSeconds": 19,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445551083",
-            "runNumber": 2
-          },
-          {
-            "id": 32445551049,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-21T04:03:18Z",
-            "startedAt": "2026-08-21T04:03:18Z",
-            "updatedAt": "2026-08-21T04:03:26Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445551049",
-            "runNumber": 5
-          },
-          {
-            "id": 32445549915,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2026-08-21T04:03:17Z",
-            "startedAt": "2026-08-21T04:03:17Z",
-            "updatedAt": "2026-08-21T04:04:04Z",
+            "branch": "feature/supabase-private-medallio-replica",
+            "createdAt": "2026-09-11T05:47:31Z",
+            "startedAt": "2026-09-11T05:47:31Z",
+            "updatedAt": "2026-09-11T05:48:18Z",
             "durationSeconds": 47,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445549915",
-            "runNumber": 6
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34567323089",
+            "runNumber": 137
           },
           {
-            "id": 32445523222,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "pull_request",
-            "branch": "feature/living-exhibits",
-            "createdAt": "2026-08-21T04:02:49Z",
-            "startedAt": "2026-08-21T04:02:49Z",
-            "updatedAt": "2026-08-21T04:02:58Z",
-            "durationSeconds": 9,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445523222",
-            "runNumber": 4
-          },
-          {
-            "id": 32444773047,
+            "id": 34537623817,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
             "branch": "main",
-            "createdAt": "2026-08-21T03:50:01Z",
-            "startedAt": "2026-08-21T03:50:01Z",
-            "updatedAt": "2026-08-21T03:50:20Z",
-            "durationSeconds": 19,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32444773047",
-            "runNumber": 3
+            "createdAt": "2026-09-10T22:28:32Z",
+            "startedAt": "2026-09-10T22:28:32Z",
+            "updatedAt": "2026-09-10T22:29:13Z",
+            "durationSeconds": 41,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34537623817",
+            "runNumber": 136
+          },
+          {
+            "id": 34537552072,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/pricing-projection-mart",
+            "createdAt": "2026-09-10T22:27:40Z",
+            "startedAt": "2026-09-10T22:27:40Z",
+            "updatedAt": "2026-09-10T22:28:24Z",
+            "durationSeconds": 44,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34537552072",
+            "runNumber": 135
+          },
+          {
+            "id": 34533074701,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-10T21:36:05Z",
+            "startedAt": "2026-09-10T21:36:05Z",
+            "updatedAt": "2026-09-10T21:36:58Z",
+            "durationSeconds": 53,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34533074701",
+            "runNumber": 134
+          },
+          {
+            "id": 34532987610,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "fix/redshift-timeout-recovery",
+            "createdAt": "2026-09-10T21:35:07Z",
+            "startedAt": "2026-09-10T21:35:07Z",
+            "updatedAt": "2026-09-10T21:35:52Z",
+            "durationSeconds": 45,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34532987610",
+            "runNumber": 133
+          },
+          {
+            "id": 34526566524,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-10T20:28:16Z",
+            "startedAt": "2026-09-10T20:28:16Z",
+            "updatedAt": "2026-09-10T20:29:10Z",
+            "durationSeconds": 54,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34526566524",
+            "runNumber": 132
+          },
+          {
+            "id": 34526464707,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/dw-self-maintaining-refresh",
+            "createdAt": "2026-09-10T20:27:14Z",
+            "startedAt": "2026-09-10T20:27:14Z",
+            "updatedAt": "2026-09-10T20:28:06Z",
+            "durationSeconds": 52,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34526464707",
+            "runNumber": 131
+          },
+          {
+            "id": 34483751768,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "feat/pricing-inmobiliario-study-v1",
+            "createdAt": "2026-09-10T13:37:00Z",
+            "startedAt": "2026-09-10T13:37:00Z",
+            "updatedAt": "2026-09-10T13:38:01Z",
+            "durationSeconds": 61,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34483751768",
+            "runNumber": 130
           }
         ]
       },
       "tags": [
-        "JavaScript"
+        "Jupyter Notebook"
       ],
       "priority": {
-        "score": 4,
-        "severity": "low",
-        "primaryReason": "2 failures detected in recent workflow history",
-        "signals": [
-          {
-            "points": 4,
-            "reason": "2 failures detected in recent workflow history",
-            "code": "actions:repeated-failures"
-          }
-        ]
+        "score": 0,
+        "severity": "clear",
+        "primaryReason": "No active intervention signal",
+        "signals": []
       }
     },
     {
@@ -12770,6 +12735,217 @@
       },
       "tags": [
         "CSS"
+      ],
+      "priority": {
+        "score": 0,
+        "severity": "clear",
+        "primaryReason": "No active intervention signal",
+        "signals": []
+      }
+    },
+    {
+      "name": "dntl_economia",
+      "fullName": "dinatalediego/dntl_economia",
+      "url": "https://github.com/dinatalediego/dntl_economia",
+      "visibility": "public",
+      "score": 90,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-09-11T15:54:52Z",
+      "attention": [
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": true,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 38,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 90,
+        "failedRecentCount": 1,
+        "latest": {
+          "id": 34618938804,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "branch": "feat/nobel-connection-lab",
+          "createdAt": "2026-09-11T15:55:00Z",
+          "startedAt": "2026-09-11T15:55:00Z",
+          "updatedAt": "2026-09-11T15:55:15Z",
+          "durationSeconds": 15,
+          "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34618938804",
+          "runNumber": 10
+        },
+        "runs": [
+          {
+            "id": 34618938804,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/nobel-connection-lab",
+            "createdAt": "2026-09-11T15:55:00Z",
+            "startedAt": "2026-09-11T15:55:00Z",
+            "updatedAt": "2026-09-11T15:55:15Z",
+            "durationSeconds": 15,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34618938804",
+            "runNumber": 10
+          },
+          {
+            "id": 34614796059,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/nobel-connection-lab",
+            "createdAt": "2026-09-11T15:13:00Z",
+            "startedAt": "2026-09-11T15:13:00Z",
+            "updatedAt": "2026-09-11T15:13:12Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34614796059",
+            "runNumber": 9
+          },
+          {
+            "id": 32486631497,
+            "name": "Deploy GitHub Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T13:23:58Z",
+            "startedAt": "2026-08-21T13:23:58Z",
+            "updatedAt": "2026-08-21T13:24:18Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631497",
+            "runNumber": 3
+          },
+          {
+            "id": 32486631454,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T13:23:58Z",
+            "startedAt": "2026-08-21T13:23:58Z",
+            "updatedAt": "2026-08-21T13:24:11Z",
+            "durationSeconds": 13,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486631454",
+            "runNumber": 8
+          },
+          {
+            "id": 32486630690,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-21T13:23:57Z",
+            "startedAt": "2026-08-21T13:23:57Z",
+            "updatedAt": "2026-08-21T13:24:37Z",
+            "durationSeconds": 40,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486630690",
+            "runNumber": 7
+          },
+          {
+            "id": 32447143133,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/adaptive-polymath-curator",
+            "createdAt": "2026-08-21T04:29:44Z",
+            "startedAt": "2026-08-21T04:29:44Z",
+            "updatedAt": "2026-08-21T04:29:56Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32447143133",
+            "runNumber": 7
+          },
+          {
+            "id": 32445870862,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/living-exhibits-complete",
+            "createdAt": "2026-08-21T04:08:31Z",
+            "startedAt": "2026-08-21T04:08:31Z",
+            "updatedAt": "2026-08-21T04:08:49Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445870862",
+            "runNumber": 6
+          },
+          {
+            "id": 32445551083,
+            "name": "Deploy GitHub Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:03:18Z",
+            "startedAt": "2026-08-21T04:03:18Z",
+            "updatedAt": "2026-08-21T04:03:37Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445551083",
+            "runNumber": 2
+          },
+          {
+            "id": 32445551049,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:03:18Z",
+            "startedAt": "2026-08-21T04:03:18Z",
+            "updatedAt": "2026-08-21T04:03:26Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445551049",
+            "runNumber": 5
+          },
+          {
+            "id": 32445549915,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-21T04:03:17Z",
+            "startedAt": "2026-08-21T04:03:17Z",
+            "updatedAt": "2026-08-21T04:04:04Z",
+            "durationSeconds": 47,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445549915",
+            "runNumber": 6
+          }
+        ]
+      },
+      "tags": [
+        "JavaScript"
       ],
       "priority": {
         "score": 0,
