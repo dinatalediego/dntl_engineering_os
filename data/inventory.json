@@ -1,18 +1,18 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-11T17:02:17.001Z",
+  "generatedAt": "2026-09-12T16:19:41.026Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
   "coverage": {
-    "discovered": 162,
-    "scored": 162,
+    "discovered": 163,
+    "scored": 163,
     "unknown": 0
   },
   "portfolioScore": 36,
   "actionsSummary": {
-    "configured": 36,
-    "green": 9,
+    "configured": 37,
+    "green": 10,
     "red": 4,
     "yellow": 1,
     "unknown": 18,
@@ -24,7 +24,7 @@
     "high": 10,
     "medium": 120,
     "low": 10,
-    "clear": 8
+    "clear": 9
   },
   "repositories": [
     {
@@ -11750,7 +11750,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-10T17:00:10Z",
+      "lastActivity": "2026-09-11T17:02:25Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -11783,31 +11783,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 34625369150,
+          "id": 34704857704,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-11T17:01:51Z",
-          "startedAt": "2026-09-11T17:01:51Z",
-          "updatedAt": "2026-09-11T17:01:54Z",
+          "createdAt": "2026-09-12T16:19:08Z",
+          "startedAt": "2026-09-12T16:19:08Z",
+          "updatedAt": "2026-09-12T16:19:11Z",
           "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34625369150",
-          "runNumber": 37
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34704857704",
+          "runNumber": 38
         },
         "runs": [
           {
-            "id": 34625369150,
+            "id": 34704857704,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-12T16:19:08Z",
+            "startedAt": "2026-09-12T16:19:08Z",
+            "updatedAt": "2026-09-12T16:19:11Z",
+            "durationSeconds": 3,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34704857704",
+            "runNumber": 38
+          },
+          {
+            "id": 34625369150,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-11T17:01:51Z",
             "startedAt": "2026-09-11T17:01:51Z",
-            "updatedAt": "2026-09-11T17:01:54Z",
-            "durationSeconds": 3,
+            "updatedAt": "2026-09-11T17:02:28Z",
+            "durationSeconds": 37,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34625369150",
             "runNumber": 37
           },
@@ -11922,20 +11936,6 @@
             "durationSeconds": 51,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33782216716",
             "runNumber": 29
-          },
-          {
-            "id": 33659424170,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-02T17:10:24Z",
-            "startedAt": "2026-09-02T17:10:24Z",
-            "updatedAt": "2026-09-02T17:11:00Z",
-            "durationSeconds": 36,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33659424170",
-            "runNumber": 28
           }
         ]
       },
@@ -11956,6 +11956,217 @@
       }
     },
     {
+      "name": "trading_for_money",
+      "fullName": "dinatalediego/trading_for_money",
+      "url": "https://github.com/dinatalediego/trading_for_money",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-09-12T04:53:56Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 39,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 10,
+        "successRateLast10": 100,
+        "failedRecentCount": 0,
+        "latest": {
+          "id": 34674202482,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-09-12T04:53:59Z",
+          "startedAt": "2026-09-12T04:53:59Z",
+          "updatedAt": "2026-09-12T04:54:17Z",
+          "durationSeconds": 18,
+          "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674202482",
+          "runNumber": 39
+        },
+        "runs": [
+          {
+            "id": 34674202482,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-12T04:53:59Z",
+            "startedAt": "2026-09-12T04:53:59Z",
+            "updatedAt": "2026-09-12T04:54:17Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674202482",
+            "runNumber": 39
+          },
+          {
+            "id": 34674174702,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "gold-worker-memory-v0.5",
+            "createdAt": "2026-09-12T04:53:19Z",
+            "startedAt": "2026-09-12T04:53:19Z",
+            "updatedAt": "2026-09-12T04:53:46Z",
+            "durationSeconds": 27,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674174702",
+            "runNumber": 38
+          },
+          {
+            "id": 34674163744,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "gold-worker-memory-v0.5",
+            "createdAt": "2026-09-12T04:53:01Z",
+            "startedAt": "2026-09-12T04:53:01Z",
+            "updatedAt": "2026-09-12T04:53:22Z",
+            "durationSeconds": 21,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674163744",
+            "runNumber": 37
+          },
+          {
+            "id": 34674146774,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "gold-worker-memory-v0.5",
+            "createdAt": "2026-09-12T04:52:38Z",
+            "startedAt": "2026-09-12T04:52:38Z",
+            "updatedAt": "2026-09-12T04:52:55Z",
+            "durationSeconds": 17,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674146774",
+            "runNumber": 36
+          },
+          {
+            "id": 34674132676,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "gold-worker-memory-v0.5",
+            "createdAt": "2026-09-12T04:52:13Z",
+            "startedAt": "2026-09-12T04:52:13Z",
+            "updatedAt": "2026-09-12T04:52:34Z",
+            "durationSeconds": 21,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674132676",
+            "runNumber": 35
+          },
+          {
+            "id": 34674131071,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "gold-worker-memory-v0.5",
+            "createdAt": "2026-09-12T04:52:11Z",
+            "startedAt": "2026-09-12T04:52:11Z",
+            "updatedAt": "2026-09-12T04:52:28Z",
+            "durationSeconds": 17,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674131071",
+            "runNumber": 34
+          },
+          {
+            "id": 34674129752,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "gold-worker-memory-v0.5",
+            "createdAt": "2026-09-12T04:52:09Z",
+            "startedAt": "2026-09-12T04:52:09Z",
+            "updatedAt": "2026-09-12T04:52:31Z",
+            "durationSeconds": 22,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674129752",
+            "runNumber": 33
+          },
+          {
+            "id": 34674080437,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "gold-worker-memory-v0.5",
+            "createdAt": "2026-09-12T04:51:01Z",
+            "startedAt": "2026-09-12T04:51:01Z",
+            "updatedAt": "2026-09-12T04:51:19Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674080437",
+            "runNumber": 32
+          },
+          {
+            "id": 34671586427,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "gold-worker-memory-v0.5",
+            "createdAt": "2026-09-12T03:53:54Z",
+            "startedAt": "2026-09-12T03:53:54Z",
+            "updatedAt": "2026-09-12T03:54:49Z",
+            "durationSeconds": 55,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34671586427",
+            "runNumber": 31
+          },
+          {
+            "id": 34671002427,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-12T03:40:28Z",
+            "startedAt": "2026-09-12T03:40:28Z",
+            "updatedAt": "2026-09-12T03:40:46Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34671002427",
+            "runNumber": 30
+          }
+        ]
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 0,
+        "severity": "clear",
+        "primaryReason": "No active intervention signal",
+        "signals": []
+      }
+    },
+    {
       "name": "bd_replica_crm",
       "fullName": "dinatalediego/bd_replica_crm",
       "url": "https://github.com/dinatalediego/bd_replica_crm",
@@ -11967,7 +12178,7 @@
       "deployment": "GitHub Actions",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-09-11T05:49:31Z",
+      "lastActivity": "2026-09-11T18:26:56Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12755,7 +12966,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-11T15:54:52Z",
+      "lastActivity": "2026-09-11T19:33:40Z",
       "attention": [
         "No operability manifest detected"
       ],
@@ -12776,7 +12987,7 @@
         "hasDocker": false,
         "hasVercelConfig": false,
         "trackedEnvFile": false,
-        "fileCount": 38,
+        "fileCount": 47,
         "recursiveTree": true
       },
       "actions": {
@@ -12785,23 +12996,93 @@
         "label": "Passing",
         "workflowCount": 2,
         "recentRuns": 10,
-        "successRateLast10": 90,
-        "failedRecentCount": 1,
+        "successRateLast10": 100,
+        "failedRecentCount": 0,
         "latest": {
-          "id": 34618938804,
+          "id": 34639501007,
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
           "event": "pull_request",
-          "branch": "feat/nobel-connection-lab",
-          "createdAt": "2026-09-11T15:55:00Z",
-          "startedAt": "2026-09-11T15:55:00Z",
-          "updatedAt": "2026-09-11T15:55:15Z",
-          "durationSeconds": 15,
-          "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34618938804",
-          "runNumber": 10
+          "branch": "feat/curatorial-priority-engine",
+          "createdAt": "2026-09-11T19:33:45Z",
+          "startedAt": "2026-09-11T19:33:45Z",
+          "updatedAt": "2026-09-11T19:33:54Z",
+          "durationSeconds": 9,
+          "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34639501007",
+          "runNumber": 13
         },
         "runs": [
+          {
+            "id": 34639501007,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/curatorial-priority-engine",
+            "createdAt": "2026-09-11T19:33:45Z",
+            "startedAt": "2026-09-11T19:33:45Z",
+            "updatedAt": "2026-09-11T19:33:54Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34639501007",
+            "runNumber": 13
+          },
+          {
+            "id": 34637517885,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/curatorial-priority-engine",
+            "createdAt": "2026-09-11T19:11:53Z",
+            "startedAt": "2026-09-11T19:11:53Z",
+            "updatedAt": "2026-09-11T19:12:20Z",
+            "durationSeconds": 27,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34637517885",
+            "runNumber": 12
+          },
+          {
+            "id": 34633191065,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-11T18:25:33Z",
+            "startedAt": "2026-09-11T18:25:33Z",
+            "updatedAt": "2026-09-11T18:25:49Z",
+            "durationSeconds": 16,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34633191065",
+            "runNumber": 11
+          },
+          {
+            "id": 34633190960,
+            "name": "Deploy GitHub Pages",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-11T18:25:33Z",
+            "startedAt": "2026-09-11T18:25:33Z",
+            "updatedAt": "2026-09-11T18:25:49Z",
+            "durationSeconds": 16,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34633190960",
+            "runNumber": 4
+          },
+          {
+            "id": 34633190449,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-09-11T18:25:33Z",
+            "startedAt": "2026-09-11T18:25:33Z",
+            "updatedAt": "2026-09-11T18:26:15Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/34633190449",
+            "runNumber": 8
+          },
           {
             "id": 34618938804,
             "name": "CI",
@@ -12871,76 +13152,6 @@
             "durationSeconds": 40,
             "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32486630690",
             "runNumber": 7
-          },
-          {
-            "id": 32447143133,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feature/adaptive-polymath-curator",
-            "createdAt": "2026-08-21T04:29:44Z",
-            "startedAt": "2026-08-21T04:29:44Z",
-            "updatedAt": "2026-08-21T04:29:56Z",
-            "durationSeconds": 12,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32447143133",
-            "runNumber": 7
-          },
-          {
-            "id": 32445870862,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feature/living-exhibits-complete",
-            "createdAt": "2026-08-21T04:08:31Z",
-            "startedAt": "2026-08-21T04:08:31Z",
-            "updatedAt": "2026-08-21T04:08:49Z",
-            "durationSeconds": 18,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445870862",
-            "runNumber": 6
-          },
-          {
-            "id": 32445551083,
-            "name": "Deploy GitHub Pages",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-21T04:03:18Z",
-            "startedAt": "2026-08-21T04:03:18Z",
-            "updatedAt": "2026-08-21T04:03:37Z",
-            "durationSeconds": 19,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445551083",
-            "runNumber": 2
-          },
-          {
-            "id": 32445551049,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-21T04:03:18Z",
-            "startedAt": "2026-08-21T04:03:18Z",
-            "updatedAt": "2026-08-21T04:03:26Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445551049",
-            "runNumber": 5
-          },
-          {
-            "id": 32445549915,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2026-08-21T04:03:17Z",
-            "startedAt": "2026-08-21T04:03:17Z",
-            "updatedAt": "2026-08-21T04:04:04Z",
-            "durationSeconds": 47,
-            "url": "https://github.com/dinatalediego/dntl_economia/actions/runs/32445549915",
-            "runNumber": 6
           }
         ]
       },
