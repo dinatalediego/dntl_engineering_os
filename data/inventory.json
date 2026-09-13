@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-12T16:19:41.026Z",
+  "generatedAt": "2026-09-13T16:58:21.653Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -2483,75 +2483,6 @@
       }
     },
     {
-      "name": "docbrown_ironman_cockkpit_app_lab",
-      "fullName": "dinatalediego/docbrown_ironman_cockkpit_app_lab",
-      "url": "https://github.com/dinatalediego/docbrown_ironman_cockkpit_app_lab",
-      "visibility": "private",
-      "score": 53,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "SQLite",
-      "tests": "Missing",
-      "lastActivity": "2026-06-14T20:13:12Z",
-      "attention": [
-        "Add automated tests",
-        "Add CI workflow"
-      ],
-      "components": {
-        "freshness": 18,
-        "documentation": 15,
-        "automation": 0,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 26,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [
-        "Python"
-      ],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
       "name": "pa_pricing_in_peru",
       "fullName": "dinatalediego/pa_pricing_in_peru",
       "url": "https://github.com/dinatalediego/pa_pricing_in_peru",
@@ -2932,6 +2863,75 @@
         "hasVercelConfig": false,
         "trackedEnvFile": false,
         "fileCount": 11,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "docbrown_ironman_cockkpit_app_lab",
+      "fullName": "dinatalediego/docbrown_ironman_cockkpit_app_lab",
+      "url": "https://github.com/dinatalediego/docbrown_ironman_cockkpit_app_lab",
+      "visibility": "private",
+      "score": 44,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "SQLite",
+      "tests": "Missing",
+      "lastActivity": "2026-06-14T20:13:12Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 26,
         "recursiveTree": true
       },
       "actions": {
@@ -11750,7 +11750,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-11T17:02:25Z",
+      "lastActivity": "2026-09-12T16:19:50Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -11783,31 +11783,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 34704857704,
+          "id": 34770143898,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-12T16:19:08Z",
-          "startedAt": "2026-09-12T16:19:08Z",
-          "updatedAt": "2026-09-12T16:19:11Z",
-          "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34704857704",
-          "runNumber": 38
+          "createdAt": "2026-09-13T16:57:52Z",
+          "startedAt": "2026-09-13T16:57:52Z",
+          "updatedAt": "2026-09-13T16:57:54Z",
+          "durationSeconds": 2,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34770143898",
+          "runNumber": 39
         },
         "runs": [
           {
-            "id": 34704857704,
+            "id": 34770143898,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-13T16:57:52Z",
+            "startedAt": "2026-09-13T16:57:52Z",
+            "updatedAt": "2026-09-13T16:57:54Z",
+            "durationSeconds": 2,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34770143898",
+            "runNumber": 39
+          },
+          {
+            "id": 34704857704,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-12T16:19:08Z",
             "startedAt": "2026-09-12T16:19:08Z",
-            "updatedAt": "2026-09-12T16:19:11Z",
-            "durationSeconds": 3,
+            "updatedAt": "2026-09-12T16:19:53Z",
+            "durationSeconds": 45,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34704857704",
             "runNumber": 38
           },
@@ -11922,20 +11936,6 @@
             "durationSeconds": 39,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33897542318",
             "runNumber": 30
-          },
-          {
-            "id": 33782216716,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-03T17:02:41Z",
-            "startedAt": "2026-09-03T17:02:41Z",
-            "updatedAt": "2026-09-03T17:03:32Z",
-            "durationSeconds": 51,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33782216716",
-            "runNumber": 29
           }
         ]
       },
@@ -11967,7 +11967,7 @@
       "deployment": "GitHub Actions",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-09-12T04:53:56Z",
+      "lastActivity": "2026-09-13T14:26:29Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -11988,7 +11988,7 @@
         "hasDocker": false,
         "hasVercelConfig": false,
         "trackedEnvFile": false,
-        "fileCount": 39,
+        "fileCount": 49,
         "recursiveTree": true
       },
       "actions": {
@@ -11997,162 +11997,162 @@
         "label": "Passing",
         "workflowCount": 1,
         "recentRuns": 10,
-        "successRateLast10": 100,
-        "failedRecentCount": 0,
+        "successRateLast10": 90,
+        "failedRecentCount": 1,
         "latest": {
-          "id": 34674202482,
+          "id": 34762672390,
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
           "event": "push",
           "branch": "main",
-          "createdAt": "2026-09-12T04:53:59Z",
-          "startedAt": "2026-09-12T04:53:59Z",
-          "updatedAt": "2026-09-12T04:54:17Z",
+          "createdAt": "2026-09-13T14:26:31Z",
+          "startedAt": "2026-09-13T14:26:31Z",
+          "updatedAt": "2026-09-13T14:26:49Z",
           "durationSeconds": 18,
-          "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674202482",
-          "runNumber": 39
+          "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34762672390",
+          "runNumber": 70
         },
         "runs": [
           {
-            "id": 34674202482,
+            "id": 34762672390,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
             "branch": "main",
-            "createdAt": "2026-09-12T04:53:59Z",
-            "startedAt": "2026-09-12T04:53:59Z",
-            "updatedAt": "2026-09-12T04:54:17Z",
+            "createdAt": "2026-09-13T14:26:31Z",
+            "startedAt": "2026-09-13T14:26:31Z",
+            "updatedAt": "2026-09-13T14:26:49Z",
             "durationSeconds": 18,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674202482",
-            "runNumber": 39
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34762672390",
+            "runNumber": 70
           },
           {
-            "id": 34674174702,
+            "id": 34762663936,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "pull_request",
-            "branch": "gold-worker-memory-v0.5",
-            "createdAt": "2026-09-12T04:53:19Z",
-            "startedAt": "2026-09-12T04:53:19Z",
-            "updatedAt": "2026-09-12T04:53:46Z",
-            "durationSeconds": 27,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674174702",
-            "runNumber": 38
+            "branch": "fix-auth-buttons-v0.7.1",
+            "createdAt": "2026-09-13T14:26:20Z",
+            "startedAt": "2026-09-13T14:26:20Z",
+            "updatedAt": "2026-09-13T14:26:40Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34762663936",
+            "runNumber": 69
           },
           {
-            "id": 34674163744,
+            "id": 34762633873,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
-            "branch": "gold-worker-memory-v0.5",
-            "createdAt": "2026-09-12T04:53:01Z",
-            "startedAt": "2026-09-12T04:53:01Z",
-            "updatedAt": "2026-09-12T04:53:22Z",
-            "durationSeconds": 21,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674163744",
-            "runNumber": 37
+            "branch": "fix-auth-buttons-v0.7.1",
+            "createdAt": "2026-09-13T14:25:44Z",
+            "startedAt": "2026-09-13T14:25:44Z",
+            "updatedAt": "2026-09-13T14:26:07Z",
+            "durationSeconds": 23,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34762633873",
+            "runNumber": 68
           },
           {
-            "id": 34674146774,
+            "id": 34762628392,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
-            "branch": "gold-worker-memory-v0.5",
-            "createdAt": "2026-09-12T04:52:38Z",
-            "startedAt": "2026-09-12T04:52:38Z",
-            "updatedAt": "2026-09-12T04:52:55Z",
-            "durationSeconds": 17,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674146774",
-            "runNumber": 36
+            "branch": "fix-auth-buttons-v0.7.1",
+            "createdAt": "2026-09-13T14:25:36Z",
+            "startedAt": "2026-09-13T14:25:36Z",
+            "updatedAt": "2026-09-13T14:25:55Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34762628392",
+            "runNumber": 67
           },
           {
-            "id": 34674132676,
+            "id": 34762599464,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
-            "branch": "gold-worker-memory-v0.5",
-            "createdAt": "2026-09-12T04:52:13Z",
-            "startedAt": "2026-09-12T04:52:13Z",
-            "updatedAt": "2026-09-12T04:52:34Z",
-            "durationSeconds": 21,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674132676",
-            "runNumber": 35
+            "branch": "fix-auth-buttons-v0.7.1",
+            "createdAt": "2026-09-13T14:25:04Z",
+            "startedAt": "2026-09-13T14:25:04Z",
+            "updatedAt": "2026-09-13T14:25:24Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34762599464",
+            "runNumber": 66
           },
           {
-            "id": 34674131071,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "gold-worker-memory-v0.5",
-            "createdAt": "2026-09-12T04:52:11Z",
-            "startedAt": "2026-09-12T04:52:11Z",
-            "updatedAt": "2026-09-12T04:52:28Z",
-            "durationSeconds": 17,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674131071",
-            "runNumber": 34
-          },
-          {
-            "id": 34674129752,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "gold-worker-memory-v0.5",
-            "createdAt": "2026-09-12T04:52:09Z",
-            "startedAt": "2026-09-12T04:52:09Z",
-            "updatedAt": "2026-09-12T04:52:31Z",
-            "durationSeconds": 22,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674129752",
-            "runNumber": 33
-          },
-          {
-            "id": 34674080437,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "gold-worker-memory-v0.5",
-            "createdAt": "2026-09-12T04:51:01Z",
-            "startedAt": "2026-09-12T04:51:01Z",
-            "updatedAt": "2026-09-12T04:51:19Z",
-            "durationSeconds": 18,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34674080437",
-            "runNumber": 32
-          },
-          {
-            "id": 34671586427,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "gold-worker-memory-v0.5",
-            "createdAt": "2026-09-12T03:53:54Z",
-            "startedAt": "2026-09-12T03:53:54Z",
-            "updatedAt": "2026-09-12T03:54:49Z",
-            "durationSeconds": 55,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34671586427",
-            "runNumber": 31
-          },
-          {
-            "id": 34671002427,
+            "id": 34715007127,
             "name": "CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
             "branch": "main",
-            "createdAt": "2026-09-12T03:40:28Z",
-            "startedAt": "2026-09-12T03:40:28Z",
-            "updatedAt": "2026-09-12T03:40:46Z",
+            "createdAt": "2026-09-12T19:43:42Z",
+            "startedAt": "2026-09-12T19:43:42Z",
+            "updatedAt": "2026-09-12T19:44:03Z",
+            "durationSeconds": 21,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34715007127",
+            "runNumber": 65
+          },
+          {
+            "id": 34714997324,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "capital-allocation-v0.7",
+            "createdAt": "2026-09-12T19:43:29Z",
+            "startedAt": "2026-09-12T19:43:29Z",
+            "updatedAt": "2026-09-12T19:43:58Z",
+            "durationSeconds": 29,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34714997324",
+            "runNumber": 64
+          },
+          {
+            "id": 34714965226,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "capital-allocation-v0.7",
+            "createdAt": "2026-09-12T19:42:47Z",
+            "startedAt": "2026-09-12T19:42:47Z",
+            "updatedAt": "2026-09-12T19:43:07Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34714965226",
+            "runNumber": 63
+          },
+          {
+            "id": 34714933897,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "capital-allocation-v0.7",
+            "createdAt": "2026-09-12T19:42:08Z",
+            "startedAt": "2026-09-12T19:42:08Z",
+            "updatedAt": "2026-09-12T19:42:28Z",
+            "durationSeconds": 20,
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34714933897",
+            "runNumber": 62
+          },
+          {
+            "id": 34714876721,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "capital-allocation-v0.7",
+            "createdAt": "2026-09-12T19:40:54Z",
+            "startedAt": "2026-09-12T19:40:54Z",
+            "updatedAt": "2026-09-12T19:41:12Z",
             "durationSeconds": 18,
-            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34671002427",
-            "runNumber": 30
+            "url": "https://github.com/dinatalediego/trading_for_money/actions/runs/34714876721",
+            "runNumber": 61
           }
         ]
       },
