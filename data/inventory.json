@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-14T18:39:15.344Z",
+  "generatedAt": "2026-09-15T17:40:50.539Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -22,8 +22,8 @@
   "attentionSummary": {
     "critical": 13,
     "high": 10,
-    "medium": 123,
-    "low": 11,
+    "medium": 122,
+    "low": 12,
     "clear": 11
   },
   "repositories": [
@@ -4366,76 +4366,6 @@
       }
     },
     {
-      "name": "econo_crm",
-      "fullName": "dinatalediego/econo_crm",
-      "url": "https://github.com/dinatalediego/econo_crm",
-      "visibility": "private",
-      "score": 29,
-      "health": "risk",
-      "type": "App",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-08-16T17:00:45Z",
-      "attention": [
-        "Repository is empty",
-        "Add automated tests",
-        "Add CI workflow",
-        "Add operational README",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 0,
-        "automation": 0,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 4
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": false,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 0,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
       "name": "cygnus_absorcion_model",
       "fullName": "dinatalediego/cygnus_absorcion_model",
       "url": "https://github.com/dinatalediego/cygnus_absorcion_model",
@@ -4982,6 +4912,76 @@
       "tags": [
         "HTML"
       ],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "econo_crm",
+      "fullName": "dinatalediego/econo_crm",
+      "url": "https://github.com/dinatalediego/econo_crm",
+      "visibility": "private",
+      "score": 22,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-08-16T17:00:45Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [],
       "priority": {
         "score": 45,
         "severity": "medium",
@@ -9882,7 +9882,7 @@
       "deployment": "GitHub Actions",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-09-13T21:23:24Z",
+      "lastActivity": "2026-09-15T08:10:08Z",
       "attention": [
         "No repository-level blockers detected",
         "GitHub Actions telemetry unavailable"
@@ -9904,7 +9904,7 @@
         "hasDocker": false,
         "hasVercelConfig": false,
         "trackedEnvFile": false,
-        "fileCount": 21,
+        "fileCount": 27,
         "recursiveTree": true
       },
       "actions": {
@@ -9919,7 +9919,7 @@
         "failedRecentCount": null
       },
       "tags": [
-        "PLpgSQL"
+        "TypeScript"
       ],
       "priority": {
         "score": 28,
@@ -10186,131 +10186,6 @@
             "points": 28,
             "reason": "GitHub Actions telemetry is unavailable",
             "code": "actions:unknown"
-          }
-        ]
-      }
-    },
-    {
-      "name": "venture_architect",
-      "fullName": "dinatalediego/venture_architect",
-      "url": "https://github.com/dinatalediego/venture_architect",
-      "visibility": "public",
-      "score": 70,
-      "health": "watch",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-09-14T17:44:11Z",
-      "attention": [
-        "Add automated tests",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 5,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 16,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 5,
-        "recentRuns": 3,
-        "successRateLast10": 100,
-        "failedRecentCount": 0,
-        "latest": {
-          "id": 34876530524,
-          "name": "Record Founder Day",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "workflow_dispatch",
-          "branch": "main",
-          "createdAt": "2026-09-14T17:44:04Z",
-          "startedAt": "2026-09-14T17:44:04Z",
-          "updatedAt": "2026-09-14T17:44:16Z",
-          "durationSeconds": 12,
-          "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34876530524",
-          "runNumber": 1
-        },
-        "runs": [
-          {
-            "id": 34876530524,
-            "name": "Record Founder Day",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "workflow_dispatch",
-            "branch": "main",
-            "createdAt": "2026-09-14T17:44:04Z",
-            "startedAt": "2026-09-14T17:44:04Z",
-            "updatedAt": "2026-09-14T17:44:16Z",
-            "durationSeconds": 12,
-            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34876530524",
-            "runNumber": 1
-          },
-          {
-            "id": 34875769877,
-            "name": "Validate Venture Contract",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T17:36:23Z",
-            "startedAt": "2026-09-14T17:36:23Z",
-            "updatedAt": "2026-09-14T17:36:31Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34875769877",
-            "runNumber": 2
-          },
-          {
-            "id": 34875650138,
-            "name": "Validate Venture Contract",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T17:35:13Z",
-            "startedAt": "2026-09-14T17:35:13Z",
-            "updatedAt": "2026-09-14T17:35:20Z",
-            "durationSeconds": 7,
-            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34875650138",
-            "runNumber": 1
-          }
-        ]
-      },
-      "tags": [
-        "HTML"
-      ],
-      "priority": {
-        "score": 28,
-        "severity": "medium",
-        "primaryReason": "Repository structural health needs attention",
-        "signals": [
-          {
-            "points": 18,
-            "reason": "Repository structural health needs attention",
-            "code": "repository:watch"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
           }
         ]
       }
@@ -11550,223 +11425,6 @@
       }
     },
     {
-      "name": "dntl_datos",
-      "fullName": "dinatalediego/dntl_datos",
-      "url": "https://github.com/dinatalediego/dntl_datos",
-      "visibility": "public",
-      "score": 100,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Not detected",
-      "tests": "Detected",
-      "lastActivity": "2026-08-21T14:51:01Z",
-      "attention": [
-        "No repository-level blockers detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 2,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 20,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 2,
-        "recentRuns": 10,
-        "successRateLast10": 60,
-        "failedRecentCount": 4,
-        "latest": {
-          "id": 34871835631,
-          "name": "Public batch ingest",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "schedule",
-          "branch": "main",
-          "createdAt": "2026-09-14T16:57:57Z",
-          "startedAt": "2026-09-14T16:57:57Z",
-          "updatedAt": "2026-09-14T16:59:08Z",
-          "durationSeconds": 71,
-          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34871835631",
-          "runNumber": 17
-        },
-        "runs": [
-          {
-            "id": 34871835631,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-14T16:57:57Z",
-            "startedAt": "2026-09-14T16:57:57Z",
-            "updatedAt": "2026-09-14T16:59:08Z",
-            "durationSeconds": 71,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34871835631",
-            "runNumber": 17
-          },
-          {
-            "id": 34613720580,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-11T15:02:19Z",
-            "startedAt": "2026-09-11T15:02:19Z",
-            "updatedAt": "2026-09-11T15:03:48Z",
-            "durationSeconds": 89,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34613720580",
-            "runNumber": 16
-          },
-          {
-            "id": 34492701241,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-10T14:59:39Z",
-            "startedAt": "2026-09-10T14:59:39Z",
-            "updatedAt": "2026-09-10T15:07:17Z",
-            "durationSeconds": 458,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34492701241",
-            "runNumber": 15
-          },
-          {
-            "id": 34368186297,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-09T15:07:42Z",
-            "startedAt": "2026-09-09T15:07:42Z",
-            "updatedAt": "2026-09-09T15:10:21Z",
-            "durationSeconds": 159,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34368186297",
-            "runNumber": 14
-          },
-          {
-            "id": 34242776784,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-08T15:08:00Z",
-            "startedAt": "2026-09-08T15:08:00Z",
-            "updatedAt": "2026-09-08T15:09:41Z",
-            "durationSeconds": 101,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34242776784",
-            "runNumber": 13
-          },
-          {
-            "id": 34143431320,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-07T16:28:31Z",
-            "startedAt": "2026-09-07T16:28:31Z",
-            "updatedAt": "2026-09-07T16:32:13Z",
-            "durationSeconds": 222,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34143431320",
-            "runNumber": 12
-          },
-          {
-            "id": 33886819619,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-04T14:58:38Z",
-            "startedAt": "2026-09-04T14:58:38Z",
-            "updatedAt": "2026-09-04T14:59:50Z",
-            "durationSeconds": 72,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33886819619",
-            "runNumber": 11
-          },
-          {
-            "id": 33770190083,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-03T15:00:52Z",
-            "startedAt": "2026-09-03T15:00:52Z",
-            "updatedAt": "2026-09-03T15:01:53Z",
-            "durationSeconds": 61,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33770190083",
-            "runNumber": 10
-          },
-          {
-            "id": 33646437679,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-02T15:06:52Z",
-            "startedAt": "2026-09-02T15:06:52Z",
-            "updatedAt": "2026-09-02T15:09:09Z",
-            "durationSeconds": 137,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33646437679",
-            "runNumber": 9
-          },
-          {
-            "id": 33525911123,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-01T15:28:07Z",
-            "startedAt": "2026-09-01T15:28:07Z",
-            "updatedAt": "2026-09-01T15:29:36Z",
-            "durationSeconds": 89,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33525911123",
-            "runNumber": 8
-          }
-        ]
-      },
-      "tags": [
-        "Python"
-      ],
-      "priority": {
-        "score": 12,
-        "severity": "low",
-        "primaryReason": "4 failures detected in recent workflow history",
-        "signals": [
-          {
-            "points": 12,
-            "reason": "4 failures detected in recent workflow history",
-            "code": "actions:repeated-failures"
-          }
-        ]
-      }
-    },
-    {
       "name": "dntl_chatbot",
       "fullName": "dinatalediego/dntl_chatbot",
       "url": "https://github.com/dinatalediego/dntl_chatbot",
@@ -11939,7 +11597,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-13T16:58:31Z",
+      "lastActivity": "2026-09-14T18:39:25Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -11972,31 +11630,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 34882053438,
+          "id": 35002719921,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-14T18:38:40Z",
-          "startedAt": "2026-09-14T18:38:40Z",
-          "updatedAt": "2026-09-14T18:38:43Z",
-          "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34882053438",
-          "runNumber": 40
+          "createdAt": "2026-09-15T17:40:20Z",
+          "startedAt": "2026-09-15T17:40:20Z",
+          "updatedAt": "2026-09-15T17:40:25Z",
+          "durationSeconds": 5,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35002719921",
+          "runNumber": 41
         },
         "runs": [
           {
-            "id": 34882053438,
+            "id": 35002719921,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-15T17:40:20Z",
+            "startedAt": "2026-09-15T17:40:20Z",
+            "updatedAt": "2026-09-15T17:40:25Z",
+            "durationSeconds": 5,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35002719921",
+            "runNumber": 41
+          },
+          {
+            "id": 34882053438,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-14T18:38:40Z",
             "startedAt": "2026-09-14T18:38:40Z",
-            "updatedAt": "2026-09-14T18:38:43Z",
-            "durationSeconds": 3,
+            "updatedAt": "2026-09-14T18:39:28Z",
+            "durationSeconds": 48,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34882053438",
             "runNumber": 40
           },
@@ -12111,20 +11783,6 @@
             "durationSeconds": 36,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34044964453",
             "runNumber": 32
-          },
-          {
-            "id": 33976746125,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-05T16:04:57Z",
-            "startedAt": "2026-09-05T16:04:57Z",
-            "updatedAt": "2026-09-05T16:05:41Z",
-            "durationSeconds": 44,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/33976746125",
-            "runNumber": 31
           }
         ]
       },
@@ -12140,6 +11798,223 @@
             "points": 10,
             "reason": "GitHub Actions run is currently in progress",
             "code": "actions:running"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dntl_datos",
+      "fullName": "dinatalediego/dntl_datos",
+      "url": "https://github.com/dinatalediego/dntl_datos",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-08-21T14:51:01Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 20,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 70,
+        "failedRecentCount": 3,
+        "latest": {
+          "id": 34989338279,
+          "name": "Public batch ingest",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "schedule",
+          "branch": "main",
+          "createdAt": "2026-09-15T15:34:17Z",
+          "startedAt": "2026-09-15T15:34:17Z",
+          "updatedAt": "2026-09-15T15:35:34Z",
+          "durationSeconds": 77,
+          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34989338279",
+          "runNumber": 18
+        },
+        "runs": [
+          {
+            "id": 34989338279,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-15T15:34:17Z",
+            "startedAt": "2026-09-15T15:34:17Z",
+            "updatedAt": "2026-09-15T15:35:34Z",
+            "durationSeconds": 77,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34989338279",
+            "runNumber": 18
+          },
+          {
+            "id": 34871835631,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-14T16:57:57Z",
+            "startedAt": "2026-09-14T16:57:57Z",
+            "updatedAt": "2026-09-14T16:59:08Z",
+            "durationSeconds": 71,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34871835631",
+            "runNumber": 17
+          },
+          {
+            "id": 34613720580,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-11T15:02:19Z",
+            "startedAt": "2026-09-11T15:02:19Z",
+            "updatedAt": "2026-09-11T15:03:48Z",
+            "durationSeconds": 89,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34613720580",
+            "runNumber": 16
+          },
+          {
+            "id": 34492701241,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-10T14:59:39Z",
+            "startedAt": "2026-09-10T14:59:39Z",
+            "updatedAt": "2026-09-10T15:07:17Z",
+            "durationSeconds": 458,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34492701241",
+            "runNumber": 15
+          },
+          {
+            "id": 34368186297,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-09T15:07:42Z",
+            "startedAt": "2026-09-09T15:07:42Z",
+            "updatedAt": "2026-09-09T15:10:21Z",
+            "durationSeconds": 159,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34368186297",
+            "runNumber": 14
+          },
+          {
+            "id": 34242776784,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-08T15:08:00Z",
+            "startedAt": "2026-09-08T15:08:00Z",
+            "updatedAt": "2026-09-08T15:09:41Z",
+            "durationSeconds": 101,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34242776784",
+            "runNumber": 13
+          },
+          {
+            "id": 34143431320,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-07T16:28:31Z",
+            "startedAt": "2026-09-07T16:28:31Z",
+            "updatedAt": "2026-09-07T16:32:13Z",
+            "durationSeconds": 222,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/34143431320",
+            "runNumber": 12
+          },
+          {
+            "id": 33886819619,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-04T14:58:38Z",
+            "startedAt": "2026-09-04T14:58:38Z",
+            "updatedAt": "2026-09-04T14:59:50Z",
+            "durationSeconds": 72,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33886819619",
+            "runNumber": 11
+          },
+          {
+            "id": 33770190083,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-03T15:00:52Z",
+            "startedAt": "2026-09-03T15:00:52Z",
+            "updatedAt": "2026-09-03T15:01:53Z",
+            "durationSeconds": 61,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33770190083",
+            "runNumber": 10
+          },
+          {
+            "id": 33646437679,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-02T15:06:52Z",
+            "startedAt": "2026-09-02T15:06:52Z",
+            "updatedAt": "2026-09-02T15:09:09Z",
+            "durationSeconds": 137,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/33646437679",
+            "runNumber": 9
+          }
+        ]
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 8,
+        "severity": "low",
+        "primaryReason": "3 failures detected in recent workflow history",
+        "signals": [
+          {
+            "points": 8,
+            "reason": "3 failures detected in recent workflow history",
+            "code": "actions:repeated-failures"
           }
         ]
       }
@@ -12292,6 +12167,223 @@
       }
     },
     {
+      "name": "venture_architect",
+      "fullName": "dinatalediego/venture_architect",
+      "url": "https://github.com/dinatalediego/venture_architect",
+      "visibility": "public",
+      "score": 90,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Not detected",
+      "tests": "Detected",
+      "lastActivity": "2026-09-15T00:55:18Z",
+      "attention": [
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 7,
+        "hasTests": true,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 61,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 7,
+        "recentRuns": 10,
+        "successRateLast10": 80,
+        "failedRecentCount": 2,
+        "latest": {
+          "id": 35001398085,
+          "name": "Daily CEO Brief",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "schedule",
+          "branch": "main",
+          "createdAt": "2026-09-15T17:27:37Z",
+          "startedAt": "2026-09-15T17:27:37Z",
+          "updatedAt": "2026-09-15T17:27:49Z",
+          "durationSeconds": 12,
+          "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35001398085",
+          "runNumber": 1
+        },
+        "runs": [
+          {
+            "id": 35001398085,
+            "name": "Daily CEO Brief",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-15T17:27:37Z",
+            "startedAt": "2026-09-15T17:27:37Z",
+            "updatedAt": "2026-09-15T17:27:49Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35001398085",
+            "runNumber": 1
+          },
+          {
+            "id": 34915182180,
+            "name": "Regression Watch",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "workflow_run",
+            "branch": "main",
+            "createdAt": "2026-09-15T00:55:41Z",
+            "startedAt": "2026-09-15T00:55:41Z",
+            "updatedAt": "2026-09-15T00:55:51Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34915182180",
+            "runNumber": 25
+          },
+          {
+            "id": 34915158306,
+            "name": "Validate Venture Contract",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-15T00:55:21Z",
+            "startedAt": "2026-09-15T00:55:21Z",
+            "updatedAt": "2026-09-15T00:55:39Z",
+            "durationSeconds": 18,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34915158306",
+            "runNumber": 30
+          },
+          {
+            "id": 34915142275,
+            "name": "Regression Watch",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "workflow_run",
+            "branch": "main",
+            "createdAt": "2026-09-15T00:55:07Z",
+            "startedAt": "2026-09-15T00:55:07Z",
+            "updatedAt": "2026-09-15T00:55:16Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34915142275",
+            "runNumber": 24
+          },
+          {
+            "id": 34915128834,
+            "name": "Validate Venture Contract",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "product/conversational-hook-brand",
+            "createdAt": "2026-09-15T00:54:55Z",
+            "startedAt": "2026-09-15T00:54:55Z",
+            "updatedAt": "2026-09-15T00:55:05Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34915128834",
+            "runNumber": 29
+          },
+          {
+            "id": 34915094060,
+            "name": "Regression Watch",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "workflow_run",
+            "branch": "main",
+            "createdAt": "2026-09-15T00:54:26Z",
+            "startedAt": "2026-09-15T00:54:26Z",
+            "updatedAt": "2026-09-15T00:54:35Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34915094060",
+            "runNumber": 23
+          },
+          {
+            "id": 34915082526,
+            "name": "Validate Venture Contract",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "product/conversational-hook-brand",
+            "createdAt": "2026-09-15T00:54:16Z",
+            "startedAt": "2026-09-15T00:54:16Z",
+            "updatedAt": "2026-09-15T00:54:24Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34915082526",
+            "runNumber": 28
+          },
+          {
+            "id": 34909221704,
+            "name": "Regression Watch",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "workflow_run",
+            "branch": "main",
+            "createdAt": "2026-09-14T23:31:05Z",
+            "startedAt": "2026-09-14T23:31:05Z",
+            "updatedAt": "2026-09-14T23:31:12Z",
+            "durationSeconds": 7,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34909221704",
+            "runNumber": 22
+          },
+          {
+            "id": 34909195356,
+            "name": "Validate Venture Contract",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-14T23:30:45Z",
+            "startedAt": "2026-09-14T23:30:45Z",
+            "updatedAt": "2026-09-14T23:31:04Z",
+            "durationSeconds": 19,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34909195356",
+            "runNumber": 27
+          },
+          {
+            "id": 34909099164,
+            "name": "Regression Watch",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "workflow_run",
+            "branch": "main",
+            "createdAt": "2026-09-14T23:29:29Z",
+            "startedAt": "2026-09-14T23:29:29Z",
+            "updatedAt": "2026-09-14T23:29:34Z",
+            "durationSeconds": 5,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/34909099164",
+            "runNumber": 21
+          }
+        ]
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 4,
+        "severity": "low",
+        "primaryReason": "2 failures detected in recent workflow history",
+        "signals": [
+          {
+            "points": 4,
+            "reason": "2 failures detected in recent workflow history",
+            "code": "actions:repeated-failures"
+          }
+        ]
+      }
+    },
+    {
       "name": "data_science_master",
       "fullName": "dinatalediego/data_science_master",
       "url": "https://github.com/dinatalediego/data_science_master",
@@ -12303,7 +12395,7 @@
       "deployment": "Vercel-ready",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-09-14T18:05:27Z",
+      "lastActivity": "2026-09-15T14:48:15Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12324,7 +12416,7 @@
         "hasDocker": false,
         "hasVercelConfig": true,
         "trackedEnvFile": false,
-        "fileCount": 31,
+        "fileCount": 69,
         "recursiveTree": true
       },
       "actions": {
@@ -12336,159 +12428,159 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 34878682203,
-          "name": "Web CI",
+          "id": 34983927477,
+          "name": "Validate SÓCRATES Foundation",
           "status": "completed",
           "conclusion": "success",
           "event": "push",
           "branch": "main",
-          "createdAt": "2026-09-14T18:05:30Z",
-          "startedAt": "2026-09-14T18:05:30Z",
-          "updatedAt": "2026-09-14T18:06:12Z",
-          "durationSeconds": 42,
-          "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878682203",
-          "runNumber": 15
+          "createdAt": "2026-09-15T14:46:37Z",
+          "startedAt": "2026-09-15T14:46:37Z",
+          "updatedAt": "2026-09-15T14:46:45Z",
+          "durationSeconds": 8,
+          "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983927477",
+          "runNumber": 82
         },
         "runs": [
           {
-            "id": 34878682203,
-            "name": "Web CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:05:30Z",
-            "startedAt": "2026-09-14T18:05:30Z",
-            "updatedAt": "2026-09-14T18:06:12Z",
-            "durationSeconds": 42,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878682203",
-            "runNumber": 15
-          },
-          {
-            "id": 34878682099,
+            "id": 34983927477,
             "name": "Validate SÓCRATES Foundation",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
             "branch": "main",
-            "createdAt": "2026-09-14T18:05:30Z",
-            "startedAt": "2026-09-14T18:05:30Z",
-            "updatedAt": "2026-09-14T18:05:41Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878682099",
-            "runNumber": 32
-          },
-          {
-            "id": 34878677120,
-            "name": "Web CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:05:27Z",
-            "startedAt": "2026-09-14T18:05:27Z",
-            "updatedAt": "2026-09-14T18:06:04Z",
-            "durationSeconds": 37,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878677120",
-            "runNumber": 14
-          },
-          {
-            "id": 34878677101,
-            "name": "Validate SÓCRATES Foundation",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:05:27Z",
-            "startedAt": "2026-09-14T18:05:27Z",
-            "updatedAt": "2026-09-14T18:05:34Z",
-            "durationSeconds": 7,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878677101",
-            "runNumber": 31
-          },
-          {
-            "id": 34878652387,
-            "name": "Validate SÓCRATES Foundation",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:05:11Z",
-            "startedAt": "2026-09-14T18:05:11Z",
-            "updatedAt": "2026-09-14T18:05:54Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878652387",
-            "runNumber": 30
-          },
-          {
-            "id": 34878652344,
-            "name": "Web CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:05:11Z",
-            "startedAt": "2026-09-14T18:05:11Z",
-            "updatedAt": "2026-09-14T18:05:51Z",
-            "durationSeconds": 40,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878652344",
-            "runNumber": 13
-          },
-          {
-            "id": 34878615454,
-            "name": "Web CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:04:51Z",
-            "startedAt": "2026-09-14T18:04:51Z",
-            "updatedAt": "2026-09-14T18:05:36Z",
-            "durationSeconds": 45,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878615454",
-            "runNumber": 12
-          },
-          {
-            "id": 34878615419,
-            "name": "Validate SÓCRATES Foundation",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:04:51Z",
-            "startedAt": "2026-09-14T18:04:51Z",
-            "updatedAt": "2026-09-14T18:04:58Z",
-            "durationSeconds": 7,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878615419",
-            "runNumber": 29
-          },
-          {
-            "id": 34878601245,
-            "name": "Web CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:04:43Z",
-            "startedAt": "2026-09-14T18:04:43Z",
-            "updatedAt": "2026-09-14T18:06:02Z",
-            "durationSeconds": 79,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878601245",
-            "runNumber": 11
-          },
-          {
-            "id": 34878601211,
-            "name": "Validate SÓCRATES Foundation",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:04:43Z",
-            "startedAt": "2026-09-14T18:04:43Z",
-            "updatedAt": "2026-09-14T18:04:51Z",
+            "createdAt": "2026-09-15T14:46:37Z",
+            "startedAt": "2026-09-15T14:46:37Z",
+            "updatedAt": "2026-09-15T14:46:45Z",
             "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34878601211",
-            "runNumber": 28
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983927477",
+            "runNumber": 82
+          },
+          {
+            "id": 34983927448,
+            "name": "Web CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-15T14:46:37Z",
+            "startedAt": "2026-09-15T14:46:37Z",
+            "updatedAt": "2026-09-15T14:47:16Z",
+            "durationSeconds": 39,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983927448",
+            "runNumber": 65
+          },
+          {
+            "id": 34983747141,
+            "name": "Validate SÓCRATES Foundation",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/v1.6-academic-week-intelligence",
+            "createdAt": "2026-09-15T14:45:03Z",
+            "startedAt": "2026-09-15T14:45:03Z",
+            "updatedAt": "2026-09-15T14:45:11Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983747141",
+            "runNumber": 81
+          },
+          {
+            "id": 34983747098,
+            "name": "Web CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/v1.6-academic-week-intelligence",
+            "createdAt": "2026-09-15T14:45:03Z",
+            "startedAt": "2026-09-15T14:45:03Z",
+            "updatedAt": "2026-09-15T14:45:55Z",
+            "durationSeconds": 52,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983747098",
+            "runNumber": 64
+          },
+          {
+            "id": 34983519141,
+            "name": "Web CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-15T14:43:03Z",
+            "startedAt": "2026-09-15T14:43:03Z",
+            "updatedAt": "2026-09-15T14:43:55Z",
+            "durationSeconds": 52,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983519141",
+            "runNumber": 63
+          },
+          {
+            "id": 34983519041,
+            "name": "Validate SÓCRATES Foundation",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-15T14:43:03Z",
+            "startedAt": "2026-09-15T14:43:03Z",
+            "updatedAt": "2026-09-15T14:43:13Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983519041",
+            "runNumber": 80
+          },
+          {
+            "id": 34983381234,
+            "name": "Web CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/v1.5-precycle-readiness",
+            "createdAt": "2026-09-15T14:41:49Z",
+            "startedAt": "2026-09-15T14:41:49Z",
+            "updatedAt": "2026-09-15T14:42:46Z",
+            "durationSeconds": 57,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983381234",
+            "runNumber": 62
+          },
+          {
+            "id": 34983381092,
+            "name": "Validate SÓCRATES Foundation",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/v1.5-precycle-readiness",
+            "createdAt": "2026-09-15T14:41:48Z",
+            "startedAt": "2026-09-15T14:41:48Z",
+            "updatedAt": "2026-09-15T14:41:57Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983381092",
+            "runNumber": 79
+          },
+          {
+            "id": 34982889030,
+            "name": "Web CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-15T14:37:24Z",
+            "startedAt": "2026-09-15T14:37:24Z",
+            "updatedAt": "2026-09-15T14:38:18Z",
+            "durationSeconds": 54,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34982889030",
+            "runNumber": 61
+          },
+          {
+            "id": 34982888654,
+            "name": "Validate SÓCRATES Foundation",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-15T14:37:24Z",
+            "startedAt": "2026-09-15T14:37:24Z",
+            "updatedAt": "2026-09-15T14:37:34Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34982888654",
+            "runNumber": 78
           }
         ]
       },
@@ -12543,24 +12635,94 @@
         "color": "green",
         "label": "Passing",
         "workflowCount": 4,
-        "recentRuns": 8,
+        "recentRuns": 10,
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 34858604132,
-          "name": "Investment UX interactions",
+          "id": 34932188154,
+          "name": "Actualizar BCRP cada hora y verificar frescura",
           "status": "completed",
           "conclusion": "success",
-          "event": "push",
+          "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-14T14:53:54Z",
-          "startedAt": "2026-09-14T14:53:54Z",
-          "updatedAt": "2026-09-14T14:54:05Z",
+          "createdAt": "2026-09-15T05:18:09Z",
+          "startedAt": "2026-09-15T05:18:09Z",
+          "updatedAt": "2026-09-15T05:18:20Z",
           "durationSeconds": 11,
-          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34858604132",
-          "runNumber": 1
+          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34932188154",
+          "runNumber": 6
         },
         "runs": [
+          {
+            "id": 34932188154,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-15T05:18:09Z",
+            "startedAt": "2026-09-15T05:18:09Z",
+            "updatedAt": "2026-09-15T05:18:20Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34932188154",
+            "runNumber": 6
+          },
+          {
+            "id": 34918992292,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-15T01:52:48Z",
+            "startedAt": "2026-09-15T01:52:48Z",
+            "updatedAt": "2026-09-15T01:53:00Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34918992292",
+            "runNumber": 5
+          },
+          {
+            "id": 34905565815,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-14T22:44:17Z",
+            "startedAt": "2026-09-14T22:44:17Z",
+            "updatedAt": "2026-09-14T22:44:31Z",
+            "durationSeconds": 14,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34905565815",
+            "runNumber": 4
+          },
+          {
+            "id": 34887705775,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-14T19:34:21Z",
+            "startedAt": "2026-09-14T19:34:21Z",
+            "updatedAt": "2026-09-14T19:34:36Z",
+            "durationSeconds": 15,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34887705775",
+            "runNumber": 3
+          },
+          {
+            "id": 34886400250,
+            "name": "Review investment fee freshness",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-14T19:21:33Z",
+            "startedAt": "2026-09-14T19:21:33Z",
+            "updatedAt": "2026-09-14T19:21:42Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34886400250",
+            "runNumber": 2
+          },
           {
             "id": 34858604132,
             "name": "Investment UX interactions",
@@ -12630,48 +12792,6 @@
             "durationSeconds": 10,
             "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34796503144",
             "runNumber": 2
-          },
-          {
-            "id": 34796503140,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-14T01:37:05Z",
-            "startedAt": "2026-09-14T01:37:05Z",
-            "updatedAt": "2026-09-14T01:37:19Z",
-            "durationSeconds": 14,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34796503140",
-            "runNumber": 2
-          },
-          {
-            "id": 34777284280,
-            "name": "Actualizar BCRP y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-13T19:18:22Z",
-            "startedAt": "2026-09-13T19:18:22Z",
-            "updatedAt": "2026-09-13T19:18:33Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34777284280",
-            "runNumber": 1
-          },
-          {
-            "id": 34777284231,
-            "name": "Calidad del portal",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-13T19:18:22Z",
-            "startedAt": "2026-09-13T19:18:22Z",
-            "updatedAt": "2026-09-13T19:18:32Z",
-            "durationSeconds": 10,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/34777284231",
-            "runNumber": 1
           }
         ]
       },
