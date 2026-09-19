@@ -1,12 +1,12 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-18T17:06:01.479Z",
+  "generatedAt": "2026-09-19T16:30:58.436Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
   "coverage": {
-    "discovered": 172,
-    "scored": 172,
+    "discovered": 173,
+    "scored": 173,
     "unknown": 0
   },
   "portfolioScore": 39,
@@ -17,12 +17,12 @@
     "yellow": 1,
     "unknown": 20,
     "idle": 4,
-    "notConfigured": 126
+    "notConfigured": 127
   },
   "attentionSummary": {
     "critical": 14,
     "high": 10,
-    "medium": 123,
+    "medium": 124,
     "low": 11,
     "clear": 14
   },
@@ -4218,6 +4218,76 @@
       "tags": [
         "HTML"
       ],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "content_creator_funcional",
+      "fullName": "dinatalediego/content_creator_funcional",
+      "url": "https://github.com/dinatalediego/content_creator_funcional",
+      "visibility": "public",
+      "score": 29,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-09-19T15:46:35Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [],
       "priority": {
         "score": 45,
         "severity": "medium",
@@ -12095,7 +12165,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-17T17:38:44Z",
+      "lastActivity": "2026-09-18T17:06:09Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12128,31 +12198,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 35372274176,
+          "id": 35455175937,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-18T17:05:24Z",
-          "startedAt": "2026-09-18T17:05:24Z",
-          "updatedAt": "2026-09-18T17:05:32Z",
-          "durationSeconds": 8,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35372274176",
-          "runNumber": 44
+          "createdAt": "2026-09-19T16:30:28Z",
+          "startedAt": "2026-09-19T16:30:28Z",
+          "updatedAt": "2026-09-19T16:30:31Z",
+          "durationSeconds": 3,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35455175937",
+          "runNumber": 45
         },
         "runs": [
           {
-            "id": 35372274176,
+            "id": 35455175937,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-19T16:30:28Z",
+            "startedAt": "2026-09-19T16:30:28Z",
+            "updatedAt": "2026-09-19T16:30:31Z",
+            "durationSeconds": 3,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35455175937",
+            "runNumber": 45
+          },
+          {
+            "id": 35372274176,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-18T17:05:24Z",
             "startedAt": "2026-09-18T17:05:24Z",
-            "updatedAt": "2026-09-18T17:05:32Z",
-            "durationSeconds": 8,
+            "updatedAt": "2026-09-18T17:06:12Z",
+            "durationSeconds": 48,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35372274176",
             "runNumber": 44
           },
@@ -12267,20 +12351,6 @@
             "durationSeconds": 39,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34505458070",
             "runNumber": 36
-          },
-          {
-            "id": 34381198766,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-09T17:09:40Z",
-            "startedAt": "2026-09-09T17:09:40Z",
-            "updatedAt": "2026-09-09T17:10:26Z",
-            "durationSeconds": 46,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34381198766",
-            "runNumber": 35
           }
         ]
       },
@@ -13125,20 +13195,90 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 35309685925,
+          "id": 35422799380,
           "name": "Actualizar BCRP cada hora y verificar frescura",
           "status": "completed",
           "conclusion": "success",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-18T05:09:13Z",
-          "startedAt": "2026-09-18T05:09:13Z",
-          "updatedAt": "2026-09-18T05:09:27Z",
-          "durationSeconds": 14,
-          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35309685925",
-          "runNumber": 18
+          "createdAt": "2026-09-19T05:00:43Z",
+          "startedAt": "2026-09-19T05:00:43Z",
+          "updatedAt": "2026-09-19T05:00:55Z",
+          "durationSeconds": 12,
+          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35422799380",
+          "runNumber": 23
         },
         "runs": [
+          {
+            "id": 35422799380,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-19T05:00:43Z",
+            "startedAt": "2026-09-19T05:00:43Z",
+            "updatedAt": "2026-09-19T05:00:55Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35422799380",
+            "runNumber": 23
+          },
+          {
+            "id": 35413002822,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-19T01:33:06Z",
+            "startedAt": "2026-09-19T01:33:06Z",
+            "updatedAt": "2026-09-19T01:33:17Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35413002822",
+            "runNumber": 22
+          },
+          {
+            "id": 35406148503,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-18T23:33:16Z",
+            "startedAt": "2026-09-18T23:33:16Z",
+            "updatedAt": "2026-09-18T23:33:30Z",
+            "durationSeconds": 14,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35406148503",
+            "runNumber": 21
+          },
+          {
+            "id": 35395552718,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-18T21:12:20Z",
+            "startedAt": "2026-09-18T21:12:20Z",
+            "updatedAt": "2026-09-18T21:12:31Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35395552718",
+            "runNumber": 20
+          },
+          {
+            "id": 35376715693,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-18T17:50:41Z",
+            "startedAt": "2026-09-18T17:50:41Z",
+            "updatedAt": "2026-09-18T17:51:28Z",
+            "durationSeconds": 47,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35376715693",
+            "runNumber": 19
+          },
           {
             "id": 35309685925,
             "name": "Actualizar BCRP cada hora y verificar frescura",
@@ -13208,76 +13348,6 @@
             "durationSeconds": 11,
             "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35185304123",
             "runNumber": 14
-          },
-          {
-            "id": 35168247289,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-17T00:51:39Z",
-            "startedAt": "2026-09-17T00:51:39Z",
-            "updatedAt": "2026-09-17T00:51:54Z",
-            "durationSeconds": 15,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35168247289",
-            "runNumber": 13
-          },
-          {
-            "id": 35153653217,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-16T21:40:16Z",
-            "startedAt": "2026-09-16T21:40:16Z",
-            "updatedAt": "2026-09-16T21:40:27Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35153653217",
-            "runNumber": 12
-          },
-          {
-            "id": 35134141988,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-16T18:23:52Z",
-            "startedAt": "2026-09-16T18:23:52Z",
-            "updatedAt": "2026-09-16T18:24:02Z",
-            "durationSeconds": 10,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35134141988",
-            "runNumber": 11
-          },
-          {
-            "id": 35058598402,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-16T05:12:34Z",
-            "startedAt": "2026-09-16T05:12:34Z",
-            "updatedAt": "2026-09-16T05:12:47Z",
-            "durationSeconds": 13,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35058598402",
-            "runNumber": 10
-          },
-          {
-            "id": 35041337098,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-16T00:45:41Z",
-            "startedAt": "2026-09-16T00:45:41Z",
-            "updatedAt": "2026-09-16T00:45:52Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35041337098",
-            "runNumber": 9
           }
         ]
       },
