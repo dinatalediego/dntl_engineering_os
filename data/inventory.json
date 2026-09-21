@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-20T16:48:35.760Z",
+  "generatedAt": "2026-09-21T18:43:22.350Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -9,7 +9,7 @@
     "scored": 174,
     "unknown": 0
   },
-  "portfolioScore": 40,
+  "portfolioScore": 39,
   "actionsSummary": {
     "configured": 47,
     "green": 17,
@@ -22,8 +22,8 @@
   "attentionSummary": {
     "critical": 14,
     "high": 10,
-    "medium": 125,
-    "low": 11,
+    "medium": 126,
+    "low": 10,
     "clear": 14
   },
   "repositories": [
@@ -381,6 +381,108 @@
       }
     },
     {
+      "name": "limpia-fast",
+      "fullName": "dinatalediego/limpia-fast",
+      "url": "https://github.com/dinatalediego/limpia-fast",
+      "visibility": "public",
+      "score": 73,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-08-22T06:51:07Z",
+      "attention": [
+        "GitHub Actions failing: CI",
+        "Add automated tests"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 25,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "red",
+        "color": "red",
+        "label": "Failing",
+        "workflowCount": 1,
+        "recentRuns": 1,
+        "successRateLast10": 0,
+        "failedRecentCount": 1,
+        "latest": {
+          "id": 32558036008,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-22T06:51:11Z",
+          "startedAt": "2026-08-22T06:51:11Z",
+          "updatedAt": "2026-08-22T06:51:19Z",
+          "durationSeconds": 8,
+          "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
+          "runNumber": 1
+        },
+        "runs": [
+          {
+            "id": 32558036008,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T06:51:11Z",
+            "startedAt": "2026-08-22T06:51:11Z",
+            "updatedAt": "2026-08-22T06:51:19Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
+            "runNumber": 1
+          }
+        ]
+      },
+      "tags": [
+        "TypeScript"
+      ],
+      "priority": {
+        "score": 98,
+        "severity": "critical",
+        "primaryReason": "Latest GitHub Actions run is failing: CI",
+        "signals": [
+          {
+            "points": 70,
+            "reason": "Latest GitHub Actions run is failing: CI",
+            "code": "actions:red"
+          },
+          {
+            "points": 18,
+            "reason": "Repository structural health needs attention",
+            "code": "repository:watch"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
       "name": "owner_ceo_leadership",
       "fullName": "dinatalediego/owner_ceo_leadership",
       "url": "https://github.com/dinatalediego/owner_ceo_leadership",
@@ -680,103 +782,6 @@
             "points": 15,
             "reason": "10 failures detected in recent workflow history",
             "code": "actions:repeated-failures"
-          }
-        ]
-      }
-    },
-    {
-      "name": "limpia-fast",
-      "fullName": "dinatalediego/limpia-fast",
-      "url": "https://github.com/dinatalediego/limpia-fast",
-      "visibility": "public",
-      "score": 80,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Vercel-ready",
-      "database": "Supabase",
-      "tests": "Missing",
-      "lastActivity": "2026-08-22T06:51:07Z",
-      "attention": [
-        "GitHub Actions failing: CI",
-        "Add automated tests"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": true,
-        "trackedEnvFile": false,
-        "fileCount": 25,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "red",
-        "color": "red",
-        "label": "Failing",
-        "workflowCount": 1,
-        "recentRuns": 1,
-        "successRateLast10": 0,
-        "failedRecentCount": 1,
-        "latest": {
-          "id": 32558036008,
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "event": "push",
-          "branch": "main",
-          "createdAt": "2026-08-22T06:51:11Z",
-          "startedAt": "2026-08-22T06:51:11Z",
-          "updatedAt": "2026-08-22T06:51:19Z",
-          "durationSeconds": 8,
-          "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
-          "runNumber": 1
-        },
-        "runs": [
-          {
-            "id": 32558036008,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T06:51:11Z",
-            "startedAt": "2026-08-22T06:51:11Z",
-            "updatedAt": "2026-08-22T06:51:19Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/limpia-fast/actions/runs/32558036008",
-            "runNumber": 1
-          }
-        ]
-      },
-      "tags": [
-        "TypeScript"
-      ],
-      "priority": {
-        "score": 80,
-        "severity": "critical",
-        "primaryReason": "Latest GitHub Actions run is failing: CI",
-        "signals": [
-          {
-            "points": 70,
-            "reason": "Latest GitHub Actions run is failing: CI",
-            "code": "actions:red"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
           }
         ]
       }
@@ -10087,6 +10092,233 @@
       }
     },
     {
+      "name": "dntl_art",
+      "fullName": "dinatalediego/dntl_art",
+      "url": "https://github.com/dinatalediego/dntl_art",
+      "visibility": "public",
+      "score": 73,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Missing",
+      "lastActivity": "2026-08-22T04:25:55Z",
+      "attention": [
+        "Add automated tests"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 2,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 17,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 2,
+        "recentRuns": 10,
+        "successRateLast10": 70,
+        "failedRecentCount": 2,
+        "latest": {
+          "id": 32551680295,
+          "name": "verify-static",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-08-22T04:25:57Z",
+          "startedAt": "2026-08-22T04:25:57Z",
+          "updatedAt": "2026-08-22T04:26:07Z",
+          "durationSeconds": 10,
+          "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680295",
+          "runNumber": 18
+        },
+        "runs": [
+          {
+            "id": 32551680295,
+            "name": "verify-static",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:25:57Z",
+            "startedAt": "2026-08-22T04:25:57Z",
+            "updatedAt": "2026-08-22T04:26:07Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680295",
+            "runNumber": 18
+          },
+          {
+            "id": 32551680247,
+            "name": "Static checks",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:25:57Z",
+            "startedAt": "2026-08-22T04:25:57Z",
+            "updatedAt": "2026-08-22T04:26:12Z",
+            "durationSeconds": 15,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680247",
+            "runNumber": 10
+          },
+          {
+            "id": 32551679943,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:25:56Z",
+            "startedAt": "2026-08-22T04:25:56Z",
+            "updatedAt": "2026-08-22T04:26:38Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551679943",
+            "runNumber": 23
+          },
+          {
+            "id": 32551585967,
+            "name": "Static checks",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:42Z",
+            "startedAt": "2026-08-22T04:23:42Z",
+            "updatedAt": "2026-08-22T04:23:55Z",
+            "durationSeconds": 13,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585967",
+            "runNumber": 9
+          },
+          {
+            "id": 32551585964,
+            "name": "verify-static",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:42Z",
+            "startedAt": "2026-08-22T04:23:42Z",
+            "updatedAt": "2026-08-22T04:23:53Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585964",
+            "runNumber": 17
+          },
+          {
+            "id": 32551585612,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:42Z",
+            "startedAt": "2026-08-22T04:23:42Z",
+            "updatedAt": "2026-08-22T04:24:30Z",
+            "durationSeconds": 48,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585612",
+            "runNumber": 22
+          },
+          {
+            "id": 32551569813,
+            "name": "Static checks",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:21Z",
+            "startedAt": "2026-08-22T04:23:21Z",
+            "updatedAt": "2026-08-22T04:23:32Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569813",
+            "runNumber": 8
+          },
+          {
+            "id": 32551569805,
+            "name": "verify-static",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:21Z",
+            "startedAt": "2026-08-22T04:23:21Z",
+            "updatedAt": "2026-08-22T04:23:30Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569805",
+            "runNumber": 16
+          },
+          {
+            "id": 32551569503,
+            "name": "pages build and deployment",
+            "status": "completed",
+            "conclusion": "cancelled",
+            "event": "dynamic",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:23:21Z",
+            "startedAt": "2026-08-22T04:23:21Z",
+            "updatedAt": "2026-08-22T04:23:48Z",
+            "durationSeconds": 27,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569503",
+            "runNumber": 21
+          },
+          {
+            "id": 32551411538,
+            "name": "Static checks",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-08-22T04:19:49Z",
+            "startedAt": "2026-08-22T04:19:49Z",
+            "updatedAt": "2026-08-22T04:19:58Z",
+            "durationSeconds": 9,
+            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551411538",
+            "runNumber": 7
+          }
+        ]
+      },
+      "tags": [
+        "JavaScript"
+      ],
+      "priority": {
+        "score": 32,
+        "severity": "medium",
+        "primaryReason": "Repository structural health needs attention",
+        "signals": [
+          {
+            "points": 18,
+            "reason": "Repository structural health needs attention",
+            "code": "repository:watch"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          },
+          {
+            "points": 4,
+            "reason": "2 failures detected in recent workflow history",
+            "code": "actions:repeated-failures"
+          }
+        ]
+      }
+    },
+    {
       "name": "game_of_the_game",
       "fullName": "dinatalediego/game_of_the_game",
       "url": "https://github.com/dinatalediego/game_of_the_game",
@@ -11364,69 +11596,6 @@
       }
     },
     {
-      "name": "rag_platform",
-      "fullName": "dinatalediego/rag_platform",
-      "url": "https://github.com/dinatalediego/rag_platform",
-      "visibility": "private",
-      "score": 73,
-      "health": "watch",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Container-ready",
-      "database": "Supabase",
-      "tests": "Detected",
-      "lastActivity": "2026-06-23T01:58:47Z",
-      "attention": [
-        "Add CI workflow"
-      ],
-      "components": {
-        "freshness": 18,
-        "documentation": 15,
-        "automation": 0,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 0,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": true,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 50,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [
-        "Jupyter Notebook"
-      ],
-      "priority": {
-        "score": 18,
-        "severity": "low",
-        "primaryReason": "Repository structural health needs attention",
-        "signals": [
-          {
-            "points": 18,
-            "reason": "Repository structural health needs attention",
-            "code": "repository:watch"
-          }
-        ]
-      }
-    },
-    {
       "name": "FortunaCore",
       "fullName": "dinatalediego/FortunaCore",
       "url": "https://github.com/dinatalediego/FortunaCore",
@@ -11475,6 +11644,69 @@
       },
       "tags": [
         "Python"
+      ],
+      "priority": {
+        "score": 18,
+        "severity": "low",
+        "primaryReason": "Repository structural health needs attention",
+        "signals": [
+          {
+            "points": 18,
+            "reason": "Repository structural health needs attention",
+            "code": "repository:watch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rag_platform",
+      "fullName": "dinatalediego/rag_platform",
+      "url": "https://github.com/dinatalediego/rag_platform",
+      "visibility": "private",
+      "score": 64,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Container-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-06-23T01:58:47Z",
+      "attention": [
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 9,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": true,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 50,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
       ],
       "priority": {
         "score": 18,
@@ -11833,228 +12065,6 @@
       }
     },
     {
-      "name": "dntl_art",
-      "fullName": "dinatalediego/dntl_art",
-      "url": "https://github.com/dinatalediego/dntl_art",
-      "visibility": "public",
-      "score": 80,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Vercel-ready",
-      "database": "Supabase",
-      "tests": "Missing",
-      "lastActivity": "2026-08-22T04:25:55Z",
-      "attention": [
-        "Add automated tests"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 2,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": true,
-        "trackedEnvFile": false,
-        "fileCount": 17,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 2,
-        "recentRuns": 10,
-        "successRateLast10": 70,
-        "failedRecentCount": 2,
-        "latest": {
-          "id": 32551680295,
-          "name": "verify-static",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "push",
-          "branch": "main",
-          "createdAt": "2026-08-22T04:25:57Z",
-          "startedAt": "2026-08-22T04:25:57Z",
-          "updatedAt": "2026-08-22T04:26:07Z",
-          "durationSeconds": 10,
-          "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680295",
-          "runNumber": 18
-        },
-        "runs": [
-          {
-            "id": 32551680295,
-            "name": "verify-static",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:25:57Z",
-            "startedAt": "2026-08-22T04:25:57Z",
-            "updatedAt": "2026-08-22T04:26:07Z",
-            "durationSeconds": 10,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680295",
-            "runNumber": 18
-          },
-          {
-            "id": 32551680247,
-            "name": "Static checks",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:25:57Z",
-            "startedAt": "2026-08-22T04:25:57Z",
-            "updatedAt": "2026-08-22T04:26:12Z",
-            "durationSeconds": 15,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551680247",
-            "runNumber": 10
-          },
-          {
-            "id": 32551679943,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:25:56Z",
-            "startedAt": "2026-08-22T04:25:56Z",
-            "updatedAt": "2026-08-22T04:26:38Z",
-            "durationSeconds": 42,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551679943",
-            "runNumber": 23
-          },
-          {
-            "id": 32551585967,
-            "name": "Static checks",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:23:42Z",
-            "startedAt": "2026-08-22T04:23:42Z",
-            "updatedAt": "2026-08-22T04:23:55Z",
-            "durationSeconds": 13,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585967",
-            "runNumber": 9
-          },
-          {
-            "id": 32551585964,
-            "name": "verify-static",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:23:42Z",
-            "startedAt": "2026-08-22T04:23:42Z",
-            "updatedAt": "2026-08-22T04:23:53Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585964",
-            "runNumber": 17
-          },
-          {
-            "id": 32551585612,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:23:42Z",
-            "startedAt": "2026-08-22T04:23:42Z",
-            "updatedAt": "2026-08-22T04:24:30Z",
-            "durationSeconds": 48,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551585612",
-            "runNumber": 22
-          },
-          {
-            "id": 32551569813,
-            "name": "Static checks",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:23:21Z",
-            "startedAt": "2026-08-22T04:23:21Z",
-            "updatedAt": "2026-08-22T04:23:32Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569813",
-            "runNumber": 8
-          },
-          {
-            "id": 32551569805,
-            "name": "verify-static",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:23:21Z",
-            "startedAt": "2026-08-22T04:23:21Z",
-            "updatedAt": "2026-08-22T04:23:30Z",
-            "durationSeconds": 9,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569805",
-            "runNumber": 16
-          },
-          {
-            "id": 32551569503,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "cancelled",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:23:21Z",
-            "startedAt": "2026-08-22T04:23:21Z",
-            "updatedAt": "2026-08-22T04:23:48Z",
-            "durationSeconds": 27,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551569503",
-            "runNumber": 21
-          },
-          {
-            "id": 32551411538,
-            "name": "Static checks",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-08-22T04:19:49Z",
-            "startedAt": "2026-08-22T04:19:49Z",
-            "updatedAt": "2026-08-22T04:19:58Z",
-            "durationSeconds": 9,
-            "url": "https://github.com/dinatalediego/dntl_art/actions/runs/32551411538",
-            "runNumber": 7
-          }
-        ]
-      },
-      "tags": [
-        "JavaScript"
-      ],
-      "priority": {
-        "score": 14,
-        "severity": "low",
-        "primaryReason": "Automated tests are missing",
-        "signals": [
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          },
-          {
-            "points": 4,
-            "reason": "2 failures detected in recent workflow history",
-            "code": "actions:repeated-failures"
-          }
-        ]
-      }
-    },
-    {
       "name": "dntl_chatbot",
       "fullName": "dinatalediego/dntl_chatbot",
       "url": "https://github.com/dinatalediego/dntl_chatbot",
@@ -12227,7 +12237,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-19T16:31:05Z",
+      "lastActivity": "2026-09-20T16:48:45Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12260,31 +12270,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 35523838616,
+          "id": 35640156159,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-20T16:47:59Z",
-          "startedAt": "2026-09-20T16:47:59Z",
-          "updatedAt": "2026-09-20T16:48:02Z",
-          "durationSeconds": 3,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35523838616",
-          "runNumber": 46
+          "createdAt": "2026-09-21T18:42:49Z",
+          "startedAt": "2026-09-21T18:42:49Z",
+          "updatedAt": "2026-09-21T18:42:53Z",
+          "durationSeconds": 4,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35640156159",
+          "runNumber": 47
         },
         "runs": [
           {
-            "id": 35523838616,
+            "id": 35640156159,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-21T18:42:49Z",
+            "startedAt": "2026-09-21T18:42:49Z",
+            "updatedAt": "2026-09-21T18:42:53Z",
+            "durationSeconds": 4,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35640156159",
+            "runNumber": 47
+          },
+          {
+            "id": 35523838616,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-20T16:47:59Z",
             "startedAt": "2026-09-20T16:47:59Z",
-            "updatedAt": "2026-09-20T16:48:02Z",
-            "durationSeconds": 3,
+            "updatedAt": "2026-09-20T16:48:49Z",
+            "durationSeconds": 50,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35523838616",
             "runNumber": 46
           },
@@ -12399,20 +12423,6 @@
             "durationSeconds": 45,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34704857704",
             "runNumber": 38
-          },
-          {
-            "id": 34625369150,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-11T17:01:51Z",
-            "startedAt": "2026-09-11T17:01:51Z",
-            "updatedAt": "2026-09-11T17:02:28Z",
-            "durationSeconds": 37,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34625369150",
-            "runNumber": 37
           }
         ]
       },
@@ -12832,23 +12842,37 @@
         "label": "Passing",
         "workflowCount": 2,
         "recentRuns": 10,
-        "successRateLast10": 60,
+        "successRateLast10": 70,
         "failedRecentCount": 1,
         "latest": {
-          "id": 35359716347,
+          "id": 35629641565,
           "name": "Public batch ingest",
           "status": "completed",
           "conclusion": "success",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-18T15:00:11Z",
-          "startedAt": "2026-09-18T15:00:11Z",
-          "updatedAt": "2026-09-18T15:01:29Z",
-          "durationSeconds": 78,
-          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35359716347",
-          "runNumber": 21
+          "createdAt": "2026-09-21T17:04:22Z",
+          "startedAt": "2026-09-21T17:04:22Z",
+          "updatedAt": "2026-09-21T17:06:04Z",
+          "durationSeconds": 102,
+          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35629641565",
+          "runNumber": 22
         },
         "runs": [
+          {
+            "id": 35629641565,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-21T17:04:22Z",
+            "startedAt": "2026-09-21T17:04:22Z",
+            "updatedAt": "2026-09-21T17:06:04Z",
+            "durationSeconds": 102,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35629641565",
+            "runNumber": 22
+          },
           {
             "id": 35359716347,
             "name": "Public batch ingest",
@@ -12974,20 +12998,6 @@
             "durationSeconds": 28,
             "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35115971641",
             "runNumber": 72
-          },
-          {
-            "id": 35115970787,
-            "name": "pages build and deployment",
-            "status": "completed",
-            "conclusion": "cancelled",
-            "event": "dynamic",
-            "branch": "main",
-            "createdAt": "2026-09-16T15:31:56Z",
-            "startedAt": "2026-09-16T15:31:56Z",
-            "updatedAt": "2026-09-16T15:32:23Z",
-            "durationSeconds": 27,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35115970787",
-            "runNumber": 24
           }
         ]
       },
@@ -14061,7 +14071,7 @@
       "fullName": "dinatalediego/expertos_en_lavados",
       "url": "https://github.com/dinatalediego/expertos_en_lavados",
       "visibility": "public",
-      "score": 100,
+      "score": 93,
       "health": "healthy",
       "type": "ML",
       "criticality": "Unclassified",
@@ -14073,7 +14083,7 @@
         "No repository-level blockers detected"
       ],
       "components": {
-        "freshness": 25,
+        "freshness": 18,
         "documentation": 15,
         "automation": 20,
         "testing": 20,
@@ -14272,7 +14282,7 @@
       "fullName": "dinatalediego/prompt-maestros",
       "url": "https://github.com/dinatalediego/prompt-maestros",
       "visibility": "public",
-      "score": 100,
+      "score": 93,
       "health": "healthy",
       "type": "ML",
       "criticality": "Unclassified",
@@ -14284,7 +14294,7 @@
         "No repository-level blockers detected"
       ],
       "components": {
-        "freshness": 25,
+        "freshness": 18,
         "documentation": 15,
         "automation": 20,
         "testing": 20,
@@ -14678,20 +14688,34 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 35371288533,
+          "id": 35638476280,
           "name": "Daily CEO Brief",
           "status": "completed",
           "conclusion": "success",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-18T16:55:10Z",
-          "startedAt": "2026-09-18T16:55:10Z",
-          "updatedAt": "2026-09-18T16:55:23Z",
-          "durationSeconds": 13,
-          "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35371288533",
-          "runNumber": 4
+          "createdAt": "2026-09-21T18:27:16Z",
+          "startedAt": "2026-09-21T18:27:16Z",
+          "updatedAt": "2026-09-21T18:27:31Z",
+          "durationSeconds": 15,
+          "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35638476280",
+          "runNumber": 5
         },
         "runs": [
+          {
+            "id": 35638476280,
+            "name": "Daily CEO Brief",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-21T18:27:16Z",
+            "startedAt": "2026-09-21T18:27:16Z",
+            "updatedAt": "2026-09-21T18:27:31Z",
+            "durationSeconds": 15,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35638476280",
+            "runNumber": 5
+          },
           {
             "id": 35371288533,
             "name": "Daily CEO Brief",
@@ -14817,20 +14841,6 @@
             "durationSeconds": 11,
             "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35252604088",
             "runNumber": 9
-          },
-          {
-            "id": 35252570010,
-            "name": "Regression Watch",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "workflow_run",
-            "branch": "main",
-            "createdAt": "2026-09-17T17:24:43Z",
-            "startedAt": "2026-09-17T17:24:43Z",
-            "updatedAt": "2026-09-17T17:24:50Z",
-            "durationSeconds": 7,
-            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35252570010",
-            "runNumber": 27
           }
         ]
       },
