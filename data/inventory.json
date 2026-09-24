@@ -1,28 +1,28 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-23T17:51:46.028Z",
+  "generatedAt": "2026-09-24T17:52:26.765Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
   "coverage": {
     "discovered": 174,
-    "scored": 174,
-    "unknown": 0
+    "scored": 173,
+    "unknown": 1
   },
   "portfolioScore": 39,
   "actionsSummary": {
-    "configured": 47,
-    "green": 16,
+    "configured": 46,
+    "green": 15,
     "red": 5,
     "yellow": 1,
-    "unknown": 21,
+    "unknown": 22,
     "idle": 4,
     "notConfigured": 127
   },
   "attentionSummary": {
     "critical": 15,
-    "high": 10,
-    "medium": 126,
+    "high": 11,
+    "medium": 125,
     "low": 11,
     "clear": 12
   },
@@ -829,23 +829,37 @@
         "label": "Failing",
         "workflowCount": 2,
         "recentRuns": 10,
-        "successRateLast10": 60,
-        "failedRecentCount": 3,
+        "successRateLast10": 50,
+        "failedRecentCount": 4,
         "latest": {
-          "id": 35881661890,
+          "id": 36022970527,
           "name": "Public batch ingest",
           "status": "completed",
           "conclusion": "failure",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-23T15:27:14Z",
-          "startedAt": "2026-09-23T15:27:14Z",
-          "updatedAt": "2026-09-23T15:28:27Z",
-          "durationSeconds": 73,
-          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35881661890",
-          "runNumber": 24
+          "createdAt": "2026-09-24T15:49:15Z",
+          "startedAt": "2026-09-24T15:49:15Z",
+          "updatedAt": "2026-09-24T15:50:03Z",
+          "durationSeconds": 48,
+          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/36022970527",
+          "runNumber": 25
         },
         "runs": [
+          {
+            "id": 36022970527,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-24T15:49:15Z",
+            "startedAt": "2026-09-24T15:49:15Z",
+            "updatedAt": "2026-09-24T15:50:03Z",
+            "durationSeconds": 48,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/36022970527",
+            "runNumber": 25
+          },
           {
             "id": 35881661890,
             "name": "Public batch ingest",
@@ -971,20 +985,6 @@
             "durationSeconds": 4,
             "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35115985783",
             "runNumber": 26
-          },
-          {
-            "id": 35115979505,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-16T15:32:00Z",
-            "startedAt": "2026-09-16T15:32:00Z",
-            "updatedAt": "2026-09-16T15:32:34Z",
-            "durationSeconds": 34,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35115979505",
-            "runNumber": 73
           }
         ]
       },
@@ -992,7 +992,7 @@
         "Python"
       ],
       "priority": {
-        "score": 78,
+        "score": 82,
         "severity": "critical",
         "primaryReason": "Latest GitHub Actions run is failing: Public batch ingest",
         "signals": [
@@ -1002,8 +1002,8 @@
             "code": "actions:red"
           },
           {
-            "points": 8,
-            "reason": "3 failures detected in recent workflow history",
+            "points": 12,
+            "reason": "4 failures detected in recent workflow history",
             "code": "actions:repeated-failures"
           }
         ]
@@ -2359,6 +2359,58 @@
       }
     },
     {
+      "name": "AutoClean_Carwash_BI_and_DataAnalytics",
+      "fullName": "dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics",
+      "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics",
+      "visibility": "public",
+      "score": null,
+      "health": "unknown",
+      "type": "Unknown",
+      "criticality": "Unclassified",
+      "deployment": "Unknown",
+      "database": "Unknown",
+      "tests": "Unknown",
+      "lastActivity": "2025-11-25T14:26:08Z",
+      "attention": [
+        "Repository could not be inspected with current token"
+      ],
+      "components": {},
+      "evidence": {
+        "coverage": "unavailable"
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": null,
+        "latest": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null,
+        "reason": "Repository could not be inspected with current token"
+      },
+      "tags": [
+        "Python"
+      ],
+      "priority": {
+        "score": 58,
+        "severity": "high",
+        "primaryReason": "Repository structural health is not observable",
+        "signals": [
+          {
+            "points": 30,
+            "reason": "Repository structural health is not observable",
+            "code": "repository:unknown"
+          },
+          {
+            "points": 28,
+            "reason": "",
+            "code": "actions:unknown"
+          }
+        ]
+      }
+    },
+    {
       "name": "crew-up",
       "fullName": "dinatalediego/crew-up",
       "url": "https://github.com/dinatalediego/crew-up",
@@ -3381,230 +3433,6 @@
         "failedRecentCount": 0
       },
       "tags": [],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
-      "name": "AutoClean_Carwash_BI_and_DataAnalytics",
-      "fullName": "dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics",
-      "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics",
-      "visibility": "public",
-      "score": 40,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2025-11-25T14:26:08Z",
-      "attention": [
-        "Add automated tests",
-        "Add operational README",
-        "Repository is stale"
-      ],
-      "components": {
-        "freshness": 0,
-        "documentation": 0,
-        "automation": 20,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": false,
-        "workflowCount": 2,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 36,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 2,
-        "recentRuns": 10,
-        "successRateLast10": 100,
-        "failedRecentCount": 0,
-        "latest": {
-          "id": 21261190949,
-          "name": "CarWash Reports + Email",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "schedule",
-          "branch": "main",
-          "createdAt": "2026-01-22T19:01:52Z",
-          "startedAt": "2026-01-22T19:01:52Z",
-          "updatedAt": "2026-01-22T19:02:28Z",
-          "durationSeconds": 36,
-          "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21261190949",
-          "runNumber": 3008
-        },
-        "runs": [
-          {
-            "id": 21261190949,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T19:01:52Z",
-            "startedAt": "2026-01-22T19:01:52Z",
-            "updatedAt": "2026-01-22T19:02:28Z",
-            "durationSeconds": 36,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21261190949",
-            "runNumber": 3008
-          },
-          {
-            "id": 21260259018,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T18:31:35Z",
-            "startedAt": "2026-01-22T18:31:35Z",
-            "updatedAt": "2026-01-22T18:32:09Z",
-            "durationSeconds": 34,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21260259018",
-            "runNumber": 3007
-          },
-          {
-            "id": 21258977162,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T17:51:59Z",
-            "startedAt": "2026-01-22T17:51:59Z",
-            "updatedAt": "2026-01-22T17:52:30Z",
-            "durationSeconds": 31,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21258977162",
-            "runNumber": 3006
-          },
-          {
-            "id": 21257998955,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T17:20:37Z",
-            "startedAt": "2026-01-22T17:20:37Z",
-            "updatedAt": "2026-01-22T17:21:14Z",
-            "durationSeconds": 37,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21257998955",
-            "runNumber": 3005
-          },
-          {
-            "id": 21256942173,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T16:48:32Z",
-            "startedAt": "2026-01-22T16:48:32Z",
-            "updatedAt": "2026-01-22T16:49:06Z",
-            "durationSeconds": 34,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21256942173",
-            "runNumber": 3004
-          },
-          {
-            "id": 21255274350,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T15:59:32Z",
-            "startedAt": "2026-01-22T15:59:32Z",
-            "updatedAt": "2026-01-22T16:00:01Z",
-            "durationSeconds": 29,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21255274350",
-            "runNumber": 3003
-          },
-          {
-            "id": 21254379390,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T15:33:26Z",
-            "startedAt": "2026-01-22T15:33:26Z",
-            "updatedAt": "2026-01-22T15:34:25Z",
-            "durationSeconds": 59,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21254379390",
-            "runNumber": 3002
-          },
-          {
-            "id": 21252959152,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T14:53:00Z",
-            "startedAt": "2026-01-22T14:53:00Z",
-            "updatedAt": "2026-01-22T14:53:36Z",
-            "durationSeconds": 36,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21252959152",
-            "runNumber": 3001
-          },
-          {
-            "id": 21251795271,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T14:17:20Z",
-            "startedAt": "2026-01-22T14:17:20Z",
-            "updatedAt": "2026-01-22T14:18:11Z",
-            "durationSeconds": 51,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21251795271",
-            "runNumber": 3000
-          },
-          {
-            "id": 21250541038,
-            "name": "CarWash Reports + Email",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-01-22T13:37:04Z",
-            "startedAt": "2026-01-22T13:37:04Z",
-            "updatedAt": "2026-01-22T13:37:34Z",
-            "durationSeconds": 30,
-            "url": "https://github.com/dinatalediego/AutoClean_Carwash_BI_and_DataAnalytics/actions/runs/21250541038",
-            "runNumber": 2999
-          }
-        ]
-      },
-      "tags": [
-        "Python"
-      ],
       "priority": {
         "score": 45,
         "severity": "medium",
@@ -6575,146 +6403,6 @@
       }
     },
     {
-      "name": "mds-python-data-science",
-      "fullName": "dinatalediego/mds-python-data-science",
-      "url": "https://github.com/dinatalediego/mds-python-data-science",
-      "visibility": "public",
-      "score": 13,
-      "health": "risk",
-      "type": "Data",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-03-28T00:37:56Z",
-      "attention": [
-        "Repository is empty",
-        "Add automated tests",
-        "Add CI workflow",
-        "Add operational README",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 9,
-        "documentation": 0,
-        "automation": 0,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 4
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": false,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 0,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
-      "name": "mds-2026-hub",
-      "fullName": "dinatalediego/mds-2026-hub",
-      "url": "https://github.com/dinatalediego/mds-2026-hub",
-      "visibility": "public",
-      "score": 13,
-      "health": "risk",
-      "type": "App",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-03-28T00:33:24Z",
-      "attention": [
-        "Repository is empty",
-        "Add automated tests",
-        "Add CI workflow",
-        "Add operational README",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 9,
-        "documentation": 0,
-        "automation": 0,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 4
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": false,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 0,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
       "name": "real_estate_rag",
       "fullName": "dinatalediego/real_estate_rag",
       "url": "https://github.com/dinatalediego/real_estate_rag",
@@ -7750,6 +7438,148 @@
         "hasVercelConfig": false,
         "trackedEnvFile": false,
         "fileCount": 13,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "mds-python-data-science",
+      "fullName": "dinatalediego/mds-python-data-science",
+      "url": "https://github.com/dinatalediego/mds-python-data-science",
+      "visibility": "public",
+      "score": 4,
+      "health": "risk",
+      "type": "Data",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-03-28T00:37:56Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "mds-2026-hub",
+      "fullName": "dinatalediego/mds-2026-hub",
+      "url": "https://github.com/dinatalediego/mds-2026-hub",
+      "visibility": "public",
+      "score": 4,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-03-28T00:33:24Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "Repository is stale",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
         "recursiveTree": true
       },
       "actions": {
@@ -11139,7 +10969,7 @@
       "deployment": "Not detected",
       "database": "Supabase",
       "tests": "Missing",
-      "lastActivity": "2026-09-17T21:51:13Z",
+      "lastActivity": "2026-09-24T01:08:36Z",
       "attention": [
         "Add automated tests",
         "Add CI workflow"
@@ -11161,7 +10991,7 @@
         "hasDocker": false,
         "hasVercelConfig": false,
         "trackedEnvFile": false,
-        "fileCount": 10,
+        "fileCount": 15,
         "recursiveTree": true
       },
       "actions": {
@@ -12523,7 +12353,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-22T17:38:57Z",
+      "lastActivity": "2026-09-23T17:51:55Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12556,31 +12386,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 35898454494,
+          "id": 36037255869,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-23T17:51:14Z",
-          "startedAt": "2026-09-23T17:51:14Z",
-          "updatedAt": "2026-09-23T17:51:18Z",
+          "createdAt": "2026-09-24T17:51:53Z",
+          "startedAt": "2026-09-24T17:51:53Z",
+          "updatedAt": "2026-09-24T17:51:57Z",
           "durationSeconds": 4,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35898454494",
-          "runNumber": 49
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/36037255869",
+          "runNumber": 50
         },
         "runs": [
           {
-            "id": 35898454494,
+            "id": 36037255869,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-24T17:51:53Z",
+            "startedAt": "2026-09-24T17:51:53Z",
+            "updatedAt": "2026-09-24T17:51:57Z",
+            "durationSeconds": 4,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/36037255869",
+            "runNumber": 50
+          },
+          {
+            "id": 35898454494,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-23T17:51:14Z",
             "startedAt": "2026-09-23T17:51:14Z",
-            "updatedAt": "2026-09-23T17:51:18Z",
-            "durationSeconds": 4,
+            "updatedAt": "2026-09-23T17:51:58Z",
+            "durationSeconds": 44,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35898454494",
             "runNumber": 49
           },
@@ -12695,20 +12539,6 @@
             "durationSeconds": 43,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35002719921",
             "runNumber": 41
-          },
-          {
-            "id": 34882053438,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-14T18:38:40Z",
-            "startedAt": "2026-09-14T18:38:40Z",
-            "updatedAt": "2026-09-14T18:39:28Z",
-            "durationSeconds": 48,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/34882053438",
-            "runNumber": 40
           }
         ]
       },
@@ -12873,6 +12703,217 @@
             "code": "actions:repeated-failures"
           }
         ]
+      }
+    },
+    {
+      "name": "bd_replica_crm",
+      "fullName": "dinatalediego/bd_replica_crm",
+      "url": "https://github.com/dinatalediego/bd_replica_crm",
+      "visibility": "public",
+      "score": 100,
+      "health": "healthy",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "GitHub Actions",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-09-24T16:49:21Z",
+      "attention": [
+        "No repository-level blockers detected"
+      ],
+      "components": {
+        "freshness": 25,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 463,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "green",
+        "color": "green",
+        "label": "Passing",
+        "workflowCount": 1,
+        "recentRuns": 10,
+        "successRateLast10": 90,
+        "failedRecentCount": 1,
+        "latest": {
+          "id": 36030026827,
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "branch": "main",
+          "createdAt": "2026-09-24T16:49:25Z",
+          "startedAt": "2026-09-24T16:49:25Z",
+          "updatedAt": "2026-09-24T16:50:08Z",
+          "durationSeconds": 43,
+          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36030026827",
+          "runNumber": 157
+        },
+        "runs": [
+          {
+            "id": 36030026827,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-24T16:49:25Z",
+            "startedAt": "2026-09-24T16:49:25Z",
+            "updatedAt": "2026-09-24T16:50:08Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36030026827",
+            "runNumber": 157
+          },
+          {
+            "id": 36029917478,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "fix/regul-papel-blanco",
+            "createdAt": "2026-09-24T16:48:27Z",
+            "startedAt": "2026-09-24T16:48:27Z",
+            "updatedAt": "2026-09-24T16:49:11Z",
+            "durationSeconds": 44,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36029917478",
+            "runNumber": 156
+          },
+          {
+            "id": 36029788159,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "pull_request",
+            "branch": "fix/regul-papel-blanco",
+            "createdAt": "2026-09-24T16:47:20Z",
+            "startedAt": "2026-09-24T16:47:20Z",
+            "updatedAt": "2026-09-24T16:48:05Z",
+            "durationSeconds": 45,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36029788159",
+            "runNumber": 155
+          },
+          {
+            "id": 36029029520,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-24T16:40:41Z",
+            "startedAt": "2026-09-24T16:40:41Z",
+            "updatedAt": "2026-09-24T16:41:30Z",
+            "durationSeconds": 49,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36029029520",
+            "runNumber": 154
+          },
+          {
+            "id": 36028902731,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/clasificar-tipos-contrato",
+            "createdAt": "2026-09-24T16:39:36Z",
+            "startedAt": "2026-09-24T16:39:36Z",
+            "updatedAt": "2026-09-24T16:40:19Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36028902731",
+            "runNumber": 153
+          },
+          {
+            "id": 36028887155,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/clasificar-tipos-contrato",
+            "createdAt": "2026-09-24T16:39:28Z",
+            "startedAt": "2026-09-24T16:39:28Z",
+            "updatedAt": "2026-09-24T16:40:11Z",
+            "durationSeconds": 43,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36028887155",
+            "runNumber": 152
+          },
+          {
+            "id": 36028818252,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/clasificar-tipos-contrato",
+            "createdAt": "2026-09-24T16:38:50Z",
+            "startedAt": "2026-09-24T16:38:50Z",
+            "updatedAt": "2026-09-24T16:39:35Z",
+            "durationSeconds": 45,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36028818252",
+            "runNumber": 151
+          },
+          {
+            "id": 36028804345,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/clasificar-tipos-contrato",
+            "createdAt": "2026-09-24T16:38:43Z",
+            "startedAt": "2026-09-24T16:38:43Z",
+            "updatedAt": "2026-09-24T16:39:30Z",
+            "durationSeconds": 47,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36028804345",
+            "runNumber": 150
+          },
+          {
+            "id": 36028703526,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feature/clasificar-tipos-contrato",
+            "createdAt": "2026-09-24T16:37:50Z",
+            "startedAt": "2026-09-24T16:37:50Z",
+            "updatedAt": "2026-09-24T16:38:42Z",
+            "durationSeconds": 52,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36028703526",
+            "runNumber": 149
+          },
+          {
+            "id": 36026000203,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-24T16:14:46Z",
+            "startedAt": "2026-09-24T16:14:46Z",
+            "updatedAt": "2026-09-24T16:15:36Z",
+            "durationSeconds": 50,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36026000203",
+            "runNumber": 148
+          }
+        ]
+      },
+      "tags": [
+        "Jupyter Notebook"
+      ],
+      "priority": {
+        "score": 0,
+        "severity": "clear",
+        "primaryReason": "No active intervention signal",
+        "signals": []
       }
     },
     {
@@ -13342,20 +13383,76 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 35821172305,
+          "id": 35959533575,
           "name": "Actualizar BCRP cada hora y verificar frescura",
           "status": "completed",
           "conclusion": "success",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-23T05:08:20Z",
-          "startedAt": "2026-09-23T05:08:20Z",
-          "updatedAt": "2026-09-23T05:08:31Z",
+          "createdAt": "2026-09-24T05:20:50Z",
+          "startedAt": "2026-09-24T05:20:50Z",
+          "updatedAt": "2026-09-24T05:21:01Z",
           "durationSeconds": 11,
-          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35821172305",
-          "runNumber": 31
+          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35959533575",
+          "runNumber": 35
         },
         "runs": [
+          {
+            "id": 35959533575,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-24T05:20:50Z",
+            "startedAt": "2026-09-24T05:20:50Z",
+            "updatedAt": "2026-09-24T05:21:01Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35959533575",
+            "runNumber": 35
+          },
+          {
+            "id": 35940282691,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-24T00:51:08Z",
+            "startedAt": "2026-09-24T00:51:08Z",
+            "updatedAt": "2026-09-24T00:51:19Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35940282691",
+            "runNumber": 34
+          },
+          {
+            "id": 35924533347,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-23T21:46:57Z",
+            "startedAt": "2026-09-23T21:46:57Z",
+            "updatedAt": "2026-09-23T21:47:07Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35924533347",
+            "runNumber": 33
+          },
+          {
+            "id": 35903600047,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-23T18:36:06Z",
+            "startedAt": "2026-09-23T18:36:06Z",
+            "updatedAt": "2026-09-23T18:36:17Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35903600047",
+            "runNumber": 32
+          },
           {
             "id": 35821172305,
             "name": "Actualizar BCRP cada hora y verificar frescura",
@@ -13439,62 +13536,6 @@
             "durationSeconds": 14,
             "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35677200678",
             "runNumber": 26
-          },
-          {
-            "id": 35668069605,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-21T23:33:05Z",
-            "startedAt": "2026-09-21T23:33:05Z",
-            "updatedAt": "2026-09-21T23:33:17Z",
-            "durationSeconds": 12,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35668069605",
-            "runNumber": 25
-          },
-          {
-            "id": 35646516957,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-21T19:42:36Z",
-            "startedAt": "2026-09-21T19:42:36Z",
-            "updatedAt": "2026-09-21T19:42:47Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35646516957",
-            "runNumber": 24
-          },
-          {
-            "id": 35644922671,
-            "name": "Review investment fee freshness",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-21T19:27:24Z",
-            "startedAt": "2026-09-21T19:27:24Z",
-            "updatedAt": "2026-09-21T19:27:32Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35644922671",
-            "runNumber": 3
-          },
-          {
-            "id": 35422799380,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-19T05:00:43Z",
-            "startedAt": "2026-09-19T05:00:43Z",
-            "updatedAt": "2026-09-19T05:00:55Z",
-            "durationSeconds": 12,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35422799380",
-            "runNumber": 23
           }
         ]
       },
@@ -13711,217 +13752,6 @@
       },
       "tags": [
         "Python"
-      ],
-      "priority": {
-        "score": 0,
-        "severity": "clear",
-        "primaryReason": "No active intervention signal",
-        "signals": []
-      }
-    },
-    {
-      "name": "bd_replica_crm",
-      "fullName": "dinatalediego/bd_replica_crm",
-      "url": "https://github.com/dinatalediego/bd_replica_crm",
-      "visibility": "public",
-      "score": 100,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "GitHub Actions",
-      "database": "Supabase",
-      "tests": "Detected",
-      "lastActivity": "2026-09-11T18:26:56Z",
-      "attention": [
-        "No repository-level blockers detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 452,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "green",
-        "color": "green",
-        "label": "Passing",
-        "workflowCount": 1,
-        "recentRuns": 10,
-        "successRateLast10": 90,
-        "failedRecentCount": 1,
-        "latest": {
-          "id": 34567450715,
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "success",
-          "event": "push",
-          "branch": "main",
-          "createdAt": "2026-09-11T05:49:33Z",
-          "startedAt": "2026-09-11T05:49:33Z",
-          "updatedAt": "2026-09-11T05:50:25Z",
-          "durationSeconds": 52,
-          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34567450715",
-          "runNumber": 139
-        },
-        "runs": [
-          {
-            "id": 34567450715,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-11T05:49:33Z",
-            "startedAt": "2026-09-11T05:49:33Z",
-            "updatedAt": "2026-09-11T05:50:25Z",
-            "durationSeconds": 52,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34567450715",
-            "runNumber": 139
-          },
-          {
-            "id": 34567384638,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-11T05:48:30Z",
-            "startedAt": "2026-09-11T05:48:30Z",
-            "updatedAt": "2026-09-11T05:49:13Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34567384638",
-            "runNumber": 138
-          },
-          {
-            "id": 34567323089,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feature/supabase-private-medallio-replica",
-            "createdAt": "2026-09-11T05:47:31Z",
-            "startedAt": "2026-09-11T05:47:31Z",
-            "updatedAt": "2026-09-11T05:48:18Z",
-            "durationSeconds": 47,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34567323089",
-            "runNumber": 137
-          },
-          {
-            "id": 34537623817,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-10T22:28:32Z",
-            "startedAt": "2026-09-10T22:28:32Z",
-            "updatedAt": "2026-09-10T22:29:13Z",
-            "durationSeconds": 41,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34537623817",
-            "runNumber": 136
-          },
-          {
-            "id": 34537552072,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/pricing-projection-mart",
-            "createdAt": "2026-09-10T22:27:40Z",
-            "startedAt": "2026-09-10T22:27:40Z",
-            "updatedAt": "2026-09-10T22:28:24Z",
-            "durationSeconds": 44,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34537552072",
-            "runNumber": 135
-          },
-          {
-            "id": 34533074701,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-10T21:36:05Z",
-            "startedAt": "2026-09-10T21:36:05Z",
-            "updatedAt": "2026-09-10T21:36:58Z",
-            "durationSeconds": 53,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34533074701",
-            "runNumber": 134
-          },
-          {
-            "id": 34532987610,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "fix/redshift-timeout-recovery",
-            "createdAt": "2026-09-10T21:35:07Z",
-            "startedAt": "2026-09-10T21:35:07Z",
-            "updatedAt": "2026-09-10T21:35:52Z",
-            "durationSeconds": 45,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34532987610",
-            "runNumber": 133
-          },
-          {
-            "id": 34526566524,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-10T20:28:16Z",
-            "startedAt": "2026-09-10T20:28:16Z",
-            "updatedAt": "2026-09-10T20:29:10Z",
-            "durationSeconds": 54,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34526566524",
-            "runNumber": 132
-          },
-          {
-            "id": 34526464707,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/dw-self-maintaining-refresh",
-            "createdAt": "2026-09-10T20:27:14Z",
-            "startedAt": "2026-09-10T20:27:14Z",
-            "updatedAt": "2026-09-10T20:28:06Z",
-            "durationSeconds": 52,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34526464707",
-            "runNumber": 131
-          },
-          {
-            "id": 34483751768,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "failure",
-            "event": "pull_request",
-            "branch": "feat/pricing-inmobiliario-study-v1",
-            "createdAt": "2026-09-10T13:37:00Z",
-            "startedAt": "2026-09-10T13:37:00Z",
-            "updatedAt": "2026-09-10T13:38:01Z",
-            "durationSeconds": 61,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/34483751768",
-            "runNumber": 130
-          }
-        ]
-      },
-      "tags": [
-        "Jupyter Notebook"
       ],
       "priority": {
         "score": 0,
@@ -14763,20 +14593,34 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 35897341623,
+          "id": 36036327822,
           "name": "Daily CEO Brief",
           "status": "completed",
           "conclusion": "success",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-23T17:41:32Z",
-          "startedAt": "2026-09-23T17:41:32Z",
-          "updatedAt": "2026-09-23T17:41:46Z",
-          "durationSeconds": 14,
-          "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35897341623",
-          "runNumber": 7
+          "createdAt": "2026-09-24T17:43:46Z",
+          "startedAt": "2026-09-24T17:43:46Z",
+          "updatedAt": "2026-09-24T17:43:58Z",
+          "durationSeconds": 12,
+          "url": "https://github.com/dinatalediego/venture_architect/actions/runs/36036327822",
+          "runNumber": 8
         },
         "runs": [
+          {
+            "id": 36036327822,
+            "name": "Daily CEO Brief",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-24T17:43:46Z",
+            "startedAt": "2026-09-24T17:43:46Z",
+            "updatedAt": "2026-09-24T17:43:58Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/36036327822",
+            "runNumber": 8
+          },
           {
             "id": 35897341623,
             "name": "Daily CEO Brief",
@@ -14902,20 +14746,6 @@
             "durationSeconds": 11,
             "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35257084032",
             "runNumber": 34
-          },
-          {
-            "id": 35252785775,
-            "name": "Daily CEO Brief",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-17T17:26:50Z",
-            "startedAt": "2026-09-17T17:26:50Z",
-            "updatedAt": "2026-09-17T17:27:01Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35252785775",
-            "runNumber": 3
           }
         ]
       },
