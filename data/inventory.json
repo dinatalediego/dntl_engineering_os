@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-09-25T17:57:55.915Z",
+  "generatedAt": "2026-09-26T17:11:04.720Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -2486,6 +2486,75 @@
       }
     },
     {
+      "name": "inmobiliaria-data",
+      "fullName": "dinatalediego/inmobiliaria-data",
+      "url": "https://github.com/dinatalediego/inmobiliaria-data",
+      "visibility": "private",
+      "score": 75,
+      "health": "watch",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Supabase",
+      "tests": "Detected",
+      "lastActivity": "2026-03-30T03:46:19Z",
+      "attention": [
+        "Repository is stale",
+        "GitHub Actions telemetry unavailable"
+      ],
+      "components": {
+        "freshness": 0,
+        "documentation": 15,
+        "automation": 20,
+        "testing": 20,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 1,
+        "hasTests": true,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 1597,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "unknown",
+        "color": "gray",
+        "label": "Actions not observable",
+        "workflowCount": 1,
+        "latest": null,
+        "runs": null,
+        "recentRuns": null,
+        "successRateLast10": null,
+        "failedRecentCount": null
+      },
+      "tags": [
+        "HTML"
+      ],
+      "priority": {
+        "score": 46,
+        "severity": "medium",
+        "primaryReason": "GitHub Actions telemetry is unavailable",
+        "signals": [
+          {
+            "points": 28,
+            "reason": "GitHub Actions telemetry is unavailable",
+            "code": "actions:unknown"
+          },
+          {
+            "points": 18,
+            "reason": "Repository structural health needs attention",
+            "code": "repository:watch"
+          }
+        ]
+      }
+    },
+    {
       "name": "Match_Pagos_CRM",
       "fullName": "dinatalediego/Match_Pagos_CRM",
       "url": "https://github.com/dinatalediego/Match_Pagos_CRM",
@@ -2689,6 +2758,75 @@
             "points": 18,
             "reason": "Repository structural health needs attention",
             "code": "repository:watch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "animes",
+      "fullName": "dinatalediego/animes",
+      "url": "https://github.com/dinatalediego/animes",
+      "visibility": "public",
+      "score": 53,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Vercel-ready",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-08-26T21:45:05Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 10,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": true,
+        "hasDocker": false,
+        "hasVercelConfig": true,
+        "trackedEnvFile": false,
+        "fileCount": 22,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "JavaScript"
+      ],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
           }
         ]
       }
@@ -10024,7 +10162,7 @@
       "fullName": "dinatalediego/mi-recomendacion-real-state",
       "url": "https://github.com/dinatalediego/mi-recomendacion-real-state",
       "visibility": "private",
-      "score": 49,
+      "score": 40,
       "health": "risk",
       "type": "ML",
       "criticality": "Unclassified",
@@ -10034,10 +10172,11 @@
       "lastActivity": "2026-03-29T19:11:22Z",
       "attention": [
         "Add CI workflow",
-        "Add operational README"
+        "Add operational README",
+        "Repository is stale"
       ],
       "components": {
-        "freshness": 9,
+        "freshness": 0,
         "documentation": 0,
         "automation": 0,
         "testing": 20,
@@ -10573,7 +10712,7 @@
       "fullName": "dinatalediego/dashboard-app",
       "url": "https://github.com/dinatalediego/dashboard-app",
       "visibility": "private",
-      "score": 100,
+      "score": 93,
       "health": "healthy",
       "type": "ML",
       "criticality": "Unclassified",
@@ -10586,7 +10725,7 @@
         "GitHub Actions telemetry unavailable"
       ],
       "components": {
-        "freshness": 25,
+        "freshness": 18,
         "documentation": 15,
         "automation": 20,
         "testing": 20,
@@ -10820,139 +10959,6 @@
             "points": 28,
             "reason": "GitHub Actions telemetry is unavailable",
             "code": "actions:unknown"
-          }
-        ]
-      }
-    },
-    {
-      "name": "inmobiliaria-data",
-      "fullName": "dinatalediego/inmobiliaria-data",
-      "url": "https://github.com/dinatalediego/inmobiliaria-data",
-      "visibility": "private",
-      "score": 84,
-      "health": "healthy",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Vercel-ready",
-      "database": "Supabase",
-      "tests": "Detected",
-      "lastActivity": "2026-03-30T03:46:19Z",
-      "attention": [
-        "No repository-level blockers detected",
-        "GitHub Actions telemetry unavailable"
-      ],
-      "components": {
-        "freshness": 9,
-        "documentation": 15,
-        "automation": 20,
-        "testing": 20,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 1,
-        "hasTests": true,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": true,
-        "trackedEnvFile": false,
-        "fileCount": 1597,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "unknown",
-        "color": "gray",
-        "label": "Actions not observable",
-        "workflowCount": 1,
-        "latest": null,
-        "runs": null,
-        "recentRuns": null,
-        "successRateLast10": null,
-        "failedRecentCount": null
-      },
-      "tags": [
-        "HTML"
-      ],
-      "priority": {
-        "score": 28,
-        "severity": "medium",
-        "primaryReason": "GitHub Actions telemetry is unavailable",
-        "signals": [
-          {
-            "points": 28,
-            "reason": "GitHub Actions telemetry is unavailable",
-            "code": "actions:unknown"
-          }
-        ]
-      }
-    },
-    {
-      "name": "animes",
-      "fullName": "dinatalediego/animes",
-      "url": "https://github.com/dinatalediego/animes",
-      "visibility": "public",
-      "score": 60,
-      "health": "watch",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Vercel-ready",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-08-26T21:45:05Z",
-      "attention": [
-        "Add automated tests",
-        "Add CI workflow"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 0,
-        "testing": 0,
-        "operability": 10,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": true,
-        "hasDocker": false,
-        "hasVercelConfig": true,
-        "trackedEnvFile": false,
-        "fileCount": 22,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [
-        "JavaScript"
-      ],
-      "priority": {
-        "score": 28,
-        "severity": "medium",
-        "primaryReason": "Repository structural health needs attention",
-        "signals": [
-          {
-            "points": 18,
-            "reason": "Repository structural health needs attention",
-            "code": "repository:watch"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
           }
         ]
       }
@@ -12353,7 +12359,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-24T17:52:36Z",
+      "lastActivity": "2026-09-25T17:58:06Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12386,31 +12392,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 36170344757,
+          "id": 36258087556,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-25T17:57:17Z",
-          "startedAt": "2026-09-25T17:57:17Z",
-          "updatedAt": "2026-09-25T17:57:21Z",
-          "durationSeconds": 4,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/36170344757",
-          "runNumber": 51
+          "createdAt": "2026-09-26T17:10:38Z",
+          "startedAt": "2026-09-26T17:10:38Z",
+          "updatedAt": "2026-09-26T17:10:41Z",
+          "durationSeconds": 3,
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/36258087556",
+          "runNumber": 52
         },
         "runs": [
           {
-            "id": 36170344757,
+            "id": 36258087556,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-09-26T17:10:38Z",
+            "startedAt": "2026-09-26T17:10:38Z",
+            "updatedAt": "2026-09-26T17:10:41Z",
+            "durationSeconds": 3,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/36258087556",
+            "runNumber": 52
+          },
+          {
+            "id": 36170344757,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-09-25T17:57:17Z",
             "startedAt": "2026-09-25T17:57:17Z",
-            "updatedAt": "2026-09-25T17:57:21Z",
-            "durationSeconds": 4,
+            "updatedAt": "2026-09-25T17:58:10Z",
+            "durationSeconds": 53,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/36170344757",
             "runNumber": 51
           },
@@ -12525,20 +12545,6 @@
             "durationSeconds": 48,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35253916370",
             "runNumber": 43
-          },
-          {
-            "id": 35129363568,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-16T17:37:43Z",
-            "startedAt": "2026-09-16T17:37:43Z",
-            "updatedAt": "2026-09-16T17:38:26Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35129363568",
-            "runNumber": 42
           }
         ]
       },
@@ -12717,7 +12723,7 @@
       "deployment": "GitHub Actions",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-09-25T17:11:04Z",
+      "lastActivity": "2026-09-25T23:32:43Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12738,7 +12744,7 @@
         "hasDocker": false,
         "hasVercelConfig": false,
         "trackedEnvFile": false,
-        "fileCount": 463,
+        "fileCount": 468,
         "recursiveTree": true
       },
       "actions": {
@@ -12750,20 +12756,62 @@
         "successRateLast10": 90,
         "failedRecentCount": 1,
         "latest": {
-          "id": 36165507545,
+          "id": 36201432749,
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
           "event": "push",
           "branch": "main",
-          "createdAt": "2026-09-25T17:11:06Z",
-          "startedAt": "2026-09-25T17:11:06Z",
-          "updatedAt": "2026-09-25T17:11:49Z",
-          "durationSeconds": 43,
-          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36165507545",
-          "runNumber": 161
+          "createdAt": "2026-09-25T23:32:45Z",
+          "startedAt": "2026-09-25T23:32:45Z",
+          "updatedAt": "2026-09-25T23:33:27Z",
+          "durationSeconds": 42,
+          "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36201432749",
+          "runNumber": 164
         },
         "runs": [
+          {
+            "id": 36201432749,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-25T23:32:45Z",
+            "startedAt": "2026-09-25T23:32:45Z",
+            "updatedAt": "2026-09-25T23:33:27Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36201432749",
+            "runNumber": 164
+          },
+          {
+            "id": 36201387838,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/clientes-calidad-staging",
+            "createdAt": "2026-09-25T23:32:02Z",
+            "startedAt": "2026-09-25T23:32:02Z",
+            "updatedAt": "2026-09-25T23:32:54Z",
+            "durationSeconds": 52,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36201387838",
+            "runNumber": 163
+          },
+          {
+            "id": 36201337974,
+            "name": "CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "feat/clientes-calidad-staging",
+            "createdAt": "2026-09-25T23:31:17Z",
+            "startedAt": "2026-09-25T23:31:17Z",
+            "updatedAt": "2026-09-25T23:31:58Z",
+            "durationSeconds": 41,
+            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36201337974",
+            "runNumber": 162
+          },
           {
             "id": 36165507545,
             "name": "CI",
@@ -12861,48 +12909,6 @@
             "durationSeconds": 45,
             "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36029788159",
             "runNumber": 155
-          },
-          {
-            "id": 36029029520,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-24T16:40:41Z",
-            "startedAt": "2026-09-24T16:40:41Z",
-            "updatedAt": "2026-09-24T16:41:30Z",
-            "durationSeconds": 49,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36029029520",
-            "runNumber": 154
-          },
-          {
-            "id": 36028902731,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feature/clasificar-tipos-contrato",
-            "createdAt": "2026-09-24T16:39:36Z",
-            "startedAt": "2026-09-24T16:39:36Z",
-            "updatedAt": "2026-09-24T16:40:19Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36028902731",
-            "runNumber": 153
-          },
-          {
-            "id": 36028887155,
-            "name": "CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feature/clasificar-tipos-contrato",
-            "createdAt": "2026-09-24T16:39:28Z",
-            "startedAt": "2026-09-24T16:39:28Z",
-            "updatedAt": "2026-09-24T16:40:11Z",
-            "durationSeconds": 43,
-            "url": "https://github.com/dinatalediego/bd_replica_crm/actions/runs/36028887155",
-            "runNumber": 152
           }
         ]
       },
@@ -12928,7 +12934,7 @@
       "deployment": "Vercel-ready",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-09-16T17:25:35Z",
+      "lastActivity": "2026-09-25T19:15:08Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12949,7 +12955,7 @@
         "hasDocker": false,
         "hasVercelConfig": true,
         "trackedEnvFile": false,
-        "fileCount": 73,
+        "fileCount": 83,
         "recursiveTree": true
       },
       "actions": {
@@ -12961,159 +12967,159 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 35128104627,
+          "id": 36178530636,
           "name": "Validate SÓCRATES Foundation",
           "status": "completed",
           "conclusion": "success",
           "event": "push",
           "branch": "main",
-          "createdAt": "2026-09-16T17:25:37Z",
-          "startedAt": "2026-09-16T17:25:37Z",
-          "updatedAt": "2026-09-16T17:25:47Z",
-          "durationSeconds": 10,
-          "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35128104627",
-          "runNumber": 86
+          "createdAt": "2026-09-25T19:15:11Z",
+          "startedAt": "2026-09-25T19:15:11Z",
+          "updatedAt": "2026-09-25T19:15:19Z",
+          "durationSeconds": 8,
+          "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36178530636",
+          "runNumber": 93
         },
         "runs": [
           {
-            "id": 35128104627,
+            "id": 36178530636,
             "name": "Validate SÓCRATES Foundation",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
             "branch": "main",
-            "createdAt": "2026-09-16T17:25:37Z",
-            "startedAt": "2026-09-16T17:25:37Z",
-            "updatedAt": "2026-09-16T17:25:47Z",
-            "durationSeconds": 10,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35128104627",
-            "runNumber": 86
+            "createdAt": "2026-09-25T19:15:11Z",
+            "startedAt": "2026-09-25T19:15:11Z",
+            "updatedAt": "2026-09-25T19:15:19Z",
+            "durationSeconds": 8,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36178530636",
+            "runNumber": 93
           },
           {
-            "id": 35128104543,
+            "id": 36178530596,
             "name": "Web CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
             "branch": "main",
-            "createdAt": "2026-09-16T17:25:37Z",
-            "startedAt": "2026-09-16T17:25:37Z",
-            "updatedAt": "2026-09-16T17:26:29Z",
-            "durationSeconds": 52,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35128104543",
-            "runNumber": 69
+            "createdAt": "2026-09-25T19:15:11Z",
+            "startedAt": "2026-09-25T19:15:11Z",
+            "updatedAt": "2026-09-25T19:15:53Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36178530596",
+            "runNumber": 76
           },
           {
-            "id": 35127898697,
+            "id": 36178368619,
             "name": "Web CI",
             "status": "completed",
             "conclusion": "success",
             "event": "pull_request",
-            "branch": "feat/meta-professor-engine-v1",
-            "createdAt": "2026-09-16T17:23:39Z",
-            "startedAt": "2026-09-16T17:23:39Z",
-            "updatedAt": "2026-09-16T17:24:30Z",
+            "branch": "codex/whatsapp-readiness",
+            "createdAt": "2026-09-25T19:13:36Z",
+            "startedAt": "2026-09-25T19:13:36Z",
+            "updatedAt": "2026-09-25T19:14:27Z",
             "durationSeconds": 51,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35127898697",
-            "runNumber": 68
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36178368619",
+            "runNumber": 75
           },
           {
-            "id": 35127898689,
+            "id": 36178368569,
             "name": "Validate SÓCRATES Foundation",
             "status": "completed",
             "conclusion": "success",
             "event": "pull_request",
-            "branch": "feat/meta-professor-engine-v1",
-            "createdAt": "2026-09-16T17:23:39Z",
-            "startedAt": "2026-09-16T17:23:39Z",
-            "updatedAt": "2026-09-16T17:23:47Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35127898689",
-            "runNumber": 85
+            "branch": "codex/whatsapp-readiness",
+            "createdAt": "2026-09-25T19:13:36Z",
+            "startedAt": "2026-09-25T19:13:36Z",
+            "updatedAt": "2026-09-25T19:13:47Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36178368569",
+            "runNumber": 92
           },
           {
-            "id": 35127849810,
-            "name": "Validate SÓCRATES Foundation",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/meta-professor-engine-v1",
-            "createdAt": "2026-09-16T17:23:11Z",
-            "startedAt": "2026-09-16T17:23:11Z",
-            "updatedAt": "2026-09-16T17:23:19Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35127849810",
-            "runNumber": 84
-          },
-          {
-            "id": 35127849779,
-            "name": "Web CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/meta-professor-engine-v1",
-            "createdAt": "2026-09-16T17:23:11Z",
-            "startedAt": "2026-09-16T17:23:11Z",
-            "updatedAt": "2026-09-16T17:23:57Z",
-            "durationSeconds": 46,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35127849779",
-            "runNumber": 67
-          },
-          {
-            "id": 35127687786,
-            "name": "Validate SÓCRATES Foundation",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/meta-professor-engine-v1",
-            "createdAt": "2026-09-16T17:21:37Z",
-            "startedAt": "2026-09-16T17:21:37Z",
-            "updatedAt": "2026-09-16T17:21:51Z",
-            "durationSeconds": 14,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35127687786",
-            "runNumber": 83
-          },
-          {
-            "id": 35127687782,
-            "name": "Web CI",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "pull_request",
-            "branch": "feat/meta-professor-engine-v1",
-            "createdAt": "2026-09-16T17:21:37Z",
-            "startedAt": "2026-09-16T17:21:37Z",
-            "updatedAt": "2026-09-16T17:22:31Z",
-            "durationSeconds": 54,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/35127687782",
-            "runNumber": 66
-          },
-          {
-            "id": 34983927477,
-            "name": "Validate SÓCRATES Foundation",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "push",
-            "branch": "main",
-            "createdAt": "2026-09-15T14:46:37Z",
-            "startedAt": "2026-09-15T14:46:37Z",
-            "updatedAt": "2026-09-15T14:46:45Z",
-            "durationSeconds": 8,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983927477",
-            "runNumber": 82
-          },
-          {
-            "id": 34983927448,
+            "id": 36177595316,
             "name": "Web CI",
             "status": "completed",
             "conclusion": "success",
             "event": "push",
             "branch": "main",
-            "createdAt": "2026-09-15T14:46:37Z",
-            "startedAt": "2026-09-15T14:46:37Z",
-            "updatedAt": "2026-09-15T14:47:16Z",
-            "durationSeconds": 39,
-            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/34983927448",
-            "runNumber": 65
+            "createdAt": "2026-09-25T19:06:09Z",
+            "startedAt": "2026-09-25T19:06:09Z",
+            "updatedAt": "2026-09-25T19:06:51Z",
+            "durationSeconds": 42,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36177595316",
+            "runNumber": 74
+          },
+          {
+            "id": 36177595294,
+            "name": "Validate SÓCRATES Foundation",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "push",
+            "branch": "main",
+            "createdAt": "2026-09-25T19:06:09Z",
+            "startedAt": "2026-09-25T19:06:09Z",
+            "updatedAt": "2026-09-25T19:06:21Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36177595294",
+            "runNumber": 91
+          },
+          {
+            "id": 36177400693,
+            "name": "Web CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "codex/whatsapp-tutor",
+            "createdAt": "2026-09-25T19:04:17Z",
+            "startedAt": "2026-09-25T19:04:17Z",
+            "updatedAt": "2026-09-25T19:05:07Z",
+            "durationSeconds": 50,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36177400693",
+            "runNumber": 73
+          },
+          {
+            "id": 36177400653,
+            "name": "Validate SÓCRATES Foundation",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "codex/whatsapp-tutor",
+            "createdAt": "2026-09-25T19:04:17Z",
+            "startedAt": "2026-09-25T19:04:17Z",
+            "updatedAt": "2026-09-25T19:04:24Z",
+            "durationSeconds": 7,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36177400653",
+            "runNumber": 90
+          },
+          {
+            "id": 36177146105,
+            "name": "Web CI",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "codex/whatsapp-tutor",
+            "createdAt": "2026-09-25T19:01:50Z",
+            "startedAt": "2026-09-25T19:01:50Z",
+            "updatedAt": "2026-09-25T19:02:43Z",
+            "durationSeconds": 53,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36177146105",
+            "runNumber": 72
+          },
+          {
+            "id": 36177146103,
+            "name": "Validate SÓCRATES Foundation",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "pull_request",
+            "branch": "codex/whatsapp-tutor",
+            "createdAt": "2026-09-25T19:01:50Z",
+            "startedAt": "2026-09-25T19:01:50Z",
+            "updatedAt": "2026-09-25T19:02:01Z",
+            "durationSeconds": 11,
+            "url": "https://github.com/dinatalediego/data_science_master/actions/runs/36177146103",
+            "runNumber": 89
           }
         ]
       },
@@ -13383,20 +13389,76 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 36098236993,
+          "id": 36220752995,
           "name": "Actualizar BCRP cada hora y verificar frescura",
           "status": "completed",
           "conclusion": "success",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-09-25T05:21:44Z",
-          "startedAt": "2026-09-25T05:21:44Z",
-          "updatedAt": "2026-09-25T05:21:56Z",
-          "durationSeconds": 12,
-          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36098236993",
-          "runNumber": 39
+          "createdAt": "2026-09-26T05:25:29Z",
+          "startedAt": "2026-09-26T05:25:29Z",
+          "updatedAt": "2026-09-26T05:25:39Z",
+          "durationSeconds": 10,
+          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36220752995",
+          "runNumber": 43
         },
         "runs": [
+          {
+            "id": 36220752995,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-26T05:25:29Z",
+            "startedAt": "2026-09-26T05:25:29Z",
+            "updatedAt": "2026-09-26T05:25:39Z",
+            "durationSeconds": 10,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36220752995",
+            "runNumber": 43
+          },
+          {
+            "id": 36210051769,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-26T01:55:55Z",
+            "startedAt": "2026-09-26T01:55:55Z",
+            "updatedAt": "2026-09-26T01:56:07Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36210051769",
+            "runNumber": 42
+          },
+          {
+            "id": 36198297509,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-25T22:46:41Z",
+            "startedAt": "2026-09-25T22:46:41Z",
+            "updatedAt": "2026-09-25T22:46:56Z",
+            "durationSeconds": 15,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36198297509",
+            "runNumber": 41
+          },
+          {
+            "id": 36176012531,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-09-25T18:50:54Z",
+            "startedAt": "2026-09-25T18:50:54Z",
+            "updatedAt": "2026-09-25T18:51:08Z",
+            "durationSeconds": 14,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36176012531",
+            "runNumber": 40
+          },
           {
             "id": 36098236993,
             "name": "Actualizar BCRP cada hora y verificar frescura",
@@ -13480,62 +13542,6 @@
             "durationSeconds": 11,
             "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35940282691",
             "runNumber": 34
-          },
-          {
-            "id": 35924533347,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-23T21:46:57Z",
-            "startedAt": "2026-09-23T21:46:57Z",
-            "updatedAt": "2026-09-23T21:47:07Z",
-            "durationSeconds": 10,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35924533347",
-            "runNumber": 33
-          },
-          {
-            "id": 35903600047,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-23T18:36:06Z",
-            "startedAt": "2026-09-23T18:36:06Z",
-            "updatedAt": "2026-09-23T18:36:17Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35903600047",
-            "runNumber": 32
-          },
-          {
-            "id": 35821172305,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-23T05:08:20Z",
-            "startedAt": "2026-09-23T05:08:20Z",
-            "updatedAt": "2026-09-23T05:08:31Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35821172305",
-            "runNumber": 31
-          },
-          {
-            "id": 35804014593,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-23T00:53:46Z",
-            "startedAt": "2026-09-23T00:53:46Z",
-            "updatedAt": "2026-09-23T00:53:57Z",
-            "durationSeconds": 11,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/35804014593",
-            "runNumber": 30
           }
         ]
       },
