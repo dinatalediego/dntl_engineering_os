@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-10-01T18:54:02.584Z",
+  "generatedAt": "2026-10-02T18:25:33.414Z",
   "owner": "dinatalediego",
   "source": "github-api",
   "fullPrivateCoverage": true,
@@ -575,7 +575,7 @@
       "deployment": "GitHub Actions",
       "database": "Supabase",
       "tests": "Detected",
-      "lastActivity": "2026-10-01T18:31:09Z",
+      "lastActivity": "2026-10-02T05:21:02Z",
       "attention": [
         "GitHub Actions failing: CI",
         "No repository-level blockers detected"
@@ -1052,23 +1052,37 @@
         "label": "Failing",
         "workflowCount": 2,
         "recentRuns": 10,
-        "successRateLast10": 20,
-        "failedRecentCount": 8,
+        "successRateLast10": 10,
+        "failedRecentCount": 9,
         "latest": {
-          "id": 36898980458,
+          "id": 37035323369,
           "name": "Public batch ingest",
           "status": "completed",
           "conclusion": "failure",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-10-01T17:23:09Z",
-          "startedAt": "2026-10-01T17:23:09Z",
-          "updatedAt": "2026-10-01T17:25:28Z",
-          "durationSeconds": 139,
-          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/36898980458",
-          "runNumber": 30
+          "createdAt": "2026-10-02T16:38:42Z",
+          "startedAt": "2026-10-02T16:38:42Z",
+          "updatedAt": "2026-10-02T16:39:18Z",
+          "durationSeconds": 36,
+          "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/37035323369",
+          "runNumber": 31
         },
         "runs": [
+          {
+            "id": 37035323369,
+            "name": "Public batch ingest",
+            "status": "completed",
+            "conclusion": "failure",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-10-02T16:38:42Z",
+            "startedAt": "2026-10-02T16:38:42Z",
+            "updatedAt": "2026-10-02T16:39:18Z",
+            "durationSeconds": 36,
+            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/37035323369",
+            "runNumber": 31
+          },
           {
             "id": 36898980458,
             "name": "Public batch ingest",
@@ -1194,20 +1208,6 @@
             "durationSeconds": 102,
             "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35629641565",
             "runNumber": 22
-          },
-          {
-            "id": 35359716347,
-            "name": "Public batch ingest",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-18T15:00:11Z",
-            "startedAt": "2026-09-18T15:00:11Z",
-            "updatedAt": "2026-09-18T15:01:29Z",
-            "durationSeconds": 78,
-            "url": "https://github.com/dinatalediego/dntl_datos/actions/runs/35359716347",
-            "runNumber": 21
           }
         ]
       },
@@ -1226,7 +1226,7 @@
           },
           {
             "points": 15,
-            "reason": "8 failures detected in recent workflow history",
+            "reason": "9 failures detected in recent workflow history",
             "code": "actions:repeated-failures"
           }
         ]
@@ -1772,7 +1772,7 @@
       "fullName": "dinatalediego/magic_crm",
       "url": "https://github.com/dinatalediego/magic_crm",
       "visibility": "public",
-      "score": 100,
+      "score": 93,
       "health": "healthy",
       "type": "ML",
       "criticality": "Unclassified",
@@ -1785,7 +1785,7 @@
         "No repository-level blockers detected"
       ],
       "components": {
-        "freshness": 25,
+        "freshness": 18,
         "documentation": 15,
         "automation": 20,
         "testing": 20,
@@ -3262,76 +3262,6 @@
       }
     },
     {
-      "name": "ai_assistant",
-      "fullName": "dinatalediego/ai_assistant",
-      "url": "https://github.com/dinatalediego/ai_assistant",
-      "visibility": "public",
-      "score": 50,
-      "health": "risk",
-      "type": "ML",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-09-02T17:49:48Z",
-      "attention": [
-        "Add automated tests",
-        "Add CI workflow",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 15,
-        "automation": 0,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 10
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": true,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 8,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [
-        "Jupyter Notebook"
-      ],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
       "name": "Sudoku",
       "fullName": "dinatalediego/Sudoku",
       "url": "https://github.com/dinatalediego/Sudoku",
@@ -3587,6 +3517,76 @@
       },
       "tags": [
         "Python"
+      ],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ai_assistant",
+      "fullName": "dinatalediego/ai_assistant",
+      "url": "https://github.com/dinatalediego/ai_assistant",
+      "visibility": "public",
+      "score": 43,
+      "health": "risk",
+      "type": "ML",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-09-02T17:49:48Z",
+      "attention": [
+        "Add automated tests",
+        "Add CI workflow",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 15,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 10
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": true,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 8,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [
+        "Jupyter Notebook"
       ],
       "priority": {
         "score": 45,
@@ -5001,76 +5001,6 @@
       }
     },
     {
-      "name": "video_live_agent",
-      "fullName": "dinatalediego/video_live_agent",
-      "url": "https://github.com/dinatalediego/video_live_agent",
-      "visibility": "public",
-      "score": 29,
-      "health": "risk",
-      "type": "App",
-      "criticality": "Unclassified",
-      "deployment": "Not detected",
-      "database": "Not detected",
-      "tests": "Missing",
-      "lastActivity": "2026-09-02T17:04:02Z",
-      "attention": [
-        "Repository is empty",
-        "Add automated tests",
-        "Add CI workflow",
-        "Add operational README",
-        "No operability manifest detected"
-      ],
-      "components": {
-        "freshness": 25,
-        "documentation": 0,
-        "automation": 0,
-        "testing": 0,
-        "operability": 0,
-        "hygiene": 4
-      },
-      "evidence": {
-        "coverage": "full",
-        "hasReadme": false,
-        "workflowCount": 0,
-        "hasTests": false,
-        "hasManifest": false,
-        "hasDocker": false,
-        "hasVercelConfig": false,
-        "trackedEnvFile": false,
-        "fileCount": 0,
-        "recursiveTree": true
-      },
-      "actions": {
-        "state": "not-configured",
-        "color": "gray",
-        "label": "No workflows",
-        "workflowCount": 0,
-        "latest": null,
-        "runs": [],
-        "recentRuns": 0,
-        "successRateLast10": null,
-        "failedRecentCount": 0
-      },
-      "tags": [],
-      "priority": {
-        "score": 45,
-        "severity": "medium",
-        "primaryReason": "Repository structural health is at risk",
-        "signals": [
-          {
-            "points": 35,
-            "reason": "Repository structural health is at risk",
-            "code": "repository:risk"
-          },
-          {
-            "points": 10,
-            "reason": "Automated tests are missing",
-            "code": "tests:missing"
-          }
-        ]
-      }
-    },
-    {
       "name": "app_rag",
       "fullName": "dinatalediego/app_rag",
       "url": "https://github.com/dinatalediego/app_rag",
@@ -5687,6 +5617,76 @@
       "tags": [
         "HTML"
       ],
+      "priority": {
+        "score": 45,
+        "severity": "medium",
+        "primaryReason": "Repository structural health is at risk",
+        "signals": [
+          {
+            "points": 35,
+            "reason": "Repository structural health is at risk",
+            "code": "repository:risk"
+          },
+          {
+            "points": 10,
+            "reason": "Automated tests are missing",
+            "code": "tests:missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "video_live_agent",
+      "fullName": "dinatalediego/video_live_agent",
+      "url": "https://github.com/dinatalediego/video_live_agent",
+      "visibility": "public",
+      "score": 22,
+      "health": "risk",
+      "type": "App",
+      "criticality": "Unclassified",
+      "deployment": "Not detected",
+      "database": "Not detected",
+      "tests": "Missing",
+      "lastActivity": "2026-09-02T17:04:02Z",
+      "attention": [
+        "Repository is empty",
+        "Add automated tests",
+        "Add CI workflow",
+        "Add operational README",
+        "No operability manifest detected"
+      ],
+      "components": {
+        "freshness": 18,
+        "documentation": 0,
+        "automation": 0,
+        "testing": 0,
+        "operability": 0,
+        "hygiene": 4
+      },
+      "evidence": {
+        "coverage": "full",
+        "hasReadme": false,
+        "workflowCount": 0,
+        "hasTests": false,
+        "hasManifest": false,
+        "hasDocker": false,
+        "hasVercelConfig": false,
+        "trackedEnvFile": false,
+        "fileCount": 0,
+        "recursiveTree": true
+      },
+      "actions": {
+        "state": "not-configured",
+        "color": "gray",
+        "label": "No workflows",
+        "workflowCount": 0,
+        "latest": null,
+        "runs": [],
+        "recentRuns": 0,
+        "successRateLast10": null,
+        "failedRecentCount": 0
+      },
+      "tags": [],
       "priority": {
         "score": 45,
         "severity": "medium",
@@ -11326,7 +11326,7 @@
       "deployment": "Not detected",
       "database": "Supabase",
       "tests": "Missing",
-      "lastActivity": "2026-09-24T01:08:36Z",
+      "lastActivity": "2026-10-02T14:43:09Z",
       "attention": [
         "Add automated tests",
         "Add CI workflow"
@@ -11348,7 +11348,7 @@
         "hasDocker": false,
         "hasVercelConfig": false,
         "trackedEnvFile": false,
-        "fileCount": 15,
+        "fileCount": 19,
         "recursiveTree": true
       },
       "actions": {
@@ -12710,7 +12710,7 @@
       "deployment": "GitHub Actions",
       "database": "Not detected",
       "tests": "Detected",
-      "lastActivity": "2026-09-30T18:27:26Z",
+      "lastActivity": "2026-10-01T18:54:10Z",
       "attention": [
         "No repository-level blockers detected"
       ],
@@ -12743,31 +12743,45 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 36910212110,
+          "id": 37047273058,
           "name": "Refresh engineering inventory",
           "status": "in_progress",
           "conclusion": null,
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-10-01T18:53:29Z",
-          "startedAt": "2026-10-01T18:53:29Z",
-          "updatedAt": "2026-10-01T18:53:33Z",
+          "createdAt": "2026-10-02T18:24:59Z",
+          "startedAt": "2026-10-02T18:24:59Z",
+          "updatedAt": "2026-10-02T18:25:03Z",
           "durationSeconds": 4,
-          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/36910212110",
-          "runNumber": 57
+          "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/37047273058",
+          "runNumber": 58
         },
         "runs": [
           {
-            "id": 36910212110,
+            "id": 37047273058,
             "name": "Refresh engineering inventory",
             "status": "in_progress",
             "conclusion": null,
             "event": "schedule",
             "branch": "main",
+            "createdAt": "2026-10-02T18:24:59Z",
+            "startedAt": "2026-10-02T18:24:59Z",
+            "updatedAt": "2026-10-02T18:25:03Z",
+            "durationSeconds": 4,
+            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/37047273058",
+            "runNumber": 58
+          },
+          {
+            "id": 36910212110,
+            "name": "Refresh engineering inventory",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
             "createdAt": "2026-10-01T18:53:29Z",
             "startedAt": "2026-10-01T18:53:29Z",
-            "updatedAt": "2026-10-01T18:53:33Z",
-            "durationSeconds": 4,
+            "updatedAt": "2026-10-01T18:54:14Z",
+            "durationSeconds": 45,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/36910212110",
             "runNumber": 57
           },
@@ -12882,20 +12896,6 @@
             "durationSeconds": 44,
             "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35898454494",
             "runNumber": 49
-          },
-          {
-            "id": 35761999359,
-            "name": "Refresh engineering inventory",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-22T17:38:14Z",
-            "startedAt": "2026-09-22T17:38:14Z",
-            "updatedAt": "2026-09-22T17:39:00Z",
-            "durationSeconds": 46,
-            "url": "https://github.com/dinatalediego/dntl_engineering_os/actions/runs/35761999359",
-            "runNumber": 48
           }
         ]
       },
@@ -13529,20 +13529,62 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 36825136136,
+          "id": 36972181622,
           "name": "Actualizar BCRP cada hora y verificar frescura",
           "status": "completed",
           "conclusion": "success",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-10-01T06:30:26Z",
-          "startedAt": "2026-10-01T06:30:26Z",
-          "updatedAt": "2026-10-01T06:30:38Z",
-          "durationSeconds": 12,
-          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36825136136",
-          "runNumber": 54
+          "createdAt": "2026-10-02T06:09:05Z",
+          "startedAt": "2026-10-02T06:09:05Z",
+          "updatedAt": "2026-10-02T06:09:19Z",
+          "durationSeconds": 14,
+          "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36972181622",
+          "runNumber": 57
         },
         "runs": [
+          {
+            "id": 36972181622,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-10-02T06:09:05Z",
+            "startedAt": "2026-10-02T06:09:05Z",
+            "updatedAt": "2026-10-02T06:09:19Z",
+            "durationSeconds": 14,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36972181622",
+            "runNumber": 57
+          },
+          {
+            "id": 36944572618,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-10-02T00:09:38Z",
+            "startedAt": "2026-10-02T00:09:38Z",
+            "updatedAt": "2026-10-02T00:09:50Z",
+            "durationSeconds": 12,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36944572618",
+            "runNumber": 56
+          },
+          {
+            "id": 36916775086,
+            "name": "Actualizar BCRP cada hora y verificar frescura",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-10-01T19:46:40Z",
+            "startedAt": "2026-10-01T19:46:40Z",
+            "updatedAt": "2026-10-01T19:46:54Z",
+            "durationSeconds": 14,
+            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36916775086",
+            "runNumber": 55
+          },
           {
             "id": 36825136136,
             "name": "Actualizar BCRP cada hora y verificar frescura",
@@ -13640,48 +13682,6 @@
             "durationSeconds": 13,
             "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36643883898",
             "runNumber": 48
-          },
-          {
-            "id": 36620458730,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-29T19:36:38Z",
-            "startedAt": "2026-09-29T19:36:38Z",
-            "updatedAt": "2026-09-29T19:36:51Z",
-            "durationSeconds": 13,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36620458730",
-            "runNumber": 47
-          },
-          {
-            "id": 36529670384,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-29T06:09:53Z",
-            "startedAt": "2026-09-29T06:09:53Z",
-            "updatedAt": "2026-09-29T06:10:05Z",
-            "durationSeconds": 12,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36529670384",
-            "runNumber": 46
-          },
-          {
-            "id": 36506891180,
-            "name": "Actualizar BCRP cada hora y verificar frescura",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-29T01:13:43Z",
-            "startedAt": "2026-09-29T01:13:43Z",
-            "updatedAt": "2026-09-29T01:13:57Z",
-            "durationSeconds": 14,
-            "url": "https://github.com/dinatalediego/patrimonio_en_monedas/actions/runs/36506891180",
-            "runNumber": 45
           }
         ]
       },
@@ -14739,20 +14739,34 @@
         "successRateLast10": 100,
         "failedRecentCount": 0,
         "latest": {
-          "id": 36908629550,
+          "id": 37045772794,
           "name": "Daily CEO Brief",
           "status": "completed",
           "conclusion": "success",
           "event": "schedule",
           "branch": "main",
-          "createdAt": "2026-10-01T18:40:50Z",
-          "startedAt": "2026-10-01T18:40:50Z",
-          "updatedAt": "2026-10-01T18:41:04Z",
-          "durationSeconds": 14,
-          "url": "https://github.com/dinatalediego/venture_architect/actions/runs/36908629550",
-          "runNumber": 13
+          "createdAt": "2026-10-02T18:11:35Z",
+          "startedAt": "2026-10-02T18:11:35Z",
+          "updatedAt": "2026-10-02T18:11:51Z",
+          "durationSeconds": 16,
+          "url": "https://github.com/dinatalediego/venture_architect/actions/runs/37045772794",
+          "runNumber": 14
         },
         "runs": [
+          {
+            "id": 37045772794,
+            "name": "Daily CEO Brief",
+            "status": "completed",
+            "conclusion": "success",
+            "event": "schedule",
+            "branch": "main",
+            "createdAt": "2026-10-02T18:11:35Z",
+            "startedAt": "2026-10-02T18:11:35Z",
+            "updatedAt": "2026-10-02T18:11:51Z",
+            "durationSeconds": 16,
+            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/37045772794",
+            "runNumber": 14
+          },
           {
             "id": 36908629550,
             "name": "Daily CEO Brief",
@@ -14878,20 +14892,6 @@
             "durationSeconds": 20,
             "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35761154325",
             "runNumber": 6
-          },
-          {
-            "id": 35641065938,
-            "name": "Day 8 Investment Gate",
-            "status": "completed",
-            "conclusion": "success",
-            "event": "schedule",
-            "branch": "main",
-            "createdAt": "2026-09-21T18:51:09Z",
-            "startedAt": "2026-09-21T18:51:09Z",
-            "updatedAt": "2026-09-21T18:51:22Z",
-            "durationSeconds": 13,
-            "url": "https://github.com/dinatalediego/venture_architect/actions/runs/35641065938",
-            "runNumber": 1
           }
         ]
       },
